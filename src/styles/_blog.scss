@@ -1,0 +1,175 @@
+:root {
+  --transition-time: 0.3s;
+}
+
+.blog {
+  padding: 80px 0;
+
+  &__card {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--main-color) 0%);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 0.8s ease-out forwards;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border: 2px solid transparent;
+      border-radius: 15px;
+      transition: border-color var(--transition-time) ease;
+    }
+
+    &:hover::before {
+    }
+  }
+
+  &__icon {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeIn 0.8s ease-out 0.2s forwards;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.8s ease-out 0.4s forwards;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.8s ease-out 0.6s forwards;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color var(--transition-time) ease,
+      transform var(--transition-time) ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.8s ease-out 0.8s forwards;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .blog {
+    &__card {
+      padding: 30px;
+    }
+
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__text {
+      font-size: 1rem;
+    }
+
+    &__button {
+      font-size: 0.95rem;
+      padding: 10px 20px;
+    }
+
+    &__icon {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    padding: 60px 0;
+
+    &__card {
+      padding: 25px;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__text {
+      font-size: 0.95rem;
+    }
+
+    &__button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+
+    &__icon {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .blog {
+    padding: 40px 0;
+
+    &__card {
+      padding: 20px;
+    }
+
+    &__title {
+      font-size: 1.8rem;
+    }
+
+    &__text {
+      font-size: 0.9rem;
+    }
+
+    &__button {
+      font-size: 0.85rem;
+      padding: 8px 16px;
+    }
+
+    &__icon {
+      font-size: 1.8rem;
+    }
+  }
+}

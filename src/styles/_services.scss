@@ -1,0 +1,39 @@
+.services {
+  min-height: 100vh;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+  }
+  &__card {
+    position: relative;
+    padding: 80px 10px 20px 10px;
+    border-radius: 20px;
+    background: #49494923;
+    height: 100%;
+    &-sercle {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 30px;
+      width: 110px;
+      top: 0;
+      aspect-ratio: 1;
+      background: var(--main-color);
+    }
+    &-title {
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: 800;
+    }
+    &-descr {
+      font-size: 1rem;
+      margin-top: 20px;
+      line-height: 140%;
+      text-align: center;
+    }
+  }
+}

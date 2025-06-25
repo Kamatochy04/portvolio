@@ -1,0 +1,243 @@
+.main {
+  &__button {
+    padding: 20px;
+    width: 100%;
+    background: var(--main-color);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+  }
+  &__descr {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    max-width: 500px;
+    text-align: end;
+  }
+  &__container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+  &__title {
+    &-top {
+      animation: slideUp 0.4s ease-out 0s forwards;
+
+      font-size: 1.5rem;
+      font-weight: 600;
+      opacity: 0;
+    }
+
+    text-transform: uppercase;
+    font-size: clamp(2rem, 20vw, 12rem);
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 90%;
+
+    color: var(--main-color);
+    animation: slideUp 0.4s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+  &__abylity {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    &-item {
+      font-size: 1.2rem;
+      color: #ffffff5a;
+      padding: 5px 30px;
+      border-radius: 15%;
+      border-top: 1px solid #85b6ffa4;
+      border-bottom: 1px solid #85b6ffa4;
+    }
+  }
+  &__text {
+    // background: #00a2ff;
+    // color: #000;
+    padding: 5px;
+    animation: slideUp 0.4s ease-out 0.4s forwards;
+    opacity: 0;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: start;
+    line-height: 80%;
+  }
+  &__buttons {
+    position: absolute;
+    bottom: 20px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    button {
+      opacity: 0;
+      animation: slideUp 0.4s ease-out 0.6s forwards;
+    }
+  }
+}
+
+$primary-color: #333;
+
+$transition-time: 0.3s;
+
+.social-media {
+  opacity: 0;
+  animation: slideUp 0.6s ease-out 0.8s forwards;
+
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    width: 90px;
+    height: 90px;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform $transition-time ease,
+      background-color $transition-time ease;
+    cursor: pointer;
+
+    i {
+      color: white;
+      font-size: 35px;
+      transition: color $transition-time ease;
+    }
+  }
+
+  &__item:hover {
+    transform: scale(1.2);
+    background-color: #181818;
+
+    i {
+      color: var(--main-color);
+    }
+  }
+}
+
+.vide {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; // Полная высота окна браузера, можно заменить на другую высоту
+  overflow: hidden;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // Видео заполняет контейнер, сохраняя пропорции
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000c6;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    &__title {
+      font-size: 6rem;
+    }
+    &__title-top {
+      font-size: 1.3rem;
+    }
+    &__text {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    &__title {
+      font-size: 4rem;
+    }
+    &__title-top {
+      font-size: 1.1rem;
+    }
+    &__text {
+      font-size: 1rem;
+      max-width: 100%;
+    }
+    &__container {
+      gap: 30px;
+      padding: 0 15px;
+    }
+    &__buttons {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+  .social-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    &__item {
+      width: 100%;
+      aspect-ratio: 1;
+
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+  .button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    &__title {
+      font-size: 2.5rem; // Минимальный размер шрифта для заголовка
+    }
+    &__title-top {
+      font-size: 1rem;
+    }
+    &__text {
+      font-size: 0.9rem;
+    }
+    &__container {
+      gap: 20px;
+      padding: 0 10px;
+    }
+  }
+
+  .button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
