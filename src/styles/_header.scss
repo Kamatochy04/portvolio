@@ -113,7 +113,6 @@
     }
 
     &__nav {
-      // display: none;
       position: fixed;
       top: 0;
       left: 0;
@@ -181,21 +180,27 @@
   }
 
   @media (max-width: 480px) {
+    &__container {
+      height: 50px;
+    }
     &__logo {
       font-size: 1.2rem;
       padding-left: 10px;
-      padding-right: 10px;
+      padding-right: 20px;
+      border-radius: 0 0 20px 0;
     }
 
-    // &__burger {
-    //   font-size: 1.2rem;
-    //   width: 24px;
-    //   height: 24px;
+    &__burger {
+      border-radius: 0 0 0 20px;
+      height: 100%;
+      font-size: 1.2rem;
+      // width: 24px;
+      // height: 24px;
 
-    //   &.active::before {
-    //     font-size: 1.2rem;
-    //   }
-    // }
+      &.active::before {
+        font-size: 1.2rem;
+      }
+    }
 
     &__nav {
       width: 200px;
