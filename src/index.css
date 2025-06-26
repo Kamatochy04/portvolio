@@ -38,8 +38,9 @@ a {
 
 .container {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .section {
@@ -54,8 +55,9 @@ a {
 
 .js-bg {
   position: absolute;
-  transform: rotate(20deg) scale(1.2);
+  transform: rotate(20deg) scale(0.4);
   left: -20px;
+  z-index: 0;
 }
 
 .ts-bg {
@@ -85,4 +87,30 @@ a {
   /* bottom: -50%; */
   transform: scale(2);
   right: 10%;
+}
+
+@media (max-width: 1205px) {
+  .ts-bg {
+    transform: rotate(-30deg) scale(0.8);
+
+    right: 0;
+  }
+  .node-bg {
+    transform: scale(1);
+  }
+}
+@media (max-width: 597px) {
+  .ts-bg {
+    transform: rotate(-30deg) scale(0.8);
+
+    right: 0;
+    bottom: -140px;
+    z-index: 0;
+  }
+  .react-bg {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    aspect-ratio: 1;
+  }
 }
