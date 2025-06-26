@@ -35,6 +35,7 @@
   }
 
   &__nav {
+    transition: all 1.4s;
     border-radius: 0 0 0 30px;
     font-size: 0.9rem;
     padding-left: 40px;
@@ -112,7 +113,7 @@
     }
 
     &__nav {
-      display: none;
+      // display: none;
       position: fixed;
       top: 0;
       left: 0;
@@ -122,14 +123,15 @@
       align-items: flex-start;
       background: var(--bg-color);
       padding: 80px 20px 20px;
-      border-right: 2px solid var(--main-color);
+      border-bottom: none;
       border-radius: 0;
       opacity: 0;
       transform: translateX(-100%);
-      transition: opacity 0.4s ease,
-        transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: all 0.4s;
 
       &.active {
+        transition: all 0.4s;
+
         display: flex;
         opacity: 1;
         transform: translateX(0);
@@ -185,15 +187,15 @@
       padding-right: 10px;
     }
 
-    &__burger {
-      font-size: 1.2rem;
-      width: 24px;
-      height: 24px;
+    // &__burger {
+    //   font-size: 1.2rem;
+    //   width: 24px;
+    //   height: 24px;
 
-      &.active::before {
-        font-size: 1.2rem;
-      }
-    }
+    //   &.active::before {
+    //     font-size: 1.2rem;
+    //   }
+    // }
 
     &__nav {
       width: 200px;
