@@ -1,25 +1,46 @@
+:root {
+  --bg-color: #010811;
+  --main-color: #ffd000;
+  --text-color: #e0e0e0;
+  --acent-color: #ffd000;
+  --acent-second-color: #4dabf7;
+}
+
 .tg {
   position: relative;
+  padding: 60px 20px;
+
   &__container {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 100px;
   }
+
   &__title {
     font-size: 1.7rem;
     font-weight: 300;
     line-height: 120%;
     letter-spacing: 2px;
     text-transform: uppercase;
+    color: var(--text-color);
+
     span {
       color: var(--main-color);
     }
   }
+
   &__description {
     max-width: 600px;
     z-index: 2;
+
+    p {
+      font-size: 1rem;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
   }
+
   &__img {
     position: absolute;
     top: 50%;
@@ -29,10 +50,77 @@
     height: auto;
     opacity: 0.7;
     z-index: 0;
-    pointer-events: none; /* Чтобы не мешала кликам */
+    pointer-events: none;
     transition: transform 0.3s ease-out;
   }
+
   &__button {
     margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: var(--acent-second-color);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 15px;
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    &__description {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__img {
+      position: relative;
+      top: auto;
+      right: auto;
+      transform: none;
+      width: 100px;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 10px;
+
+    &__title {
+      font-size: 1.2rem;
+    }
+
+    &__description {
+      text-align: start;
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    &__button {
+      margin-top: 15px;
+      width: 100%;
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+
+    &__img {
+      width: 80px;
+    }
   }
 }

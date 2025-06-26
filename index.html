@@ -275,7 +275,7 @@
     <!-- проекты (портфолио) -->
 
     <!-- телеграм -->
-    <!-- <section class="tg">
+    <section class="tg">
       <div class="container">
         <div class="tg__container">
           <h2
@@ -298,40 +298,9 @@
               Перейти в канал
             </button>
           </div>
-          <img
-            src="./src/assets/icons/telegram.svg"
-            alt="telegram"
-            class="tg__img animate-on-scroll"
-          />
         </div>
       </div>
     </section>
-    <script>
-      const img = document.querySelector(".tg__img.animate-on-scroll");
-
-      if (img) {
-        function handleScroll() {
-          const scrollPosition = window.scrollY;
-          const windowHeight = window.innerHeight;
-          const section = document.querySelector(".section.tg");
-          const sectionTop = section ? section.getBoundingClientRect().top : 0;
-
-          if (sectionTop < windowHeight && sectionTop > -windowHeight) {
-            const progress = (windowHeight - sectionTop) / (windowHeight * 2);
-            const moveRange = 70;
-            const translateY =
-              Math.sin(progress * Math.PI) * moveRange - moveRange / 2;
-            img.style.transform = `translateY(${translateY}px)`;
-          }
-        }
-
-        window.addEventListener("scroll", handleScroll);
-
-        window.addEventListener("unload", () => {
-          window.removeEventListener("scroll", handleScroll);
-        });
-      }
-    </script> -->
 
     <!-- отзывы -->
     <section class="testimonials section">
