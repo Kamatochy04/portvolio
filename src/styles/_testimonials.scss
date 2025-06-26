@@ -1,0 +1,154 @@
+.testimonials {
+  position: relative;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  &__card {
+    background: #1c2526;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+
+    &.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--acent-color);
+    }
+  }
+
+  &__stars {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 5px;
+
+    i {
+      transition: transform 0.2s ease;
+      color: var(--main-color);
+
+      .testimonials__card:hover & {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--acent-second-color);
+    transition: transform 0.3s ease;
+
+    .testimonials__card:hover & {
+      transform: scale(1.1);
+    }
+  }
+
+  &__author-info {
+    flex: 1;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+  }
+
+  &__position {
+    font-size: 14px;
+    color: var(--acent-second-color);
+    margin: 0 0 0 0;
+  }
+
+  // Адаптивность
+  @media (max-width: 1024px) {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 15px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__card {
+      padding: 20px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+
+    &__position {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 10px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__stars {
+      font-size: 16px;
+    }
+
+    &__photo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

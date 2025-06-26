@@ -1,0 +1,247 @@
+:root {
+  --bg-color: #010811;
+  --main-color: #ffd000;
+  --text-color: #e0e0e0;
+  --acent-color: #ffd000;
+  --acent-second-color: #4dabf7;
+}
+
+.footer {
+  color: var(--text-color);
+  position: relative;
+  overflow: hidden;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  &__column {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+
+    &.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &--brand {
+      grid-column: span 1;
+    }
+
+    &--links,
+    &--contact,
+    &--subscribe {
+      grid-column: span 1;
+    }
+  }
+
+  &__logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--acent-color);
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__social-link {
+    color: var(--text-color);
+    font-size: 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--acent-second-color);
+      transform: scale(1.2);
+    }
+  }
+
+  &__column-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--acent-color);
+    margin-bottom: 20px;
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: var(--text-color);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+
+    i {
+      margin-right: 8px;
+      color: var(--acent-second-color);
+    }
+
+    &:hover {
+      color: var(--acent-second-color);
+      transform: translateX(5px);
+    }
+  }
+
+  &__subscribe-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  &__subscribe-form {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__subscribe-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--acent-second-color);
+    border-radius: 5px;
+    background: #1c2526;
+    color: var(--text-color);
+    flex: 1;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: var(--acent-color);
+    }
+  }
+
+  &__subscribe-btn {
+    background: var(--acent-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #010811;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: var(--acent-second-color);
+      transform: scale(1.1);
+    }
+  }
+
+  &__bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+
+  &__privacy {
+    font-size: 14px;
+    color: var(--acent-second-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--acent-color);
+    }
+  }
+
+  // Адаптивность
+  @media (max-width: 1024px) {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__column--brand,
+    &__column--subscribe {
+      grid-column: span 2;
+      text-align: center;
+    }
+
+    &__socials {
+      justify-content: center;
+    }
+
+    &__subscribe-form {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 15px;
+
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__column--brand,
+    &__column--links,
+    &__column--contact,
+    &__column--subscribe {
+      grid-column: span 1;
+    }
+
+    &__logo {
+      font-size: 24px;
+    }
+
+    &__column-title {
+      font-size: 18px;
+    }
+
+    &__description,
+    &__subscribe-text,
+    &__link {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 10px;
+
+    &__logo {
+      font-size: 20px;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__copyright,
+    &__privacy {
+      font-size: 12px;
+    }
+
+    &__subscribe-input,
+    &__subscribe-btn {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+}

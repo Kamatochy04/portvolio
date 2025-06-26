@@ -1,4 +1,12 @@
 .main {
+  position: relative;
+  &-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 500px;
+    z-index: 100;
+  }
   &__button {
     padding: 20px;
     width: 100%;
@@ -96,9 +104,10 @@ $transition-time: 0.3s;
   justify-content: center;
 
   &__item {
-    width: 90px;
-    height: 90px;
-    background-color: $primary-color;
+    width: 40px;
+    height: 40px;
+    // background-color: $primary-color;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,8 +116,8 @@ $transition-time: 0.3s;
     cursor: pointer;
 
     i {
-      color: white;
-      font-size: 35px;
+      color: var(--main-color);
+      font-size: 25px;
       transition: color $transition-time ease;
     }
   }

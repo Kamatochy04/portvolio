@@ -9,59 +9,46 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- header -->
-    <!-- <header class="header">
-      <div class="container">
-        <div class="header__container">
-          <a href="#" class="logo">Valiuk</a>
-          <div class="header__burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">LOGO</div>
+        <nav class="header__nav">
+          <a href="" class="header__nav-item">Обо мне</a>
+          <a href="" class="header__nav-item">Услуги</a>
+          <a href="" class="header__nav-item">Портфолио</a>
+          <a href="" class="header__nav-item">Отзывы </a>
+          <a href="" class="header__nav-item">Контакты </a>
+        </nav>
       </div>
     </header>
-    <nav class="sidebar">
-      <ul class="sidebar__nav">
-        <li class="sidebar__item">
-          <a href="#home" class="sidebar__link">Главная</a>
-        </li>
-        <li class="sidebar__item">
-          <a href="#about" class="sidebar__link">Обо мне</a>
-        </li>
-        <li class="sidebar__item">
-          <a href="#portfolio" class="sidebar__link">Портфолио</a>
-        </li>
-        <li class="sidebar__item">
-          <a href="#services" class="sidebar__link">Услуги</a>
-        </li>
-        <li class="sidebar__item">
-          <a href="#contact" class="sidebar__link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <script>
-      const burger = document.querySelector(".header__burger");
-      const sidebar = document.querySelector(".sidebar");
-
-      burger.addEventListener("click", () => {
-        burger.classList.toggle("active");
-        sidebar.classList.toggle("active");
-      });
-    </script> -->
 
     <main class="main">
+      <img class="main-img" src="./src/assets/img/main-mem.png" alt="" />
+
       <div class="vide">
-        <!-- <video autoplay muted loop playsinline>
+        <video autoplay muted loop playsinline>
           <source
             src="./src/assets/video/3129671-uhd_3840_2160_30fps (1).mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
-        </video> -->
+        </video>
         <div class="overlay"></div>
       </div>
       <div class="container">
@@ -76,26 +63,10 @@
             и web разработчик
           </p>
 
-          <!-- <div class="main__abylity">
-            <div class="main__abylity-item">Оптимизация</div>
-            <div class="main__abylity-item">Оптимизация</div>
-            <div class="main__abylity-item">Оптимизация</div>
-            <div class="main__abylity-item">Оптимизация</div>
-            <div class="main__abylity-item">Оптимизация</div>
-            <div class="main__abylity-item">Оптимизация</div>
-            <div class="main__abylity-item">Оптимизация</div>
-            <div class="main__abylity-item">Оптимизация</div>
-            <div class="main__abylity-item">Оптимизация</div>
-          </div> -->
           <div class="main__descr">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              dolore fugit vel, nam eligendi tempore cum repellendus incidunt!
-              Pariatur veritatis rerum nulla itaque aut. Consequatur minima
-              pariatur eius porro nisi?
-            </p>
             <button class="main__button">Посмотреть проекты</button>
           </div>
+
           <div class="main__buttons">
             <div class="social-media">
               <a href="#" class="social-media__item"
@@ -117,37 +88,636 @@
     </main>
 
     <!-- Услуги -->
-
-    <section class="section services">
-      <div class="container">
-        <h2 class="title">Услуги</h2>
-        <div class="services__container">
-          <div class="services__card">
-            <div class="services__card-sercle"></div>
-            <div class="services__card-title">Название</div>
-            <p class="services__card-descr">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              officia corporis dignissimos
+    <section class="services section">
+      <div class="services__container">
+        <h2 class="title" data-aos="fade-right" data-aos-easing="ease-in-sine">
+          Мои услуги
+        </h2>
+        <p
+          class="sub-title"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-sine"
+        >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          blanditiis aut accusantium exercitationem ipsa dicta modi officiis, a
+          dolore quae ut cumque id eligendi repellat soluta nam mollitia fuga
+          libero?
+        </p>
+        <div class="services__grid">
+          <div
+            class="services__card"
+            data-aos="zoom-out-up"
+            data-aos-offset="100"
+          >
+            <div class="services__icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="services__card-title">Разработка лендингов</h3>
+            <p class="services__description">
+              Создаю яркие и конверсионные одностраничные сайты, которые
+              привлекают клиентов и повышают продажи.
             </p>
+            <a href="#contact" class="services__link"
+              >Связаться <i class="fas fa-arrow-right"></i
+            ></a>
           </div>
-          <div class="services__card">
-            <div class="services__card-sercle"></div>
-            <div class="services__card-title">Название</div>
-            <p class="services__card-descr">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              officia corporis
+          <div
+            class="services__card"
+            data-aos="zoom-out-up"
+            data-aos-offset="200"
+          >
+            <div class="services__icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3 class="services__card-title">Интернет-магазины</h3>
+            <p class="services__description">
+              Разрабатываю функциональные e-commerce платформы с фильтрами,
+              корзиной и интеграцией платежных систем.
             </p>
+            <a href="#contact" class="services__link"
+              >Связаться <i class="fas fa-arrow-right"></i
+            ></a>
           </div>
-          <div class="services__card">
-            <div class="services__card-sercle"></div>
-            <div class="services__card-title">Название</div>
-            <p class="services__card-descr">
-              YНебольшое описание того что тут происходит
+          <div
+            class="services__card"
+            data-aos="zoom-out-up"
+            data-aos-offset="300"
+          >
+            <div class="services__icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="services__card-title">Веб-приложения</h3>
+            <p class="services__description">
+              Создаю интерактивные SPA и сложные веб-приложения с интуитивным
+              интерфейсом и высокой производительностью.
             </p>
+            <a href="#contact" class="services__link"
+              >Связаться <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div
+            class="services__card"
+            data-aos="zoom-out-up"
+            data-aos-offset="400"
+          >
+            <div class="services__icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="services__card-title">UI/UX дизайн</h3>
+            <p class="services__description">
+              Проектирую стильные и удобные интерфейсы, которые обеспечивают
+              отличный пользовательский опыт.
+            </p>
+            <a href="#contact" class="services__link"
+              >Связаться <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div
+            class="services__card"
+            data-aos="zoom-out-up"
+            data-aos-offset="500"
+          >
+            <div class="services__icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3 class="services__card-title">SEO-оптимизация</h3>
+            <p class="services__description">
+              Оптимизирую сайты для поисковых систем, чтобы ваш бизнес был на
+              первых местах в выдаче.
+            </p>
+            <a href="#contact" class="services__link"
+              >Связаться <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div
+            class="services__card"
+            data-aos="zoom-out-up"
+            data-aos-offset="600"
+          >
+            <div class="services__icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="services__card-title">Поддержка и обновления</h3>
+            <p class="services__description">
+              Обеспечиваю техническую поддержку и обновления сайтов для
+              бесперебойной работы вашего проекта.
+            </p>
+            <a href="#contact" class="services__link"
+              >Связаться <i class="fas fa-arrow-right"></i
+            ></a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Обо мне -->
+    <section class="about">
+      <img
+        src="./src/assets/icons/js-official-svgrepo-com (1) 2.svg"
+        alt="js"
+        class="js-bg"
+      />
+      <img
+        src="./src/assets/icons/typescript-official-svgrepo-com 2.svg"
+        alt="ts"
+        class="ts-bg"
+      />
+      <div class="about__container">
+        <div class="about__photo">
+          <img
+            src="./src/assets/img/Me.jpg"
+            alt="Andrey Valiuk"
+            class="about__image"
+          />
+        </div>
+        <div class="about__content">
+          <h2 class="about__title">Обо мне</h2>
+          <p class="about__description">
+            Привет! Я [Ваше имя], веб-разработчик с [X] годами опыта.
+            Специализируюсь на создании современных, быстрых и адаптивных сайтов
+            и веб-приложений. Моя цель — помогать бизнесу расти через
+            качественные цифровые решения.
+          </p>
+          <p class="about__description">
+            Работаю с широким стеком технологий и всегда учитываю ваши
+            бизнес-задачи. От лендингов до сложных веб-приложений — каждый
+            проект выполняю с вниманием к деталям.
+          </p>
+          <div class="about__skills">
+            <h3 class="about__skills-title">Ключевые навыки:</h3>
+            <ul class="about__skills-list">
+              <li class="about__skill">HTML5, CSS3, SCSS</li>
+              <li class="about__skill">JavaScript, TypeScript</li>
+              <li class="about__skill">React, Vue, Next</li>
+
+              <li class="about__skill">Node.js, Express</li>
+              <li class="about__skill">Адаптивная и кроссбраузерная верстка</li>
+              <li class="about__skill">SEO-оптимизация и производительность</li>
+            </ul>
+          </div>
+          <a href="#contact" class="button">Связаться со мной</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- проекты (портфолио) -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const filters = document.querySelectorAll(".portfolio__filter");
+        const items = document.querySelectorAll(".portfolio__item");
+
+        filters.forEach((filter) => {
+          filter.addEventListener("click", () => {
+            filters.forEach((btn) =>
+              btn.classList.remove("portfolio__filter--active")
+            );
+            filter.classList.add("portfolio__filter--active");
+          });
+
+          const filterCategory = filter.dataset.filter;
+
+          items.forEach((item) => {
+            if (filterCategory === "all" || item.dataset === filterCategory) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+
+    <!-- телеграм -->
+    <section class="tg">
+      <div class="container">
+        <div class="tg__container">
+          <h2
+            class="title tg__title"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            Подпишитесь на мой <br />
+            <span>телеграм канал</span>
+          </h2>
+          <!-- <h2 class="tg__title"></h2> -->
+          <div class="tg__description">
+            <p data-aos="fade-down">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio amet id illum ipsum? Cum incidunt dolores deserunt sit
+              asperiores nihil consectetur harum, saepe impedit nisi deleniti
+              debitis voluptatum assumenda excepturi.
+            </p>
+            <button class="button tg__button" data-aos="fade-up">
+              Перейти в канал
+            </button>
+          </div>
+          <img
+            src="./src/assets/icons/telegram.svg"
+            alt="telegram"
+            class="tg__img animate-on-scroll"
+          />
+        </div>
+      </div>
+    </section>
+    <script>
+      const img = document.querySelector(".tg__img.animate-on-scroll");
+
+      if (img) {
+        function handleScroll() {
+          const scrollPosition = window.scrollY;
+          const windowHeight = window.innerHeight;
+          const section = document.querySelector(".section.tg");
+          const sectionTop = section ? section.getBoundingClientRect().top : 0;
+
+          if (sectionTop < windowHeight && sectionTop > -windowHeight) {
+            const progress = (windowHeight - sectionTop) / (windowHeight * 2);
+            const moveRange = 70;
+            const translateY =
+              Math.sin(progress * Math.PI) * moveRange - moveRange / 2;
+            img.style.transform = `translateY(${translateY}px)`;
+          }
+        }
+
+        window.addEventListener("scroll", handleScroll);
+
+        window.addEventListener("unload", () => {
+          window.removeEventListener("scroll", handleScroll);
+        });
+      }
+    </script>
+
+    <!-- отзывы -->
+    <section class="testimonials section">
+      <img src="./src/assets/icons/react.svg" alt="react" class="react-bg" />
+      <div class="testimonials__container">
+        <h2 class="title" data-aos="fade-right" data-aos-easing="ease-in-sine">
+          Отзывы клиентов
+        </h2>
+        <p
+          class="sub-title"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-sine"
+        >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+          blanditiis aut accusantium exercitationem ipsa dicta modi officiis, a
+          dolore quae ut cumque id eligendi repellat soluta nam mollitia fuga
+          libero?
+        </p>
+        <div class="testimonials__grid">
+          <div
+            class="testimonials__card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="100"
+          >
+            <div class="testimonials__stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonials__text">
+              Работа выполнена на высшем уровне! Сайт получился стильным,
+              быстрым и полностью соответствовал нашим ожиданиям. Команда учла
+              все пожелания и предложила крутые решения.
+            </p>
+            <div class="testimonials__author">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Иван Иванов"
+                class="testimonials__photo"
+              />
+              <div class="testimonials__author-info">
+                <h3 class="testimonials__name">Иван Иванов</h3>
+                <p class="testimonials__position">Владелец фитнес-клуба</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="testimonials__card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="200"
+          >
+            <div class="testimonials__stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonials__text">
+              Разработали интернет-магазин с удобным интерфейсом и интеграцией
+              платежных систем. Продажи выросли, а клиенты отмечают простоту
+              использования сайта. Рекомендую!
+            </p>
+            <div class="testimonials__author">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Мария Петрова"
+                class="testimonials__photo"
+              />
+              <div class="testimonials__author-info">
+                <h3 class="testimonials__name">Мария Петрова</h3>
+                <p class="testimonials__position">Директор по маркетингу</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="testimonials__card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="300"
+          >
+            <div class="testimonials__stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonials__text">
+              Веб-приложение для управления задачами превзошло ожидания.
+              Интуитивный интерфейс, быстрая работа и отличная поддержка. Теперь
+              наша команда работает эффективнее!
+            </p>
+            <div class="testimonials__author">
+              <img
+                src="https://via.placeholder.com/50"
+                alt="Алексей Сидоров"
+                class="testimonials__photo"
+              />
+              <div class="testimonials__author-info">
+                <h3 class="testimonials__name">Алексей Сидоров</h3>
+                <p class="testimonials__position">Руководитель IT-отдела</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- шаги -->
+    <section class="how-we-work">
+      <div class="how-we-work__container">
+        <h2 class="how-we-work__title">Как мы работаем</h2>
+        <div class="how-we-work__grid">
+          <div
+            class="how-we-work__card"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="100"
+          >
+            <div class="how-we-work__icon">
+              <i class="fas fa-comment-dots"></i>
+            </div>
+            <div class="how-we-work__step-number">1</div>
+            <h3 class="how-we-work__step">Сбор требований</h3>
+            <p class="how-we-work__description">
+              Обсуждаем ваши цели, аудиторию и бизнес-задачи. Анализирую
+              требования, чтобы создать точное техническое задание.
+            </p>
+          </div>
+          <div
+            class="how-we-work__card"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="200"
+          >
+            <div class="how-we-work__icon">
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <div class="how-we-work__step-number">2</div>
+
+            <h3 class="how-we-work__step">Прототипирование</h3>
+            <p class="how-we-work__description">
+              Создаю прототип сайта или приложения, чтобы визуализировать
+              структуру и согласовать с вами функционал.
+            </p>
+          </div>
+          <div
+            class="how-we-work__card"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="300"
+          >
+            <div class="how-we-work__icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="how-we-work__step-number">3</div>
+
+            <h3 class="how-we-work__step">Дизайн</h3>
+            <p class="how-we-work__description">
+              Разрабатываю современный и адаптивный дизайн, который
+              соответствует вашему бренду и привлекает пользователей.
+            </p>
+          </div>
+          <div
+            class="how-we-work__card"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="400"
+          >
+            <div class="how-we-work__icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="how-we-work__step-number">4</div>
+
+            <h3 class="how-we-work__step">Разработка</h3>
+            <p class="how-we-work__description">
+              Пишу чистый и оптимизированный код, интегрирую необходимые функции
+              и API для полной работоспособности.
+            </p>
+          </div>
+          <div
+            class="how-we-work__card"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="500"
+          >
+            <div class="how-we-work__icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="how-we-work__step-number">5</div>
+
+            <h3 class="how-we-work__step">Тестирование и запуск</h3>
+            <p class="how-we-work__description">
+              Тестирую проект на всех устройствах, устраняю баги и запускаю
+              сайт, обеспечивая его стабильную работу.
+            </p>
+          </div>
+        </div>
+        <a href="#contact" class="how-we-work__cta"
+          >Начать проект <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- портфолио -->
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="title">Мои проекты</h2>
+        <div class="portfolio__grid">
+          <div class="portfolio__project size-2"></div>
+          <div class="portfolio__project size-1"></div>
+          <div class="portfolio__project size-1"></div>
+          <div class="portfolio__project size-1"></div>
+          <div class="portfolio__project size-2"></div>
+          <div class="portfolio__project size-1"></div>
+          <div class="portfolio__project size-2"></div>
+          <div class="portfolio__project size-1"></div>
+          <div class="portfolio__project size-1"></div>
+        </div>
+      </div>
+    </section>
+    <!-- подвал -->
+    <footer class="footer">
+      <img src="./src/assets/icons/node-js.svg" alt="node-js" class="node-bg" />
+      <div class="footer__container">
+        <div
+          class="footer__column footer__column--brand animate"
+          data-delay="0"
+        >
+          <h3 class="footer__logo">[Ваше имя]</h3>
+          <p class="footer__description">
+            Веб-разработчик, создающий современные и эффективные сайты и
+            приложения для вашего бизнеса.
+          </p>
+          <div class="footer__socials">
+            <a
+              href="https://t.me/yourprofile"
+              class="footer__social-link"
+              target="_blank"
+            >
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/yourprofile"
+              class="footer__social-link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/yourprofile"
+              class="footer__social-link"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="footer__column footer__column--links animate"
+          data-delay="200"
+        >
+          <h3 class="footer__column-title">Навигация</h3>
+          <ul class="footer__links">
+            <li><a href="#home" class="footer__link">Главная</a></li>
+            <li><a href="#about" class="footer__link">Обо мне</a></li>
+            <li><a href="#portfolio" class="footer__link">Портфолио</a></li>
+            <li><a href="#services" class="footer__link">Услуги</a></li>
+            <li><a href="#testimonials" class="footer__link">Отзывы</a></li>
+            <li><a href="#contact" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div
+          class="footer__column footer__column--contact animate"
+          data-delay="400"
+        >
+          <h3 class="footer__column-title">Контакты</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="mailto:your.email@example.com" class="footer__link">
+                <i class="fas fa-envelope"></i> your.email@example.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+79991234567" class="footer__link">
+                <i class="fas fa-phone"></i> +7 (999) 123-45-67
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/yourprofile" class="footer__link">
+                <i class="fab fa-telegram-plane"></i> Telegram
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="footer__column footer__column--subscribe animate"
+          data-delay="600"
+        >
+          <h3 class="footer__column-title">Подписка на новости</h3>
+          <p class="footer__subscribe-text">
+            Получайте советы по веб-разработке и обновления!
+          </p>
+          <form class="footer__subscribe-form">
+            <input
+              type="email"
+              class="footer__subscribe-input"
+              placeholder="Ваш email"
+              required
+            />
+            <button type="submit" class="footer__subscribe-btn">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2025 [Ваше имя]. Все права защищены.
+        </p>
+        <a href="#privacy" class="footer__privacy"
+          >Политика конфиденциальности</a
+        >
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const jsBg = document.querySelector(".js-bg");
+        const tsBg = document.querySelector(".ts-bg");
+        const tgBg = document.querySelector(".tg__img");
+
+        function handleParallax() {
+          const scrollY = window.scrollY;
+          const section = document.querySelector(".about");
+          const sectionRect = section.getBoundingClientRect();
+          const sectionTop = sectionRect.top + window.scrollY;
+
+          // Проверяем, находится ли секция в области видимости
+          if (sectionRect.top < window.innerHeight && sectionRect.bottom > 0) {
+            // Параллакс-эффект: иконки движутся с разной скоростью
+            const parallaxSpeedJs = 0.4; // Скорость для JS-иконки
+            const parallaxSpeedTs = 0.4; // Скорость для TS-иконки
+            const parallaxSpeedtg = 0.1; // Скорость для TS-иконки
+            const offset = scrollY - sectionTop;
+
+            tgBg.style.transform = `translateY(${offset * parallaxSpeedtg}px) `;
+            jsBg.style.transform = `translateY(${
+              offset * parallaxSpeedJs
+            }px) rotate(30deg) scale(1.2)`;
+            tsBg.style.transform = `translateY(${
+              offset * parallaxSpeedTs
+            }px) rotate(-20deg) scale(1.2)`;
+          }
+        }
+
+        // Запускаем параллакс при скролле
+        window.addEventListener("scroll", handleParallax);
+
+        // Инициализация при загрузке
+        handleParallax();
+      });
+    </script>
     <script src="./src/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
