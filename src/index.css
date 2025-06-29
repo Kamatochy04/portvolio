@@ -13,7 +13,7 @@
 @import url("./styles/_tg.scss");
 @import url("./styles/_footer.scss");
 @import url("./styles/_how-work.scss");
-
+@import url("styles/_feedbeckmodel.scss");
 * {
   margin: 0;
   padding: 0;

@@ -22,8 +22,52 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- модальное окно -->
+    <div class="modal" id="contactModal">
+      <div class="modal__content">
+        <button class="modal__close"><i class="fas fa-times"></i></button>
+        <h2 class="modal__title">Связаться со мной</h2>
+        <div class="modal__section">
+          <h3 class="modal__subtitle">Способы связи</h3>
+          <div class="modal__actions">
+            <a href="tel:+1234567890" class="modal__action trigger">
+              <i class="fas fa-phone"></i> Позвонить
+            </a>
+            <a href="mailto:example@email.com" class="modal__action trigger">
+              <i class="fas fa-envelope"></i> Написать на почту
+            </a>
+            <a
+              href="https://t.me/yourusername"
+              target="_blank"
+              class="modal__action trigger"
+            >
+              <i class="fab fa-telegram-plane"></i> Написать в Telegram
+            </a>
+          </div>
+        </div>
+        <div class="modal__section">
+          <h3 class="modal__subtitle">Мой Telegram-канал</h3>
+          <div class="modal__actions">
+            <a
+              href="https://t.me/yourchannel"
+              target="_blank"
+              class="modal__action trigger"
+            >
+              <i class="fab fa-telegram"></i> Подписаться на канал
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- header -->
     <header class="header">
       <div class="header__container">
@@ -86,17 +130,13 @@
             и web разработчик
           </p>
 
-          <!-- <div class="main__descr">
-            <button class="main__button">Посмотреть проекты</button>
-          </div> -->
-
           <div class="main__buttons">
             <div class="social-media">
-              <a href="#" class="social-media__item"
-                ><i class="fab fa-github"></i
+              <a href="#" class="social-media__item">
+                <i class="fab fa-github"></i
               ></a>
-              <a href="#" class="social-media__item"
-                ><i class="fas fa-phone"></i
+              <a href="#" class="social-media__item">
+                <i class="fas fa-phone"></i
               ></a>
               <a href="#" class="social-media__item"
                 ><i class="fab fa-telegram-plane"></i
@@ -145,7 +185,7 @@
                 Создаю яркие и конверсионные одностраничные сайты, которые
                 привлекают клиентов и повышают продажи.
               </p>
-              <a href="#contact" class="services__link"
+              <a href="#contact" class="services__link trigger"
                 >Связаться <i class="fas fa-arrow-right"></i
               ></a>
             </div>
@@ -550,9 +590,9 @@
               </p>
             </div>
           </div>
-          <a href="#contact" class="how-we-work__cta"
-            >Начать проект <i class="fas fa-arrow-right"></i
-          ></a>
+          <button href="#contact" class="button trigger">
+            Начать проект <i class="fas fa-arrow-right"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -561,16 +601,103 @@
     <section class="portfolio">
       <div class="container">
         <h2 class="title">Мои проекты</h2>
-        <div class="portfolio__grid">
-          <div class="portfolio__project size-2"></div>
-          <div class="portfolio__project size-1"></div>
-          <div class="portfolio__project size-1"></div>
-          <div class="portfolio__project size-1"></div>
-          <div class="portfolio__project size-2"></div>
-          <div class="portfolio__project size-1"></div>
-          <div class="portfolio__project size-2"></div>
-          <div class="portfolio__project size-1"></div>
-          <div class="portfolio__project size-1"></div>
+      </div>
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img
+                src="https://picsum.photos/seed/slide1/600/300"
+                alt="cosmetics"
+              />
+              <div class="slide-content">
+                <h3>Project One</h3>
+                <p>
+                  Description: A modern web application for task management.
+                </p>
+                <p>My Role: Frontend Developer</p>
+                <p>Technologies: React, Node.js, MongoDB</p>
+                <a href="https://example.com/project1" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://picsum.photos/seed/slide2/600/300"
+                alt="sneakers"
+              />
+              <div class="slide-content">
+                <h3>Project Two</h3>
+                <p>Description: E-commerce platform with custom CMS.</p>
+                <p>My Role: Full Stack Developer</p>
+                <p>Technologies: Vue.js, Express, PostgreSQL</p>
+                <a href="https://example.com/project2" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://picsum.photos/seed/slide3/600/300"
+                alt="cosmetics"
+              />
+              <div class="slide-content">
+                <h3>Project Three</h3>
+                <p>Description: Mobile-first portfolio website.</p>
+                <p>My Role: UI/UX Designer</p>
+                <p>Technologies: Figma, HTML, CSS</p>
+                <a href="https://example.com/project3" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://picsum.photos/seed/slide4/600/300"
+                alt="sneakers"
+              />
+              <div class="slide-content">
+                <h3>Project Four</h3>
+                <p>Description: Real-time chat application.</p>
+                <p>My Role: Backend Developer</p>
+                <p>Technologies: Socket.io, Redis, TypeScript</p>
+                <a href="https://example.com/project4" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://picsum.photos/seed/slide5/600/300"
+                alt="cosmetics"
+              />
+              <div class="slide-content">
+                <h3>Project Five</h3>
+                <p>Description: Data visualization dashboard.</p>
+                <p>My Role: Data Engineer</p>
+                <p>Technologies: D3.js, Python, Flask</p>
+                <a href="https://example.com/project5" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://picsum.photos/seed/slide6/600/300"
+                alt="sneakers"
+              />
+              <div class="slide-content">
+                <h3>Project Six</h3>
+                <p>Description: Online learning platform.</p>
+                <p>My Role: Project Manager</p>
+                <p>Technologies: Angular, Firebase, SCSS</p>
+                <a href="https://example.com/project6" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -680,47 +807,11 @@
         </div>
       </div>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const jsBg = document.querySelector(".js-bg");
-        const tsBg = document.querySelector(".ts-bg");
-        const tgBg = document.querySelector(".tg__img");
 
-        function handleParallax() {
-          const scrollY = window.scrollY;
-          const section = document.querySelector(".about");
-          const sectionRect = section.getBoundingClientRect();
-          const sectionTop = sectionRect.top + window.scrollY;
-
-          // Проверяем, находится ли секция в области видимости
-          if (sectionRect.top < window.innerHeight && sectionRect.bottom > 0) {
-            // Параллакс-эффект: иконки движутся с разной скоростью
-            const parallaxSpeedJs = 0.4; // Скорость для JS-иконки
-            const parallaxSpeedTs = 0.4; // Скорость для TS-иконки
-            const parallaxSpeedtg = 0.1; // Скорость для TS-иконки
-            const offset = scrollY - sectionTop;
-
-            tgBg.style.transform = `translateY(${offset * parallaxSpeedtg}px) `;
-            jsBg.style.transform = `translateY(${
-              offset * parallaxSpeedJs
-            }px) rotate(30deg) scale(1.2)`;
-            tsBg.style.transform = `translateY(${
-              offset * parallaxSpeedTs
-            }px) rotate(-20deg) scale(1.2)`;
-          }
-        }
-
-        // Запускаем параллакс при скролле
-        window.addEventListener("scroll", handleParallax);
-
-        // Инициализация при загрузке
-        handleParallax();
-      });
-    </script>
-    <script src="./src/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>
