@@ -1,7 +1,5 @@
 .about {
   position: relative;
-  padding: 60px 20px;
-  background: var(--bg-color);
 
   &__container {
     display: flex;
@@ -10,7 +8,7 @@
   }
 
   &__photo {
-    flex: 0 0 500px;
+    flex: 0 0 450px;
   }
 
   &__image {
@@ -27,14 +25,19 @@
   }
 
   &__content {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
     flex: 1;
   }
 
   &__title {
+    line-height: 100%;
     font-size: 36px;
     font-weight: 700;
     color: #d8d8d8;
-    margin-bottom: 20px;
   }
 
   &__description {
@@ -45,7 +48,7 @@
   }
 
   &__skills {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 
   &__skills-title {
@@ -60,14 +63,16 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
   }
 
   &__skill {
-    background: #3498db;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 16px;
+    display: block;
+    border-bottom: 2px solid #54ccff88;
+    border-top: 2px solid #54ccff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
     color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease;

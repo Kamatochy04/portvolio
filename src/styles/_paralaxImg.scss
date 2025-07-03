@@ -1,0 +1,49 @@
+.paralaxImg {
+  position: absolute;
+  z-index: -1;
+  width: 100px;
+  height: auto;
+  opacity: 0.3;
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+
+  &.js-bg {
+    position: absolute;
+    transform: rotate(20deg) scale(1);
+    left: -20px;
+    z-index: 0;
+  }
+
+  &.ts-bg {
+    position: absolute;
+    transform: rotate(-30deg) scale(2.2);
+    left: auto;
+    right: 10%;
+    z-index: 0;
+    bottom: 0;
+  }
+  //   &.react-bg {
+  //     position: absolute;
+  //     left: 30%;
+  //   }
+  //   &.node-bg {
+  //     position: absolute;
+  //     transform: scale(2);
+  //     right: 10%;
+  //   }
+
+  @media (max-width: 768px) {
+    width: 80px; // Smaller size on mobile
+    opacity: 0.2;
+
+    &.js-bg {
+      top: 15%;
+      left: 3%;
+    }
+
+    &.ts-bg {
+      top: 25%;
+      right: 3%;
+    }
+  }
+}

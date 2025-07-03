@@ -1,4 +1,7 @@
 .services {
+  background-color: var(--bg-color);
+  padding: 60px 0;
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,8 +14,8 @@
     box-shadow: 0 4px 12px rgba(255, 205, 25, 0.15);
     position: relative;
     transition: all 0.6s ease;
-
     border: 1px solid #ffffff49;
+    background: rgba(255, 255, 255, 0.05);
 
     &.animate {
       opacity: 1;
@@ -30,11 +33,8 @@
     top: 20px;
     left: 20px;
     font-size: 30px;
-    color: #3498db;
+    color: var(--acent-color);
     transition: transform 0.3s ease;
-    i {
-      color: var(--acent-color);
-    }
 
     .services__card:hover & {
       transform: scale(1.2);
@@ -44,7 +44,7 @@
   &__card-title {
     font-size: 22px;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--text-color);
     margin: 50px 0 15px;
     transition: color 0.3s ease;
   }
@@ -71,7 +71,7 @@
     }
 
     &:hover {
-      color: #2980b9;
+      color: var(--acent-second-color);
 
       i {
         transform: translateX(5px);
@@ -79,22 +79,102 @@
     }
   }
 
-  // Адаптивность
+  &__offer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__offer-icon {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  &__offer-content {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1;
+    border: 1px solid rgba(var(--acent-color), 0.2);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__offer-title {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+
+  &__offer-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+
+  &__offer-button {
+    display: inline-flex;
+    align-items: center;
+    background: var(--acent-color);
+    color: var(--bg-color);
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background: var(--acent-second-color);
+      transform: scale(1.05);
+    }
+  }
+
   @media (max-width: 1024px) {
     &__grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__offer {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__offer-icon {
+      width: 100px;
+      // aspect-ratio: 1;
+      height: 100px;
+    }
+
+    &__offer-title {
+      font-size: 1.6rem;
     }
   }
 
   @media (max-width: 768px) {
     padding: 40px 15px;
 
-    &__title {
-      font-size: 30px;
+    .title {
+      font-size: 2rem;
+    }
+
+    .sub-title {
+      font-size: 1rem;
     }
 
     &__grid {
       grid-template-columns: 1fr;
+    }
+
+    &__card {
+      padding: 20px;
     }
 
     &__card-title {
@@ -108,17 +188,33 @@
     &__link {
       font-size: 14px;
     }
+
+    &__offer {
+      padding: 20px;
+    }
+
+    &__offer-title {
+      font-size: 1.4rem;
+    }
+
+    &__offer-description {
+      font-size: 0.9rem;
+    }
   }
 
   @media (max-width: 480px) {
     padding: 20px 10px;
 
-    &__title {
-      font-size: 24px;
+    .title {
+      font-size: 1.8rem;
+    }
+
+    .sub-title {
+      font-size: 0.9rem;
     }
 
     &__card {
-      padding: 20px;
+      padding: 15px;
     }
 
     &__icon {
@@ -130,6 +226,20 @@
     &__card-title {
       font-size: 18px;
       margin: 40px 0 10px;
+    }
+
+    &__offer-icon {
+      width: 80px;
+      height: 80px;
+    }
+
+    &__offer-title {
+      font-size: 1.2rem;
+    }
+
+    &__offer-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
     }
   }
 }

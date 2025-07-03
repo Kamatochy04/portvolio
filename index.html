@@ -14,70 +14,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- модальное окно -->
-    <div class="modal" id="contactModal">
-      <div class="modal__content">
-        <button class="modal__close"><i class="fas fa-times"></i></button>
-        <h2 class="modal__title">Связаться со мной</h2>
-        <div class="modal__section">
-          <h3 class="modal__subtitle">Способы связи</h3>
-          <div class="modal__actions">
-            <a href="tel:+1234567890" class="modal__action trigger">
-              <i class="fas fa-phone"></i> Позвонить
-            </a>
-            <a href="mailto:example@email.com" class="modal__action trigger">
-              <i class="fas fa-envelope"></i> Написать на почту
-            </a>
-            <a
-              href="https://t.me/yourusername"
-              target="_blank"
-              class="modal__action trigger"
-            >
-              <i class="fab fa-telegram-plane"></i> Написать в Telegram
-            </a>
-          </div>
-        </div>
-        <div class="modal__section">
-          <h3 class="modal__subtitle">Мой Telegram-канал</h3>
-          <div class="modal__actions">
-            <a
-              href="https://t.me/yourchannel"
-              target="_blank"
-              class="modal__action trigger"
-            >
-              <i class="fab fa-telegram"></i> Подписаться на канал
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- header -->
     <header class="header">
       <div class="header__container">
         <div class="header__logo">LOGO</div>
         <nav class="header__nav">
-          <a href="" class="header__nav-item">Обо мне</a>
-          <a href="" class="header__nav-item">Услуги</a>
-          <a href="" class="header__nav-item">Портфолио</a>
-          <a href="" class="header__nav-item">Отзывы</a>
-          <a href="" class="header__nav-item">Контакты</a>
+          <a href="#about" class="header__nav-item">Обо мне</a>
+          <a href="#services" class="header__nav-item">Услуги</a>
+          <a href="#testimonials" class="header__nav-item">Отзывы</a>
+          <a href="#how-we-work" class="header__nav-item"> Как я работаю </a>
+          <a href="#portfolio" class="header__nav-item">Портфолио</a>
+          <a href="#feedback-section" class="header__nav-item">Контакты</a>
         </nav>
         <button class="header__burger">
           <i class="fas fa-bars"></i>
@@ -86,52 +42,25 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </header>
 
     <main class="main">
-      <!-- <img class="main-img" src="./src/assets/img/main-mem.png" alt="" /> -->
-
-      <div class="vide">
-        <video autoplay muted loop playsinline>
-          <source
-            src="./src/assets/video/3129671-uhd_3840_2160_30fps (1).mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <div class="overlay"></div>
-      </div>
       <div class="container">
         <div class="main__container">
           <div>
-            <!-- <p class="main__title-top">Hi, I'm</p> -->
             <h1 class="main__title">Valiuk Andrei</h1>
           </div>
 
-          <p class="main__text">
-            Маркетолог <br />
-            и web разработчик
+          <p class="main__text">Создаю современные <span>web-решения</span></p>
+          <p class="main__descr">
+            Добро пожаловать на мой сайт! Я создаю современные, функциональные
+            веб-решения, которые помогают вашему бизнесу выделиться и привлечь
+            клиентов.
           </p>
-
-          <div class="main__buttons">
-            <div class="social-media">
-              <a href="#" class="social-media__item">
-                <i class="fab fa-github"></i
-              ></a>
-              <a href="#" class="social-media__item">
-                <i class="fas fa-phone"></i
-              ></a>
-              <a href="#" class="social-media__item"
-                ><i class="fab fa-telegram-plane"></i
-              ></a>
-              <a href="#" class="social-media__item"
-                ><i class="fas fa-envelope"></i
-              ></a>
-            </div>
-          </div>
+          <button class="button modal-trigger">Связаться со мной</button>
         </div>
       </div>
     </main>
 
     <!-- Услуги -->
-    <section class="services section">
+    <section class="services section" id="services">
       <div class="container">
         <div class="services__container">
           <h2
@@ -146,10 +75,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             data-aos="fade-right"
             data-aos-easing="ease-in-sine"
           >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-            blanditiis aut accusantium exercitationem ipsa dicta modi officiis,
-            a dolore quae ut cumque id eligendi repellat soluta nam mollitia
-            fuga libero?
+            Предоставляю профессиональные услуги веб-разработки, от создания
+            лендингов до сложных веб-приложений. Моя цель — помочь вашему
+            бизнесу выделиться в цифровом пространстве с помощью современных и
+            эффективных решений.
           </p>
           <div class="services__grid">
             <div
@@ -209,12 +138,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               data-aos-offset="400"
             >
               <div class="services__icon">
-                <i class="fas fa-paint-brush"></i>
+                <i class="fab fa-wordpress"></i>
               </div>
-              <h3 class="services__card-title">UI/UX дизайн</h3>
+              <h3 class="services__card-title">Работа с WordPress</h3>
               <p class="services__description">
-                Проектирую стильные и удобные интерфейсы, которые обеспечивают
-                отличный пользовательский опыт.
+                Разрабатываю и настраиваю сайты на WordPress, включая кастомные
+                темы, плагины и оптимизацию для ваших задач.
               </p>
               <a href="#contact" class="services__link"
                 >Связаться <i class="fas fa-arrow-right"></i
@@ -255,67 +184,161 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               ></a>
             </div>
           </div>
+          <div class="services__offer" data-aos="fade-up" data-aos-delay="200">
+            <img
+              src="./src/assets/img/wordpres.png"
+              alt="WordPress Offer"
+              class="services__offer-icon"
+            />
+            <div class="services__offer-content">
+              <h3 class="services__offer-title">
+                Бесплатная разработка на WordPress!
+              </h3>
+              <p class="services__offer-description">
+                Закажите создание сайта, верстку или веб-приложение, и я настрою
+                ваш проект на WordPress совершенно бесплатно! Получите
+                функциональный и удобный сайт с профессиональной CMS без
+                дополнительных затрат.
+              </p>
+              <a class="services__offer-button trigger">Получить предложение</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Обо мне -->
-    <section class="about">
+    <section class="about section" id="about">
       <img
         src="./src/assets/icons/js-official-svgrepo-com (1) 2.svg"
         alt="js"
-        class="js-bg"
+        class="js-bg paralaxImg"
       />
       <img
         src="./src/assets/icons/typescript-official-svgrepo-com 2.svg"
         alt="ts"
-        class="ts-bg"
+        class="ts-bg paralaxImg"
       />
       <div class="container">
         <div class="about__container">
           <div class="about__photo">
             <img
+              data-aos="zoom-in"
               src="./src/assets/img/Me.jpg"
               alt="Andrey Valiuk"
               class="about__image"
             />
           </div>
           <div class="about__content">
-            <h2 class="about__title">Обо мне</h2>
-            <p class="about__description">
-              Привет! Я [Ваше имя], веб-разработчик с [X] годами опыта.
-              Специализируюсь на создании современных, быстрых и адаптивных
-              сайтов и веб-приложений. Моя цель — помогать бизнесу расти через
-              качественные цифровые решения.
+            <h2
+              class="about__title"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              Обо мне
+            </h2>
+            <p
+              class="about__description"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              Привет! Я Андрей, веб-разработчик, увлеченный созданием
+              современных и функциональных сайтов. Моя страсть — превращать идеи
+              в реальность через код, будь то стильный лендинг, интернет-магазин
+              или сложное веб-приложение.
             </p>
-            <p class="about__description">
-              Работаю с широким стеком технологий и всегда учитываю ваши
-              бизнес-задачи. От лендингов до сложных веб-приложений — каждый
-              проект выполняю с вниманием к деталям.
+            <p
+              class="about__description"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              Я фокусируюсь на качестве, скорости и удобстве для пользователей.
+              Каждый проект для меня — это возможность создать что-то
+              уникальное, что поможет вашему бизнесу выделиться и достичь целей.
             </p>
             <div class="about__skills">
-              <h3 class="about__skills-title">Ключевые навыки:</h3>
+              <h3
+                class="about__skills-title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+              >
+                Ключевые навыки:
+              </h3>
               <ul class="about__skills-list">
-                <li class="about__skill">HTML5, CSS3, SCSS</li>
-                <li class="about__skill">JavaScript, TypeScript</li>
-                <li class="about__skill">React, Vue, Next</li>
-
-                <li class="about__skill">Node.js, Express</li>
-                <li class="about__skill">
+                <li
+                  class="about__skill"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  HTML5, CSS3, SCSS
+                </li>
+                <li
+                  class="about__skill"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  JavaScript, TypeScript
+                </li>
+                <li
+                  class="about__skill"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  React, Vue, Next
+                </li>
+                <li
+                  class="about__skill"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
+                  WordPress
+                </li>
+                <li
+                  class="about__skill"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                >
+                  Node.js, Express
+                </li>
+                <li
+                  class="about__skill"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="600"
+                >
                   Адаптивная и кроссбраузерная верстка
                 </li>
-                <li class="about__skill">
+                <li
+                  class="about__skill"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="700"
+                >
                   SEO-оптимизация и производительность
                 </li>
               </ul>
             </div>
-            <a href="#contact" class="button">Связаться со мной</a>
+            <button
+              class="button"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="700"
+            >
+              Связаться со мной
+            </button>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- проекты (портфолио) -->
 
     <!-- телеграм -->
     <section class="tg">
@@ -346,8 +369,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </section>
 
     <!-- отзывы -->
-    <section class="testimonials section">
-      <img src="./src/assets/icons/react.svg" alt="react" class="react-bg" />
+    <section class="testimonials section" id="testimonials">
+      <!-- <img src="./src/assets/icons/react.svg" alt="react" class="react-bg" /> -->
       <div class="container">
         <div class="testimonials__container">
           <h2
@@ -464,7 +487,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </section>
 
     <!-- шаги -->
-    <section class="how-we-work">
+    <section class="how-we-work section" id="how-we-work">
       <div class="container">
         <div class="how-we-work__container">
           <h2
@@ -578,9 +601,27 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </section>
 
     <!-- портфолио -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
-        <h2 class="title">Мои проекты</h2>
+        <div class="portfolio__flex">
+          <h2
+            class="title"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+          >
+            Мои проекты
+          </h2>
+          <p
+            class="sub-title"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
+            blanditiis aut accusantium exercitationem ipsa dicta modi officiis,
+            a dolore quae ut cumque id eligendi repellat soluta nam mollitia
+            fuga libero?
+          </p>
+        </div>
       </div>
       <div class="splide">
         <div class="splide__track">
@@ -591,14 +632,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 alt="cosmetics"
               />
               <div class="slide-content">
-                <h3>Project One</h3>
-                <p>
-                  Description: A modern web application for task management.
-                </p>
-                <p>My Role: Frontend Developer</p>
-                <p>Technologies: React, Node.js, MongoDB</p>
+                <h3>Проект 1</h3>
+                <p>Современное веб-приложение для управления задачами.</p>
+                <p>Моя роль: Фронтенд-разработчик</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
                 <a href="https://example.com/project1" target="_blank"
-                  >View Project</a
+                  >Посмотреть проект</a
                 >
               </div>
             </li>
@@ -608,12 +651,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 alt="sneakers"
               />
               <div class="slide-content">
-                <h3>Project Two</h3>
-                <p>Description: E-commerce platform with custom CMS.</p>
-                <p>My Role: Full Stack Developer</p>
-                <p>Technologies: Vue.js, Express, PostgreSQL</p>
+                <h3>Проект 2</h3>
+                <p>Платформа электронной коммерции с кастомным CMS.</p>
+                <p>Моя роль: Фулл-стек разработчик</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">Vue.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                </div>
                 <a href="https://example.com/project2" target="_blank"
-                  >View Project</a
+                  >Посмотреть проект</a
                 >
               </div>
             </li>
@@ -623,12 +670,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 alt="cosmetics"
               />
               <div class="slide-content">
-                <h3>Project Three</h3>
-                <p>Description: Mobile-first portfolio website.</p>
-                <p>My Role: UI/UX Designer</p>
-                <p>Technologies: Figma, HTML, CSS</p>
+                <h3>Проект 3</h3>
+                <p>Мобильно-ориентированный сайт-портфолио.</p>
+                <p>Моя роль: UI/UX дизайнер</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">Figma</span>
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                </div>
                 <a href="https://example.com/project3" target="_blank"
-                  >View Project</a
+                  >Посмотреть проект</a
                 >
               </div>
             </li>
@@ -638,12 +689,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 alt="sneakers"
               />
               <div class="slide-content">
-                <h3>Project Four</h3>
-                <p>Description: Real-time chat application.</p>
-                <p>My Role: Backend Developer</p>
-                <p>Technologies: Socket.io, Redis, TypeScript</p>
+                <h3>Проект 4</h3>
+                <p>Приложение для чата в реальном времени.</p>
+                <p>Моя роль: Бэкенд-разработчик</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">TypeScript</span>
+                </div>
                 <a href="https://example.com/project4" target="_blank"
-                  >View Project</a
+                  >Посмотреть проект</a
                 >
               </div>
             </li>
@@ -653,12 +708,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 alt="cosmetics"
               />
               <div class="slide-content">
-                <h3>Project Five</h3>
-                <p>Description: Data visualization dashboard.</p>
-                <p>My Role: Data Engineer</p>
-                <p>Technologies: D3.js, Python, Flask</p>
+                <h3>Проект 5</h3>
+                <p>Дашборд для визуализации данных.</p>
+                <p>Моя роль: Инженер данных</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">D3.js</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Flask</span>
+                </div>
                 <a href="https://example.com/project5" target="_blank"
-                  >View Project</a
+                  >Посмотреть проект</a
                 >
               </div>
             </li>
@@ -668,12 +727,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 alt="sneakers"
               />
               <div class="slide-content">
-                <h3>Project Six</h3>
-                <p>Description: Online learning platform.</p>
-                <p>My Role: Project Manager</p>
-                <p>Technologies: Angular, Firebase, SCSS</p>
+                <h3>Проект 6</h3>
+                <p>Платформа для онлайн-обучения.</p>
+                <p>Моя роль: Менеджер проекта</p>
+                <div class="tech-tags">
+                  <span class="tech-tag">Angular</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">SCSS</span>
+                </div>
                 <a href="https://example.com/project6" target="_blank"
-                  >View Project</a
+                  >Посмотреть проект</a
                 >
               </div>
             </li>
@@ -681,42 +744,136 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
       </div>
     </section>
+
+    <section class="feedback-section" id="feedback-section">
+      <div class="container">
+        <div class="feedback-wrapper">
+          <div class="contact-cards">
+            <h2 class="cards-title">Связаться со мной</h2>
+            <p class="cards-description">
+              Буду рад вашему сообщению! Задавайте вопросы или делитесь
+              отзывами.
+            </p>
+            <div class="card">
+              <a
+                href="https://web.telegram.org/a/#7699447339"
+                class="contact-link"
+                target="_blank"
+              >
+                <i class="fab fa-telegram-plane"></i> Telegram
+              </a>
+            </div>
+            <div class="card">
+              <a href="tel:+375333260981" class="contact-link">
+                <i class="fas fa-phone"></i> +375 (33) 326-0981
+              </a>
+            </div>
+            <div class="card">
+              <a href="mailto:valukandrey004@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i> valukandrey004@gmail.com
+              </a>
+            </div>
+          </div>
+          <form class="feedback-form">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Ваше имя" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Ваш номер телефона"
+                required
+                pattern="[0-9+\-\(\) ]{10,15}"
+                title="Пожалуйста, введите действительный номер телефона"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                placeholder="Ваше сообщение"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn button">
+              Отправить сообщение
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- модальное овно -->
+    <div class="modal" id="quick-contact-modal">
+      <div class="modal__content">
+        <button class="modal__close">
+          <i class="fas fa-times"></i>
+        </button>
+        <h2 class="modal__title">Связаться со мной</h2>
+        <p class="modal__description">
+          Заполните форму, и я свяжусь с вами в кратчайшие сроки!
+        </p>
+        <form class="modal__form">
+          <input
+            type="text"
+            class="modal__input"
+            id="modal-name"
+            placeholder="Ваше имя"
+            required
+          />
+          <input
+            type="tel"
+            class="modal__input"
+            id="modal-phone"
+            placeholder="Ваш номер телефона"
+            required
+            pattern="[0-9+\-\(\) ]{10,15}"
+            title="Пожалуйста, введите действительный номер телефона"
+          />
+          <button type="submit" class="button">Отправить</button>
+        </form>
+      </div>
+    </div>
+
     <!-- подвал -->
     <footer class="footer">
-      <img src="./src/assets/icons/node-js.svg" alt="node-js" class="node-bg" />
       <div class="container">
         <div class="footer__container">
           <div
             class="footer__column footer__column--brand animate"
             data-delay="0"
           >
-            <h3 class="footer__logo">[Ваше имя]</h3>
+            <h3 class="footer__logo">Valiuk Andrei</h3>
             <p class="footer__description">
               Веб-разработчик, создающий современные и эффективные сайты и
               приложения для вашего бизнеса.
             </p>
-            <div class="footer__socials">
-              <a
-                href="https://t.me/yourprofile"
-                class="footer__social-link"
-                target="_blank"
-              >
-                <i class="fab fa-telegram-plane"></i>
-              </a>
-              <a
-                href="https://linkedin.com/in/yourprofile"
-                class="footer__social-link"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a
-                href="https://github.com/yourprofile"
-                class="footer__social-link"
-                target="_blank"
-              >
-                <i class="fab fa-github"></i>
-              </a>
+
+            <div class="main__buttons">
+              <div class="social-media">
+                <a
+                  href="https://github.com/Kamatochy04"
+                  class="social-media__item"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="tel:+375333260981" class="social-media__item">
+                  <i class="fas fa-phone"></i>
+                </a>
+                <a
+                  href="https://web.telegram.org/a/#7699447339"
+                  class="social-media__item"
+                >
+                  <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a
+                  href="mailto:valukandrey004@gmail.com"
+                  class="social-media__item"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
             </div>
           </div>
           <div
@@ -740,17 +897,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <h3 class="footer__column-title">Контакты</h3>
             <ul class="footer__links">
               <li>
-                <a href="mailto:your.email@example.com" class="footer__link">
-                  <i class="fas fa-envelope"></i> your.email@example.com
+                <a href="mailto:valukandrey004@gmail.com" class="footer__link">
+                  <i class="fas fa-envelope"></i> valukandrey004@gmail.com
                 </a>
               </li>
               <li>
-                <a href="tel:+79991234567" class="footer__link">
-                  <i class="fas fa-phone"></i> +7 (999) 123-45-67
+                <a href="tel:+375333260981" class="footer__link">
+                  <i class="fas fa-phone"></i> +375 (33) 326-0981
                 </a>
               </li>
               <li>
-                <a href="https://t.me/yourprofile" class="footer__link">
+                <a
+                  href="https://web.telegram.org/a/#7699447339"
+                  class="footer__link"
+                >
                   <i class="fab fa-telegram-plane"></i> Telegram
                 </a>
               </li>
@@ -764,30 +924,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <p class="footer__subscribe-text">
               Получайте советы по веб-разработке и обновления!
             </p>
-            <form class="footer__subscribe-form">
-              <input
-                type="email"
-                class="footer__subscribe-input"
-                placeholder="Ваш email"
-                required
-              />
-              <button type="submit" class="footer__subscribe-btn">
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </form>
+            <div class="footer__subscribe-form">
+              <a
+                href="https://web.telegram.org/a/#7699447339"
+                class="footer__subscribe-btn"
+                target="_blank"
+              >
+                <i class="fab fa-telegram-plane"></i> Присоединиться к Telegram
+              </a>
+            </div>
           </div>
         </div>
         <div class="footer__bottom">
-          <p class="footer__copyright">
-            &copy; 2025 [Ваше имя]. Все права защищены.
-          </p>
-          <a href="#privacy" class="footer__privacy"
-            >Политика конфиденциальности</a
-          >
+          <p class="footer__copyright">© 2025 Андрей. Все права защищены.</p>
         </div>
       </div>
     </footer>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
@@ -795,3 +947,32 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
     <script src="./src/index.js"></script>
   </body>
 </html>
+
+<!-- <img class="main-img" src="./src/assets/img/main-mem.png" alt="" /> -->
+
+<!-- <div class="vide">
+        <video autoplay muted loop playsinline>
+          <source
+            src="./src/assets/video/3129671-uhd_3840_2160_30fps (1).mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+      </div> -->
+<!-- <div class="main__buttons">
+              <div class="social-media">
+                <a href="#" class="social-media__item">
+                  <i class="fab fa-github"></i
+                ></a>
+                <a href="#" class="social-media__item">
+                  <i class="fas fa-phone"></i
+                ></a>
+                <a href="#" class="social-media__item"
+                  ><i class="fab fa-telegram-plane"></i
+                ></a>
+                <a href="#" class="social-media__item"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div> -->

@@ -1,14 +1,7 @@
-:root {
-  --bg-color: #010811;
-  --main-color: #ffd000;
-  --text-color: #e0e0e0;
-  --acent-color: #ffd000;
-  --acent-second-color: #4dabf7;
-}
-
 .tg {
   position: relative;
   padding: 60px 20px;
+  background: #bc4ba11e;
 
   &__container {
     display: flex;
@@ -56,17 +49,6 @@
 
   &__button {
     margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-
-    &:hover {
-      background: var(--acent-second-color);
-    }
   }
 
   @media (max-width: 768px) {

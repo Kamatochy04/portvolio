@@ -1,0 +1,112 @@
+:root {
+  --bg-color: #010811;
+  --main-color: #ffd000;
+  --text-color: #e0e0e0;
+  --acent-color: #ffd000;
+  --acent-second-color: #4dabf7;
+}
+
+.technologies {
+  background-color: var(--bg-color);
+  padding: 60px 0;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  &__carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .splide {
+    .splide__track {
+      overflow: hidden;
+    }
+
+    .splide__slide {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      background: rgba(var(--acent-second-color), 0.1);
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    span {
+      color: var(--text-color);
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .tech-item {
+      padding: 15px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.8rem;
+    }
+
+    .tech-item {
+      padding: 10px;
+
+      img {
+        width: 45px;
+        height: 45px;
+      }
+
+      span {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

@@ -14,6 +14,11 @@
 @import url("./styles/_footer.scss");
 @import url("./styles/_how-work.scss");
 @import url("styles/_feedbeckmodel.scss");
+@import url("./styles/_feedbackFrorm.scss");
+@import url("./styles/_paralaxImg.scss");
+@import url("./styles/_tehnology.scss");
+@import url("./styles/_model.scss");
+
 * {
   margin: 0;
   padding: 0;
@@ -47,73 +52,20 @@ a {
 }
 
 .section {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.3rem;
   position: relative;
   text-align: start;
-}
-
-.js-bg {
-  position: absolute;
-  transform: rotate(20deg) scale(0.4);
-  left: -20px;
-  z-index: 0;
-}
-
-.ts-bg {
-  position: absolute;
-  transform: rotate(-30deg) scale(1.2);
-  left: auto;
-  right: 10%;
-  z-index: 0;
-  bottom: 0;
+  display: inline;
 }
 
 .sub-title {
   margin-bottom: 40px;
   max-width: 700px;
-  line-height: 130%;
+  line-height: 140%;
   color: #c7c7c7;
-  font-size: 14px;
-}
-
-.react-bg {
-  position: absolute;
-  left: 30%;
-}
-
-.node-bg {
-  position: absolute;
-  /* bottom: -50%; */
-  transform: scale(2);
-  right: 10%;
-}
-
-@media (max-width: 1205px) {
-  .ts-bg {
-    transform: rotate(-30deg) scale(0.8);
-
-    right: 0;
-  }
-  .node-bg {
-    transform: scale(1);
-  }
-}
-@media (max-width: 597px) {
-  .ts-bg {
-    transform: rotate(-30deg) scale(0.8);
-
-    right: 0;
-    bottom: -140px;
-    z-index: 0;
-  }
-  .react-bg {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    aspect-ratio: 1;
-  }
+  font-size: 1.1rem;
 }
