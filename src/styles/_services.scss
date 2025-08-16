@@ -1,6 +1,7 @@
 .services {
   background-color: var(--bg-color);
   padding: 60px 0;
+  position: relative;
 
   &__grid {
     display: grid;

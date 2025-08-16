@@ -38,6 +38,17 @@
     font-size: 36px;
     font-weight: 700;
     color: #d8d8d8;
+    @media (max-width: 1024px) {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  &__button {
+    @media (max-width: 1024px) {
+      margin: 0 auto;
+      margin-top: 20px;
+    }
   }
 
   &__description {

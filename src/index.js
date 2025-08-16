@@ -1,42 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init();
 
-  const mySlider = new Splide(".splide", {
-    perPage: 3,
-    gap: "1rem",
-    type: "loop",
-    pagination: false,
-    speed: 600,
-    easing: "cubic-bezier(0.25, 1, 0.5, 1)",
-    focus: "center",
-    autoplay: true,
-    interval: 3000,
-    pauseOnHover: true,
-    arrows: false,
-    breakpoints: {
-      768: {
-        perPage: 3,
-        focus: "center",
-      },
-      480: {
-        perPage: 1,
-        focus: "center",
-      },
-    },
-  }).mount();
-
-  const tehnologyFront = new Splide(".splide", {
-    type: "loop",
-    drag: "free",
-    focus: "center",
-    perPage: 3,
-    autoScroll: {
-      speed: 1,
-    },
-  });
-
-  tehnologyFront.mount();
-
   const burger = document.querySelector(".header__burger");
   const nav = document.querySelector(".header__nav");
 
@@ -85,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault(); // Prevent default form submission
     modal.classList.remove("active");
-    // Add your form submission logic here (e.g., send data to server)
     form.reset(); // Reset form fields
   });
 
@@ -94,4 +57,55 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.classList.remove("active");
     }
   });
+
+  const updateParallax = (className) => {
+    const elements = document.querySelectorAll(`.${className}`);
+
+    // Инициализация текущих позиций для сглаживания
+    const currentPositions = new Map();
+    elements.forEach((element) => {
+      currentPositions.set(element, 0);
+    });
+
+    const update = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const elementTop = rect.top + scrollPosition;
+        const elementCenter = elementTop + rect.height / 2;
+        const scrollProgress =
+          (scrollPosition + windowHeight / 2 - elementCenter) / windowHeight;
+
+        const amplitude = parseFloat(
+          element.getAttribute("data-amplitude") || "250"
+        );
+        const rotation = parseFloat(
+          element.getAttribute("data-rotation") || "23"
+        );
+
+        const targetTranslateY = scrollProgress * amplitude;
+
+        const currentTranslateY = currentPositions.get(element) || 0;
+        const smoothedTranslateY =
+          currentTranslateY + (targetTranslateY - currentTranslateY) * 0.1;
+
+        currentPositions.set(element, smoothedTranslateY);
+
+        element.style.transition = "transform 0.1s ease-out"; // Плавный переход
+        element.style.transform = `translateY(${smoothedTranslateY}px) rotate(${rotation}deg)`;
+      });
+
+      requestAnimationFrame(update);
+    };
+
+    update();
+  };
+
+  updateParallax("js-bg");
+  updateParallax("ts-bg");
+  updateParallax("node-bg");
+  updateParallax("react-bg");
+  updateParallax("tg-bg");
 });

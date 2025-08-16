@@ -10,20 +10,13 @@
     font-size: 1.2rem;
   }
 
-  @media (max-width: 768px) {
-    margin: 15px auto;
-    padding: 10px;
-
-    p {
-      font-size: clamp(0.9rem, 2.5vw, 1rem);
+  &__descr {
+    @media (max-width: 768px) {
+      line-height: 120%;
+      font-size: 0.9rem;
     }
   }
 
-  @media (max-width: 480px) {
-    p {
-      font-size: clamp(0.8rem, 2vw, 0.9rem);
-    }
-  }
   &-img {
     position: absolute;
     bottom: 0;
@@ -42,7 +35,7 @@
 
   &__container {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -57,10 +50,49 @@
     font-size: clamp(2rem, 20vw, 8rem);
     font-weight: 900;
 
-    // letter-spacing: 200%;
     line-height: 90%;
 
     color: var(--main-color);
+  }
+  &__statistic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    color: var(--main-color);
+    margin-left: auto;
+    @media (max-width: 669px) {
+      margin: 0 auto;
+    }
+    &-stat {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 80%;
+      color: var(--main-color);
+      @media (max-width: 669px) {
+        font-size: 2rem !important;
+      }
+    }
+    &-text {
+      font-size: 1.5rem;
+      color: var(--main-color);
+      font-weight: 500;
+      @media (max-width: 669px) {
+        font-size: 0.8rem;
+      }
+    }
+    &-footer {
+      border-top: 1px solid #ffffff6f;
+      display: flex;
+      align-items: center;
+    }
+    &-procent {
+      color: var(--main-color);
+    }
   }
   &__abylity {
     display: flex;
@@ -81,7 +113,6 @@
     }
   }
   &__text {
-    padding: 5px;
     animation: slideUp 0.4s ease-out 0.4s forwards;
     opacity: 0;
     font-weight: 500;
@@ -102,6 +133,11 @@
       animation: slideUp 0.4s ease-out 0.6s forwards;
     }
   }
+}
+
+.stat {
+  background: #ffffff18;
+  padding: 20px 0;
 }
 
 .vide {

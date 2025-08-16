@@ -21,8 +21,6 @@
     />
   </head>
   <body>
-    <!-- модальное окно -->
-
     <!-- header -->
     <header class="header">
       <div class="header__container">
@@ -59,27 +57,66 @@
       </div>
     </main>
 
+    <section class="stat">
+      <div class="container">
+        <div class="main__statistic" data-aos="zoom-in">
+          <div
+            class="main__statistic-yers main__statistic-stat"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            3
+            <p class="main__statistic-text">года опыта разработки</p>
+          </div>
+          <div class="main__statistic-projects main__statistic-stat">
+            +10
+            <p class="main__statistic-text">Законченных проектов</p>
+          </div>
+          <div
+            class="main__statistic-procent main__statistic-stat"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+            data-aos-duration="1000"
+          >
+            90%
+            <p class="main__statistic-text">Довольных клиентов</p>
+          </div>
+          <!-- <div
+            class="main__statistic-footer"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          ></div> -->
+        </div>
+      </div>
+    </section>
+
     <!-- Услуги -->
     <section class="services section" id="services">
+      <img
+        src="./src/assets/icons/node-js.svg"
+        alt="node-js"
+        class="node-bg"
+        data-rotation="0"
+        data-amplitude="200"
+      />
+
       <div class="container">
-        <div class="services__container">
-          <h2
-            class="title"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
-          >
-            Мои услуги
-          </h2>
-          <p
-            class="sub-title"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
-          >
+        <div
+          class="section-header"
+          data-aos="fade-down"
+          data-aos-duration="1200"
+        >
+          <h2>Мои услуги</h2>
+          <p>
             Предоставляю профессиональные услуги веб-разработки, от создания
             лендингов до сложных веб-приложений. Моя цель — помочь вашему
             бизнесу выделиться в цифровом пространстве с помощью современных и
             эффективных решений.
           </p>
+        </div>
+        <div class="services__container">
           <div class="services__grid">
             <div
               class="services__card"
@@ -200,7 +237,9 @@
                 функциональный и удобный сайт с профессиональной CMS без
                 дополнительных затрат.
               </p>
-              <a class="services__offer-button trigger">Получить предложение</a>
+              <a href="#feedback-section" class="services__offer-button trigger"
+                >Получить предложение</a
+              >
             </div>
           </div>
         </div>
@@ -210,14 +249,11 @@
     <!-- Обо мне -->
     <section class="about section" id="about">
       <img
-        src="./src/assets/icons/js-official-svgrepo-com (1) 2.svg"
-        alt="js"
-        class="js-bg paralaxImg"
-      />
-      <img
         src="./src/assets/icons/typescript-official-svgrepo-com 2.svg"
         alt="ts"
         class="ts-bg paralaxImg"
+        data-amplitude="400"
+        data-rotation="-20"
       />
       <div class="container">
         <div class="about__container">
@@ -327,14 +363,91 @@
                 </li>
               </ul>
             </div>
-            <button
-              class="button"
+            <div
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="700"
+              class="button__wrapper"
             >
-              Связаться со мной
-            </button>
+              <button class="button about__button modal-trigger">
+                Связаться со мной
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tehnologies">
+      <div class="container">
+        <div
+          class="section-header"
+          data-aos="fade-down"
+          data-aos-duration="1200"
+        >
+          <h2>С чем я работаю</h2>
+        </div>
+        <div class="main__tehnologies">
+          <div class="main__tehnologies-item">
+            <img src="./src/assets/tehnologies/react-2.svg" alt="React" />
+            <p>React</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img src="./src/assets/tehnologies/vue-9.svg" alt="Vue" />
+            <p>Vue</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img src="./src/assets/tehnologies/next.svg" alt="Next" />
+            <p>Next</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img
+              src="./src/assets/tehnologies/wordpress-icon-1.svg"
+              alt="Wordpress"
+            />
+            <p>Wordpress</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img src="./src/assets/tehnologies/html-1.svg" alt="HTML" />
+            <p>HTML</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img src="./src/assets/tehnologies/css-3.svg" alt="CSS" />
+            <p>CSS</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img
+              src="./src/assets/tehnologies/typescript.svg"
+              alt="TypeScript"
+            />
+            <p>TypeScript</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img src="./src/assets/tehnologies/express.svg" alt="Express" />
+            <p>Express</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img
+              src="./src/assets/tehnologies/javascript-1.svg"
+              alt="JavaScript"
+            />
+            <p>JavaScript</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img src="./src/assets/tehnologies/sass-1.svg" alt="SASS" />
+            <p>SASS</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img src="./src/assets/tehnologies/nodejs.svg" alt="nodejs" />
+            <p>nodejs</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img src="./src/assets/tehnologies/mysql-3.svg" alt="mysql" />
+            <p>mySQL</p>
+          </div>
+          <div class="main__tehnologies-item">
+            <img src="./src/assets/tehnologies/prisma-3.svg" alt="prisma" />
+            <p>prisma</p>
           </div>
         </div>
       </div>
@@ -342,6 +455,12 @@
 
     <!-- телеграм -->
     <section class="tg">
+      <img
+        src="./src/assets/icons/telegram.svg"
+        alt="tg"
+        class="tg-bg"
+        data-rotation="0"
+      />
       <div class="container">
         <div class="tg__container">
           <h2
@@ -355,10 +474,9 @@
           </h2>
           <div class="tg__description">
             <p data-aos="fade-down">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio amet id illum ipsum? Cum incidunt dolores deserunt sit
-              asperiores nihil consectetur harum, saepe impedit nisi deleniti
-              debitis voluptatum assumenda excepturi.
+              Веб-разработчик с 3 годами опыта делится туториалами, кейсами и
+              новостями по React, Node.js, Vue и не только. Подписывайся для
+              обучения и вдохновения!
             </p>
             <button class="button tg__button" data-aos="fade-up">
               Перейти в канал
@@ -370,143 +488,287 @@
 
     <!-- отзывы -->
     <section class="testimonials section" id="testimonials">
-      <!-- <img src="./src/assets/icons/react.svg" alt="react" class="react-bg" /> -->
       <div class="container">
         <div class="testimonials__container">
-          <h2
-            class="title"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
+          <div
+            class="section-header"
+            data-aos="fade-down"
+            data-aos-duration="1200"
           >
-            Отзывы клиентов
-          </h2>
-          <p
-            class="sub-title"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
+            <h2>Отзывы клиентов</h2>
+          </div>
+
+          <div
+            class="splide testimonials__slider"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-            blanditiis aut accusantium exercitationem ipsa dicta modi officiis,
-            a dolore quae ut cumque id eligendi repellat soluta nam mollitia
-            fuga libero?
-          </p>
-          <div class="testimonials__grid">
-            <div
-              class="testimonials__card"
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="100"
-            >
-              <div class="testimonials__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="testimonials__text">
-                Работа выполнена на высшем уровне! Сайт получился стильным,
-                быстрым и полностью соответствовал нашим ожиданиям. Команда учла
-                все пожелания и предложила крутые решения.
-              </p>
-              <div class="testimonials__author">
-                <img
-                  src="https://via.placeholder.com/50"
-                  alt="Иван Иванов"
-                  class="testimonials__photo"
-                />
-                <div class="testimonials__author-info">
-                  <h3 class="testimonials__name">Иван Иванов</h3>
-                  <p class="testimonials__position">Владелец фитнес-клуба</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="testimonials__card"
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="200"
-            >
-              <div class="testimonials__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="testimonials__text">
-                Разработали интернет-магазин с удобным интерфейсом и интеграцией
-                платежных систем. Продажи выросли, а клиенты отмечают простоту
-                использования сайта. Рекомендую!
-              </p>
-              <div class="testimonials__author">
-                <img
-                  src="https://via.placeholder.com/50"
-                  alt="Мария Петрова"
-                  class="testimonials__photo"
-                />
-                <div class="testimonials__author-info">
-                  <h3 class="testimonials__name">Мария Петрова</h3>
-                  <p class="testimonials__position">Директор по маркетингу</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="testimonials__card"
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="300"
-            >
-              <div class="testimonials__stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="testimonials__text">
-                Веб-приложение для управления задачами превзошло ожидания.
-                Интуитивный интерфейс, быстрая работа и отличная поддержка.
-                Теперь наша команда работает эффективнее!
-              </p>
-              <div class="testimonials__author">
-                <img
-                  src="https://via.placeholder.com/50"
-                  alt="Алексей Сидоров"
-                  class="testimonials__photo"
-                />
-                <div class="testimonials__author-info">
-                  <h3 class="testimonials__name">Алексей Сидоров</h3>
-                  <p class="testimonials__position">Руководитель IT-отдела</p>
-                </div>
-              </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- Testimonial 1 -->
+                <li class="splide__slide">
+                  <div class="testimonials__card">
+                    <div class="testimonials__stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonials__text">
+                      Работа выполнена на высшем уровне! Сайт получился
+                      стильным, быстрым и полностью соответствовал нашим
+                      ожиданиям. Команда учла все пожелания и предложила крутые
+                      решения.
+                    </p>
+                    <div class="testimonials__author">
+                      <img
+                        src="./src/assets/icons/user.png"
+                        alt="Иван Иванов"
+                        class="testimonials__photo"
+                      />
+                      <div class="testimonials__author-info">
+                        <h3 class="testimonials__name">Иван Иванов</h3>
+                        <p class="testimonials__position">
+                          Владелец фитнес-клуба
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Testimonial 2 -->
+                <li class="splide__slide">
+                  <div class="testimonials__card">
+                    <div class="testimonials__stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonials__text">
+                      Разработали интернет-магазин с удобным интерфейсом и
+                      интеграцией платежных систем. Продажи выросли, а клиенты
+                      отмечают простоту использования сайта. Рекомендую!
+                    </p>
+                    <div class="testimonials__author">
+                      <img
+                        src="./src/assets/icons/user.png"
+                        alt="Мария Петрова"
+                        class="testimonials__photo"
+                      />
+                      <div class="testimonials__author-info">
+                        <h3 class="testimonials__name">Мария Петрова</h3>
+                        <p class="testimonials__position">
+                          Директор по маркетингу
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Testimonial 3 -->
+                <li class="splide__slide">
+                  <div class="testimonials__card">
+                    <div class="testimonials__stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonials__text">
+                      Веб-приложение для управления задачами превзошло ожидания.
+                      Интуитивный интерфейс, быстрая работа и отличная
+                      поддержка. Теперь наша команда работает эффективнее!
+                    </p>
+                    <div class="testimonials__author">
+                      <img
+                        src="./src/assets/icons/user.png"
+                        alt="Алексей Сидоров"
+                        class="testimonials__photo"
+                      />
+                      <div class="testimonials__author-info">
+                        <h3 class="testimonials__name">Алексей Сидоров</h3>
+                        <p class="testimonials__position">
+                          Руководитель IT-отдела
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Testimonial 4 -->
+                <li class="splide__slide">
+                  <div class="testimonials__card">
+                    <div class="testimonials__stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonials__text">
+                      Разработали платформу для обучения с геймификацией.
+                      Интерфейс интуитивно понятен, а функционал для
+                      отслеживания прогресса идеально подходит для студентов.
+                    </p>
+                    <div class="testimonials__author">
+                      <img
+                        src="./src/assets/icons/user.png"
+                        alt="Елена Козлова"
+                        class="testimonials__photo"
+                      />
+                      <div class="testimonials__author-info">
+                        <h3 class="testimonials__name">Елена Козлова</h3>
+                        <p class="testimonials__position">
+                          Преподаватель онлайн-курсов
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Testimonial 5 -->
+                <li class="splide__slide">
+                  <div class="testimonials__card">
+                    <div class="testimonials__stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonials__text">
+                      Сайт для нашего стартапа получился современным и
+                      функциональным. Интеграция с аналитикой помогла нам лучше
+                      понимать поведение пользователей.
+                    </p>
+                    <div class="testimonials__author">
+                      <img
+                        src="./src/assets/icons/user.png"
+                        alt="Дмитрий Волков"
+                        class="testimonials__photo"
+                      />
+                      <div class="testimonials__author-info">
+                        <h3 class="testimonials__name">Дмитрий Волков</h3>
+                        <p class="testimonials__position">
+                          Основатель стартапа
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Testimonial 6 -->
+                <li class="splide__slide">
+                  <div class="testimonials__card">
+                    <div class="testimonials__stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonials__text">
+                      Созданное приложение для планирования мероприятий
+                      упростило организацию наших событий. Уведомления и
+                      RSVP-функционал работают безупречно!
+                    </p>
+                    <div class="testimonials__author">
+                      <img
+                        src="./src/assets/icons/user.png"
+                        alt="Ольга Смирнова"
+                        class="testimonials__photo"
+                      />
+                      <div class="testimonials__author-info">
+                        <h3 class="testimonials__name">Ольга Смирнова</h3>
+                        <p class="testimonials__position">
+                          Организатор мероприятий
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Testimonial 7 -->
+                <li class="splide__slide">
+                  <div class="testimonials__card">
+                    <div class="testimonials__stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonials__text">
+                      Разработка портала для сообщества превзошла наши ожидания.
+                      Чат в реальном времени и модерация контента сделали
+                      платформу удобной и безопасной.
+                    </p>
+                    <div class="testimonials__author">
+                      <img
+                        src="./src/assets/icons/user.png"
+                        alt="Сергей Николаев"
+                        class="testimonials__photo"
+                      />
+                      <div class="testimonials__author-info">
+                        <h3 class="testimonials__name">Сергей Николаев</h3>
+                        <p class="testimonials__position">
+                          Координатор сообщества
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide(".testimonials__slider", {
+          type: "loop",
+          perPage: 3,
+          perMove: 1,
+          gap: "30px",
+          pagination: true,
+          arrows: false,
+          autoplay: true,
+          interval: 5000,
+          speed: 600,
+          easing: "cubic-bezier(0.4, 0, 0.2, 1)",
+          breakpoints: {
+            1024: {
+              perPage: 2,
+              gap: "20px",
+              speed: 500,
+            },
+            768: {
+              perPage: 1,
+              gap: "15px",
+              speed: 400,
+            },
+          },
+        }).mount();
+      });
+    </script>
 
     <!-- шаги -->
     <section class="how-we-work section" id="how-we-work">
+      <img
+        src="./src/assets/icons/js-official-svgrepo-com (1) 2.svg"
+        alt="js"
+        class="js-bg"
+        data-amplitude="100"
+      />
       <div class="container">
         <div class="how-we-work__container">
-          <h2
-            class="title"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
+          <div
+            class="section-header"
+            data-aos="fade-down"
+            data-aos-duration="1200"
           >
-            Как я работаю
-          </h2>
-          <p
-            class="sub-title"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
-          >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-            blanditiis aut accusantium exercitationem ipsa dicta modi officiis,
-            a dolore quae ut cumque id eligendi repellat soluta nam mollitia
-            fuga libero?
-          </p>
+            <h2>Как я работаю</h2>
+          </div>
+
           <div class="how-we-work__grid">
             <div
               class="how-we-work__card"
@@ -593,213 +855,364 @@
               </p>
             </div>
           </div>
-          <button href="#contact" class="button trigger">
-            Начать проект <i class="fas fa-arrow-right"></i>
-          </button>
         </div>
       </div>
     </section>
 
     <!-- портфолио -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <div class="portfolio__flex">
-          <h2
-            class="title"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
-          >
-            Мои проекты
-          </h2>
-          <p
-            class="sub-title"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
-          >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-            blanditiis aut accusantium exercitationem ipsa dicta modi officiis,
-            a dolore quae ut cumque id eligendi repellat soluta nam mollitia
-            fuga libero?
-          </p>
-        </div>
+    <section class="projects-section container" id="portfolio">
+      <div class="section-header" data-aos="fade-down" data-aos-duration="1200">
+        <h2>Мои проекты</h2>
+        <p>
+          Здесь представлены некоторые из моих последних работ. Каждый проект —
+          это уникальный опыт и вызов, который помогает мне расти как
+          разработчику.
+        </p>
       </div>
-      <div class="splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <img
-                src="https://picsum.photos/seed/slide1/600/300"
-                alt="cosmetics"
-              />
-              <div class="slide-content">
-                <h3>Проект 1</h3>
-                <p>Современное веб-приложение для управления задачами.</p>
-                <p>Моя роль: Фронтенд-разработчик</p>
-                <div class="tech-tags">
-                  <span class="tech-tag">React</span>
-                  <span class="tech-tag">Node.js</span>
-                  <span class="tech-tag">MongoDB</span>
-                </div>
-                <a href="https://example.com/project1" target="_blank"
-                  >Посмотреть проект</a
-                >
-              </div>
-            </li>
-            <li class="splide__slide">
-              <img
-                src="https://picsum.photos/seed/slide2/600/300"
-                alt="sneakers"
-              />
-              <div class="slide-content">
-                <h3>Проект 2</h3>
-                <p>Платформа электронной коммерции с кастомным CMS.</p>
-                <p>Моя роль: Фулл-стек разработчик</p>
-                <div class="tech-tags">
-                  <span class="tech-tag">Vue.js</span>
-                  <span class="tech-tag">Express</span>
-                  <span class="tech-tag">PostgreSQL</span>
-                </div>
-                <a href="https://example.com/project2" target="_blank"
-                  >Посмотреть проект</a
-                >
-              </div>
-            </li>
-            <li class="splide__slide">
-              <img
-                src="https://picsum.photos/seed/slide3/600/300"
-                alt="cosmetics"
-              />
-              <div class="slide-content">
-                <h3>Проект 3</h3>
-                <p>Мобильно-ориентированный сайт-портфолио.</p>
-                <p>Моя роль: UI/UX дизайнер</p>
-                <div class="tech-tags">
-                  <span class="tech-tag">Figma</span>
-                  <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">CSS</span>
-                </div>
-                <a href="https://example.com/project3" target="_blank"
-                  >Посмотреть проект</a
-                >
-              </div>
-            </li>
-            <li class="splide__slide">
-              <img
-                src="https://picsum.photos/seed/slide4/600/300"
-                alt="sneakers"
-              />
-              <div class="slide-content">
-                <h3>Проект 4</h3>
-                <p>Приложение для чата в реальном времени.</p>
-                <p>Моя роль: Бэкенд-разработчик</p>
-                <div class="tech-tags">
-                  <span class="tech-tag">Socket.io</span>
-                  <span class="tech-tag">Redis</span>
-                  <span class="tech-tag">TypeScript</span>
-                </div>
-                <a href="https://example.com/project4" target="_blank"
-                  >Посмотреть проект</a
-                >
-              </div>
-            </li>
-            <li class="splide__slide">
-              <img
-                src="https://picsum.photos/seed/slide5/600/300"
-                alt="cosmetics"
-              />
-              <div class="slide-content">
-                <h3>Проект 5</h3>
-                <p>Дашборд для визуализации данных.</p>
-                <p>Моя роль: Инженер данных</p>
-                <div class="tech-tags">
-                  <span class="tech-tag">D3.js</span>
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Flask</span>
-                </div>
-                <a href="https://example.com/project5" target="_blank"
-                  >Посмотреть проект</a
-                >
-              </div>
-            </li>
-            <li class="splide__slide">
-              <img
-                src="https://picsum.photos/seed/slide6/600/300"
-                alt="sneakers"
-              />
-              <div class="slide-content">
-                <h3>Проект 6</h3>
-                <p>Платформа для онлайн-обучения.</p>
-                <p>Моя роль: Менеджер проекта</p>
-                <div class="tech-tags">
-                  <span class="tech-tag">Angular</span>
-                  <span class="tech-tag">Firebase</span>
-                  <span class="tech-tag">SCSS</span>
-                </div>
-                <a href="https://example.com/project6" target="_blank"
-                  >Посмотреть проект</a
-                >
-              </div>
-            </li>
-          </ul>
+
+      <div class="projects-grid">
+        <div
+          class="project-card"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1200"
+        >
+          <div class="project-image">
+            <img
+              src="./src/assets/project_img/taskade.png"
+              alt="Планировщик задач для фрилансеров"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Планировщик задач для фрилансеров</h3>
+            <p class="project-description">
+              Веб-приложение для фрилансеров, позволяющее управлять проектами,
+              отслеживать время и создавать отчеты для клиентов. Включает
+              интеграцию с календарем и уведомлениями.
+            </p>
+            <p class="project-role">
+              <strong>Моя роль:</strong> Разработал интерактивный интерфейс с
+              React и TypeScript, обеспечив адаптивность с Tailwind CSS.
+              Реализовал REST API с Express для управления задачами и отчетами.
+              Настроил Prisma для взаимодействия с MongoDB, оптимизировал
+              запросы для высокой производительности. Интегрировал
+              push-уведомления через Firebase и развернул приложение в
+              Docker-контейнере.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">Prisma</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">Tailwind CSS</span>
+              <span class="project-tag">Docker</span>
+            </div>
+            <a href="https://www.taskade.com" class="project-button"
+              >Перейти на проект</a
+            >
+          </div>
+        </div>
+
+        <!-- Проект 2 -->
+        <div
+          class="project-card"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+        >
+          <div class="project-image">
+            <img
+              src="./src/assets/project_img/sc training.jpg"
+              alt="Платформа для микро-курсов"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Платформа для микро-курсов</h3>
+            <p class="project-description">
+              Платформа для создания и прохождения коротких образовательных
+              курсов с прогресс-трекером и сертификатами. Оптимизирована для
+              мобильных устройств.
+            </p>
+            <p class="project-role">
+              <strong>Моя роль:</strong> Создал адаптивный интерфейс с Vue.js,
+              используя Vuex для управления состоянием. Реализовал бэкенд с
+              Express и Prisma для работы с PostgreSQL, обеспечив хранение
+              курсов и сертификатов. Интегрировал Firebase для аналитики и
+              управления медиа. Настроил Docker для контейнеризации и деплоя,
+              обеспечив масштабируемость.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Vue.js</span>
+              <span class="project-tag">Vuex</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">Prisma</span>
+              <span class="project-tag">PostgreSQL</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <a href="https://www.edapp.com" class="project-button"
+              >Перейти на проект</a
+            >
+          </div>
+        </div>
+
+        <!-- Проект 3 -->
+        <div
+          class="project-card"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200"
+        >
+          <div class="project-image">
+            <img
+              src="./src/assets/project_img/budgetbakers.jpg"
+              alt="Визуализатор личных финансов"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Визуализатор личных финансов</h3>
+            <p class="project-description">
+              Приложение для анализа личных расходов с интерактивными графиками
+              и категоризацией транзакций. Поддерживает импорт данных из CSV.
+            </p>
+            <p class="project-role">
+              <strong>Моя роль:</strong> Разработал интерфейс с React и
+              TypeScript, внедрил визуализации с Recharts для интерактивных
+              графиков. Настроил Express и Prisma для работы с PostgreSQL,
+              обеспечив импорт и обработку CSV-файлов. Оптимизировал
+              производительность API и развернул приложение с помощью Docker.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">Prisma</span>
+              <span class="project-tag">PostgreSQL</span>
+              <span class="project-tag">Recharts</span>
+            </div>
+            <a href="https://www.budgetbakers.com" class="project-button"
+              >Перейти на проект</a
+            >
+          </div>
+        </div>
+
+        <!-- Проект 4 -->
+        <div
+          class="project-card"
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="1200"
+        >
+          <div class="project-image">
+            <img
+              src="./src/assets/project_img/nextdoor.png"
+              alt="Форум для локальных сообществ"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Форум для локальных сообществ</h3>
+            <p class="project-description">
+              Платформа для общения местных сообществ с поддержкой тем,
+              комментариев и уведомлений в реальном времени. Обеспечивает
+              модерацию и фильтрацию контента.
+            </p>
+            <p class="project-role">
+              <strong>Моя роль:</strong> Создал динамичный интерфейс с Vue.js и
+              TypeScript, используя Vuex для управления состоянием. Реализовал
+              бэкенд с Express и Prisma для MongoDB, настроил WebSocket для
+              уведомлений в реальном времени. Интегрировал JWT-аутентификацию и
+              развернул приложение в Docker.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Vue.js</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">Prisma</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">Vuex</span>
+              <span class="project-tag">Docker</span>
+            </div>
+            <a href="https://www.nextdoor.com" class="project-button"
+              >Перейти на проект</a
+            >
+          </div>
+        </div>
+
+        <!-- Проект 5 -->
+        <div
+          class="project-card"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="1200"
+        >
+          <div class="project-image">
+            <img
+              src="./src/assets/project_img/eventtribe.png"
+              alt="Планировщик мероприятий"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Планировщик мероприятий</h3>
+            <p class="project-description">
+              Веб-приложение для организации мероприятий с календарем,
+              приглашениями и RSVP-функционалом. Поддерживает уведомления по
+              email и SMS.
+            </p>
+            <p class="project-role">
+              <strong>Моя роль:</strong> Разработал кроссплатформенный интерфейс
+              с React и TypeScript, используя Redux для управления состоянием.
+              Создал API с Express и Prisma для PostgreSQL, интегрировал Twilio
+              для SMS-уведомлений. Настроил деплой с Docker, обеспечив
+              масштабируемость и стабильность.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">Prisma</span>
+              <span class="project-tag">PostgreSQL</span>
+              <span class="project-tag">Twilio</span>
+              <span class="project-tag">Docker</span>
+            </div>
+            <a href="https://www.eventbrite.com" class="project-button"
+              >Перейти на проект</a
+            >
+          </div>
+        </div>
+
+        <!-- Проект 6 -->
+        <div
+          class="project-card"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-duration="1200"
+        >
+          <div class="project-image">
+            <img
+              src="./src/assets/project_img/kithcen.jpg"
+              alt="Приложение для рецептов"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Приложение для рецептов</h3>
+            <p class="project-description">
+              Платформа для обмена кулинарными рецептами с функцией поиска по
+              ингредиентам и генерации списка покупок. Поддерживает загрузку
+              изображений.
+            </p>
+            <p class="project-role">
+              <strong>Моя роль:</strong> Разработал интерфейс с Next.js и
+              TypeScript, обеспечив серверный рендеринг для SEO. Создал API с
+              Express и Prisma для Supabase, настроил загрузку медиа.
+              Оптимизировал производительность страниц и развернул приложение с
+              помощью Docker.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">Prisma</span>
+              <span class="project-tag">Supabase</span>
+              <span class="project-tag">Docker</span>
+            </div>
+            <a href="https://www.yummly.com" class="project-button"
+              >Перейти на проект</a
+            >
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="feedback-section" id="feedback-section">
+    <section class="contact-section" id="contact">
       <div class="container">
-        <div class="feedback-wrapper">
-          <div class="contact-cards">
-            <h2 class="cards-title">Связаться со мной</h2>
-            <p class="cards-description">
-              Буду рад вашему сообщению! Задавайте вопросы или делитесь
-              отзывами.
-            </p>
-            <div class="card">
-              <a
-                href="https://web.telegram.org/a/#7699447339"
-                class="contact-link"
-                target="_blank"
+        <div
+          class="section-header"
+          data-aos="fade-down"
+          data-aos-duration="1200"
+        >
+          <h2>Связаться со мной</h2>
+          <p>
+            Хотите обсудить проект или задать вопрос? Свяжитесь со мной через
+            удобную для вас платформу. Я всегда открыт к новым возможностям и
+            сотрудничеству!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Telegram -->
+          <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+            <div class="contact-card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+                alt="Telegram"
+                class="contact-icon"
+              />
+              <h3 class="contact-title">Telegram</h3>
+              <p class="contact-description">
+                Быстрое общение через чат или голосовые сообщения. Напишите мне
+                для оперативного ответа.
+              </p>
+              <a href="https://t.me/yourusername" class="contact-button"
+                >Перейти в Telegram</a
               >
-                <i class="fab fa-telegram-plane"></i> Telegram
-              </a>
-            </div>
-            <div class="card">
-              <a href="tel:+375333260981" class="contact-link">
-                <i class="fas fa-phone"></i> +375 (33) 326-0981
-              </a>
-            </div>
-            <div class="card">
-              <a href="mailto:valukandrey004@gmail.com" class="contact-link">
-                <i class="fas fa-envelope"></i> valukandrey004@gmail.com
-              </a>
             </div>
           </div>
-          <form class="feedback-form">
-            <div class="form-group">
-              <input type="text" id="name" placeholder="Ваше имя" required />
-            </div>
-            <div class="form-group">
-              <input
-                type="tel"
-                id="phone"
-                placeholder="Ваш номер телефона"
-                required
-                pattern="[0-9+\-\(\) ]{10,15}"
-                title="Пожалуйста, введите действительный номер телефона"
+
+          <!-- Email -->
+          <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+            <div class="contact-card">
+              <img
+                src="./src/assets/icons/email.png"
+                alt="Email"
+                class="contact-icon"
               />
+              <h3 class="contact-title">Электронная почта</h3>
+              <p class="contact-description">
+                Отправьте мне письмо для подробного обсуждения или запроса
+                предложения.
+              </p>
+              <a href="mailto:your.email@example.com" class="contact-button"
+                >Написать на почту</a
+              >
             </div>
-            <div class="form-group">
-              <textarea
-                id="message"
-                placeholder="Ваше сообщение"
-                rows="5"
-                required
-              ></textarea>
+          </div>
+
+          <!-- Phone -->
+          <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+            <div class="contact-card">
+              <img
+                src="./src/assets/icons/phone.png"
+                alt="Phone"
+                class="contact-icon"
+              />
+              <h3 class="contact-title">Телефон</h3>
+              <p class="contact-description">
+                Позвоните или напишите в мессенджер для прямого общения.
+              </p>
+              <a href="tel:+1234567890" class="contact-button">Позвонить</a>
             </div>
-            <button type="submit" class="submit-btn button">
-              Отправить сообщение
-            </button>
-          </form>
+          </div>
+
+          <!-- LinkedIn -->
+          <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+            <div class="contact-card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                alt="LinkedIn"
+                class="contact-icon"
+              />
+              <h3 class="contact-title">LinkedIn</h3>
+              <p class="contact-description">
+                Подключитесь ко мне в профессиональной сети для делового
+                общения.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/yourprofile"
+                class="contact-button"
+                >Перейти в LinkedIn</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -930,7 +1343,7 @@
                 class="footer__subscribe-btn"
                 target="_blank"
               >
-                <i class="fab fa-telegram-plane"></i> Присоединиться к Telegram
+                Присоединиться к Telegram
               </a>
             </div>
           </div>
@@ -947,32 +1360,3 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
     <script src="./src/index.js"></script>
   </body>
 </html>
-
-<!-- <img class="main-img" src="./src/assets/img/main-mem.png" alt="" /> -->
-
-<!-- <div class="vide">
-        <video autoplay muted loop playsinline>
-          <source
-            src="./src/assets/video/3129671-uhd_3840_2160_30fps (1).mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <div class="overlay"></div>
-      </div> -->
-<!-- <div class="main__buttons">
-              <div class="social-media">
-                <a href="#" class="social-media__item">
-                  <i class="fab fa-github"></i
-                ></a>
-                <a href="#" class="social-media__item">
-                  <i class="fas fa-phone"></i
-                ></a>
-                <a href="#" class="social-media__item"
-                  ><i class="fab fa-telegram-plane"></i
-                ></a>
-                <a href="#" class="social-media__item"
-                  ><i class="fas fa-envelope"></i
-                ></a>
-              </div>
-            </div> -->
