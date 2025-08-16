@@ -1,27 +1,17 @@
 .how-we-work {
   position: relative;
-  &__title {
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--text-color);
-    text-align: center;
-    margin-bottom: 40px;
-  }
 
-  &__button {
-    margin-top: 20px;
-  }
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 15px;
   }
 
   &__card {
     position: relative;
     background: #1c2526;
     border-radius: 8px;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     position: relative;
     transition: all 0.6s ease;
@@ -41,7 +31,7 @@
   }
 
   &__step {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--text-color);
     margin: 50px 0 15px;
@@ -51,7 +41,7 @@
       color: var(--acent-color);
     }
     &-number {
-      font-size: 12rem;
+      font-size: 10rem;
       border-radius: 20px;
       width: 140px;
       height: 180px;
@@ -67,7 +57,7 @@
   }
 
   &__description {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--text-color);
     line-height: 1.6;
     margin-bottom: 20px;

@@ -12,11 +12,11 @@
 
 .section-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 15px;
   color: var(--accent-second-color);
   position: relative;
@@ -29,13 +29,13 @@
   width: 50%;
   height: 2px;
   background: var(--accent-second-color);
-  bottom: -10px;
+  bottom: -3px;
   left: 25%;
   transition: width 0.6s ease-in-out;
 }
 
 .section-header p {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
@@ -45,7 +45,7 @@
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
+  gap: 15px;
 }
 
 .contact-card {
@@ -55,7 +55,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 20px;
+  padding: 20px;
+  width: 100%;
+  aspect-ratio: 6/5;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -121,7 +123,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
+  padding: 8px 24px;
   color: var(--bg-color);
   background: var(--accent-second-color);
   text-decoration: none;

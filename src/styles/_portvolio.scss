@@ -4,7 +4,7 @@
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 15px;
   color: var(--main-color);
   position: relative;
@@ -32,8 +32,8 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
+  gap: 20px;
 }
 
 .project-card {

@@ -7,7 +7,7 @@
     opacity: 0.9;
     text-align: start;
     max-width: 700px;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   &__descr {
@@ -47,7 +47,7 @@
     text-align: start;
 
     text-transform: uppercase;
-    font-size: clamp(2rem, 20vw, 8rem);
+    font-size: clamp(2rem, 10vw, 5rem);
     font-weight: 900;
 
     line-height: 90%;
