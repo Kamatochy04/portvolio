@@ -6,12 +6,12 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 20px;
   }
 
   &__card {
     border-radius: 8px;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 4px 12px rgba(255, 205, 25, 0.15);
     position: relative;
     transition: all 0.6s ease;
@@ -33,7 +33,7 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 30px;
+    font-size: 25px;
     color: var(--acent-color);
     transition: transform 0.3s ease;
 
@@ -43,7 +43,7 @@
   }
 
   &__card-title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--text-color);
     margin: 50px 0 15px;
@@ -51,7 +51,7 @@
   }
 
   &__description {
-    font-size: 16px;
+    font-size: 14px;
     color: #bababa;
     line-height: 1.6;
     margin-bottom: 20px;

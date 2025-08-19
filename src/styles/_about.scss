@@ -35,9 +35,10 @@
 
   &__title {
     line-height: 100%;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
     color: #d8d8d8;
+    margin-bottom: 15px;
     @media (max-width: 1024px) {
       display: block;
       width: 100%;
@@ -52,7 +53,7 @@
   }
 
   &__description {
-    font-size: 18px;
+    font-size: 16px;
     color: #d8d8d8;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -63,7 +64,7 @@
   }
 
   &__skills-title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     color: #d8d8d8;
     margin-bottom: 10px;
@@ -79,11 +80,11 @@
 
   &__skill {
     display: block;
-    border-bottom: 2px solid #54ccff88;
-    border-top: 2px solid #54ccff;
+    border-bottom: 1px solid #54ccff88;
+    border-top: 1px solid #54ccff;
     padding: 5px 15px;
     border-radius: 10px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease;
