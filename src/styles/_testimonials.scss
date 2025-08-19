@@ -62,7 +62,8 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 320px;
+  min-height: 220px;
+  border: 0px solid #ffffff00;
 }
 
 .testimonials__card:hover {
@@ -91,7 +92,6 @@
   font-size: 14px;
   color: var(--text-color);
   line-height: 1.5;
-  margin-bottom: 20px;
   flex-grow: 1;
 }
 
@@ -163,7 +163,6 @@
   .testimonials__card {
     padding: 20px;
     max-width: 320px;
-    min-height: 300px;
   }
 
   .testimonials__text {
@@ -191,7 +190,6 @@
   .testimonials__card {
     padding: 20px;
     max-width: 300px;
-    min-height: 280px;
   }
 
   .testimonials__stars {
@@ -224,9 +222,9 @@
   }
 
   .testimonials__card {
-    padding: 15px;
+    padding: 10px 20px;
     max-width: 280px;
-    min-height: 260px;
+    min-height: 200px;
   }
 
   .testimonials__text {

@@ -36,7 +36,7 @@
           <a href="#testimonials" class="header__nav-item">Отзывы</a>
           <a href="#how-we-work" class="header__nav-item"> Как я работаю </a>
           <a href="#portfolio" class="header__nav-item">Портфолио</a>
-          <a href="#feedback-section" class="header__nav-item">Контакты</a>
+          <a href="#contact" class="header__nav-item">Контакты</a>
         </nav>
         <button class="header__burger">
           <i class="fas fa-bars"></i>
@@ -47,17 +47,41 @@
     <main class="main">
       <div class="container">
         <div class="main__container">
-          <div>
+          <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <h1 class="main__title">Valiuk Andrei</h1>
           </div>
 
-          <p class="main__text">Создаю современные <span>web-решения</span></p>
-          <p class="main__descr">
+          <p
+            class="main__text"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            Создаю современные <span>web-решения</span>
+          </p>
+
+          <p
+            class="main__descr"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             Добро пожаловать на мой сайт! Я создаю современные, функциональные
             веб-решения, которые помогают вашему бизнесу выделиться и привлечь
             клиентов.
           </p>
-          <button class="button modal-trigger">Связаться со мной</button>
+          <button
+            class="button modal-trigger"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+          >
+            <a href="#contact">Связаться со мной</a>
+          </button>
         </div>
       </div>
     </main>
@@ -88,12 +112,6 @@
               90%
               <p class="main__statistic-text">Довольных клиентов</p>
             </div>
-            <!-- <div
-            class="main__statistic-footer"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-          ></div> -->
           </div>
         </div>
       </div>
@@ -110,13 +128,9 @@
       />
 
       <div class="container">
-        <div
-          class="section-header"
-          data-aos="fade-down"
-          data-aos-duration="1200"
-        >
-          <h2>Мои услуги</h2>
-          <p>
+        <div class="section-header">
+          <h2 data-aos="fade-right" data-aos-duration="1000">Мои услуги</h2>
+          <p data-aos="fade-left" data-aos-duration="1000">
             Предоставляю профессиональные услуги веб-разработки, от создания
             лендингов до сложных веб-приложений. Моя цель — помочь вашему
             бизнесу выделиться в цифровом пространстве с помощью современных и
@@ -125,11 +139,7 @@
         </div>
         <div class="services__container">
           <div class="services__grid">
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="100"
-            >
+            <div class="services__card" data-aos="zoom-out-up">
               <div class="services__icon">
                 <i class="fas fa-laptop-code"></i>
               </div>
@@ -142,11 +152,7 @@
                 >Связаться <i class="fas fa-arrow-right"></i
               ></a>
             </div>
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="200"
-            >
+            <div class="services__card" data-aos="zoom-out-up">
               <div class="services__icon">
                 <i class="fas fa-shopping-cart"></i>
               </div>
@@ -159,11 +165,7 @@
                 >Связаться <i class="fas fa-arrow-right"></i
               ></a>
             </div>
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="300"
-            >
+            <div class="services__card" data-aos="zoom-out-up">
               <div class="services__icon">
                 <i class="fas fa-code"></i>
               </div>
@@ -176,11 +178,7 @@
                 >Связаться <i class="fas fa-arrow-right"></i
               ></a>
             </div>
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="400"
-            >
+            <div class="services__card" data-aos="zoom-out-up">
               <div class="services__icon">
                 <i class="fab fa-wordpress"></i>
               </div>
@@ -193,11 +191,7 @@
                 >Связаться <i class="fas fa-arrow-right"></i
               ></a>
             </div>
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="500"
-            >
+            <div class="services__card" data-aos="zoom-out-up">
               <div class="services__icon">
                 <i class="fas fa-search"></i>
               </div>
@@ -210,11 +204,7 @@
                 >Связаться <i class="fas fa-arrow-right"></i
               ></a>
             </div>
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="600"
-            >
+            <div class="services__card" data-aos="zoom-out-up">
               <div class="services__icon">
                 <i class="fas fa-tools"></i>
               </div>
@@ -226,27 +216,6 @@
               <a href="#contact" class="services__link"
                 >Связаться <i class="fas fa-arrow-right"></i
               ></a>
-            </div>
-          </div>
-          <div class="services__offer" data-aos="fade-up" data-aos-delay="200">
-            <img
-              src="./src/assets/img/wordpres.png"
-              alt="WordPress Offer"
-              class="services__offer-icon"
-            />
-            <div class="services__offer-content">
-              <h3 class="services__offer-title">
-                Бесплатная разработка на WordPress!
-              </h3>
-              <p class="services__offer-description">
-                Закажите создание сайта, верстку или веб-приложение, и я настрою
-                ваш проект на WordPress совершенно бесплатно! Получите
-                функциональный и удобный сайт с профессиональной CMS без
-                дополнительных затрат.
-              </p>
-              <a href="#feedback-section" class="services__offer-button trigger"
-                >Получить предложение</a
-              >
             </div>
           </div>
         </div>
@@ -387,12 +356,10 @@
 
     <section class="tehnologies">
       <div class="container">
-        <div
-          class="section-header"
-          data-aos="fade-down"
-          data-aos-duration="1200"
-        >
-          <h2>С чем я работаю</h2>
+        <div class="section-header">
+          <h2 data-aos="fade-right" data-aos-duration="1000">
+            С чем я работаю
+          </h2>
         </div>
         <div class="main__tehnologies">
           <div class="main__tehnologies-item">
@@ -497,12 +464,10 @@
     <section class="testimonials section" id="testimonials">
       <div class="container">
         <div class="testimonials__container">
-          <div
-            class="section-header"
-            data-aos="fade-down"
-            data-aos-duration="1200"
-          >
-            <h2>Отзывы клиентов</h2>
+          <div class="section-header">
+            <h2 data-aos="fade-right" data-aos-duration="1000">
+              Отзывы клиентов
+            </h2>
           </div>
 
           <div
@@ -540,11 +505,6 @@
                         </p>
                       </div>
                     </div>
-                    <a
-                      href="https://www.fitnesstver.ru"
-                      class="testimonials__button"
-                      >Посмотреть проект</a
-                    >
                   </div>
                 </li>
                 <!-- Testimonial 2 -->
@@ -575,11 +535,6 @@
                         </p>
                       </div>
                     </div>
-                    <a
-                      href="https://www.lavkacvetov.ru"
-                      class="testimonials__button"
-                      >Посмотреть проект</a
-                    >
                   </div>
                 </li>
                 <!-- Testimonial 3 -->
@@ -610,49 +565,10 @@
                         </p>
                       </div>
                     </div>
-                    <a
-                      href="https://www.taskque.com"
-                      class="testimonials__button"
-                      >Посмотреть проект</a
-                    >
                   </div>
                 </li>
                 <!-- Testimonial 4 -->
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Платформа для наших онлайн-курсов получилась
-                      увлекательной! Интерактивные элементы и удобный трекинг
-                      прогресса понравились всем студентам.
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="./src/assets/icons/user.png"
-                        alt="Елена Козлова"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Елена Козлова</h3>
-                        <p class="testimonials__position">
-                          Преподаватель онлайн-курсов
-                        </p>
-                      </div>
-                    </div>
-                    <a
-                      href="https://www.teachbase.ru"
-                      class="testimonials__button"
-                      >Посмотреть проект</a
-                    >
-                  </div>
-                </li>
-                <!-- Testimonial 5 -->
+
                 <li class="splide__slide">
                   <div class="testimonials__card">
                     <div class="testimonials__stars">
@@ -680,11 +596,6 @@
                         </p>
                       </div>
                     </div>
-                    <a
-                      href="https://www.getoutline.com"
-                      class="testimonials__button"
-                      >Посмотреть проект</a
-                    >
                   </div>
                 </li>
                 <!-- Testimonial 6 -->
@@ -715,11 +626,6 @@
                         </p>
                       </div>
                     </div>
-                    <a
-                      href="https://www.eventcreate.com"
-                      class="testimonials__button"
-                      >Посмотреть проект</a
-                    >
                   </div>
                 </li>
                 <!-- Testimonial 7 -->
@@ -750,11 +656,6 @@
                         </p>
                       </div>
                     </div>
-                    <a
-                      href="https://www.bettermode.com"
-                      class="testimonials__button"
-                      >Посмотреть проект</a
-                    >
                   </div>
                 </li>
               </ul>
@@ -802,12 +703,10 @@
       />
       <div class="container">
         <div class="how-we-work__container">
-          <div
-            class="section-header"
-            data-aos="fade-down"
-            data-aos-duration="1200"
-          >
-            <h2>Как я работаю</h2>
+          <div class="section-header">
+            <h2 data-aos="fade-right" data-aos-duration="1000">
+              Как я работаю
+            </h2>
           </div>
 
           <div class="how-we-work__grid">
@@ -902,9 +801,12 @@
 
     <!-- портфолио -->
     <section class="projects-section container" id="portfolio">
-      <div class="section-header" data-aos="fade-down" data-aos-duration="1200">
-        <h2>Мои проекты</h2>
-        <p>
+      <div class="section-header">
+        <h2 data-aos="fade-right" data-aos-duration="1000">
+          Проекты над которыми работал
+        </h2>
+
+        <p data-aos="fade-left" data-aos-duration="1000">
           Здесь представлены некоторые из моих последних работ. Каждый проект —
           это уникальный опыт и вызов, который помогает мне расти как
           разработчику.
@@ -1166,13 +1068,11 @@
 
     <section class="contact-section" id="contact">
       <div class="container">
-        <div
-          class="section-header"
-          data-aos="fade-down"
-          data-aos-duration="1200"
-        >
-          <h2>Связаться со мной</h2>
-          <p>
+        <div class="section-header">
+          <h2 data-aos="fade-left" data-aos-duration="1000">
+            Связаться со мной
+          </h2>
+          <p data-aos="fade-right" data-aos-duration="1000">
             Хотите обсудить проект или задать вопрос? Свяжитесь со мной через
             удобную для вас платформу. Я всегда открыт к новым возможностям и
             сотрудничеству!
@@ -1259,7 +1159,7 @@
     </section>
 
     <!-- модальное овно -->
-    <div class="modal" id="quick-contact-modal">
+    <!-- <div class="modal" id="quick-contact-modal">
       <div class="modal__content">
         <button class="modal__close">
           <i class="fas fa-times"></i>
@@ -1288,7 +1188,7 @@
           <button type="submit" class="button">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <!-- подвал -->
     <footer class="footer">
@@ -1303,32 +1203,6 @@
               Веб-разработчик, создающий современные и эффективные сайты и
               приложения для вашего бизнеса.
             </p>
-
-            <div class="main__buttons">
-              <div class="social-media">
-                <a
-                  href="https://github.com/Kamatochy04"
-                  class="social-media__item"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="tel:+375333260981" class="social-media__item">
-                  <i class="fas fa-phone"></i>
-                </a>
-                <a
-                  href="https://web.telegram.org/a/#7699447339"
-                  class="social-media__item"
-                >
-                  <i class="fab fa-telegram-plane"></i>
-                </a>
-                <a
-                  href="mailto:valukandrey004@gmail.com"
-                  class="social-media__item"
-                >
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </div>
-            </div>
           </div>
           <div
             class="footer__column footer__column--links animate"
@@ -1370,24 +1244,6 @@
               </li>
             </ul>
           </div>
-          <div
-            class="footer__column footer__column--subscribe animate"
-            data-delay="600"
-          >
-            <h3 class="footer__column-title">Подписка на новости</h3>
-            <p class="footer__subscribe-text">
-              Получайте советы по веб-разработке и обновления!
-            </p>
-            <div class="footer__subscribe-form">
-              <a
-                href="https://web.telegram.org/a/#7699447339"
-                class="footer__subscribe-btn"
-                target="_blank"
-              >
-                Присоединиться к Telegram
-              </a>
-            </div>
-          </div>
         </div>
         <div class="footer__bottom">
           <p class="footer__copyright">© 2025 Андрей. Все права защищены.</p>
@@ -1416,47 +1272,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
             burger.classList.remove("active");
             nav.classList.remove("active");
           });
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener("click", (e) => {
-          if (!nav.contains(e.target) && !burger.contains(e.target)) {
-            burger.classList.remove("active");
-            nav.classList.remove("active");
-          }
-        });
-
-        const triggers = document.querySelectorAll(".modal-trigger");
-        const modal = document.querySelector("#quick-contact-modal");
-        const closeButton = document.querySelector(".modal__close");
-        const form = document.querySelector(".modal__form");
-
-        triggers.forEach((trigger) => {
-          trigger.addEventListener("click", () => {
-            modal.classList.add("active");
-          });
-        });
-
-        closeButton.addEventListener("click", () => {
-          modal.classList.remove("active");
-        });
-
-        modal.addEventListener("click", (e) => {
-          if (e.target === modal) {
-            modal.classList.remove("active");
-          }
-        });
-
-        form.addEventListener("submit", (e) => {
-          e.preventDefault(); // Prevent default form submission
-          modal.classList.remove("active");
-          form.reset(); // Reset form fields
-        });
-
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape" && modal.classList.contains("active")) {
-            modal.classList.remove("active");
-          }
         });
 
         const updateParallax = (className) => {
