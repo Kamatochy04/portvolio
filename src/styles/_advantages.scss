@@ -1,0 +1,104 @@
+$primary-color: #ff5722;
+$secondary-color: #212121;
+$bg-color: #ffffff;
+$text-color: #424242;
+$light-text-color: #757575;
+
+.advantages {
+  padding: 4rem 0;
+  background-color: $bg-color; /* Фон должен быть белым, как и запрашивалось */
+  position: relative;
+  overflow: hidden;
+
+  &__header {
+    z-index: 1;
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    z-index: 1;
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $secondary-color;
+    margin: 0;
+    text-align: left; /* Заголовок прижат к левому краю */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    z-index: 1;
+
+    font-size: 1rem;
+    color: $light-text-color;
+    margin-top: 0.5rem;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+
+  &__list {
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap; /* Для адаптивности */
+  }
+
+  &__item {
+    z-index: 10;
+
+    flex-basis: calc(25% - 2rem); /* 4 элемента в строку с отступами */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0;
+    background-color: transparent; /* Нет фона, как и запрашивалось */
+
+    @media (max-width: 1024px) {
+      flex-basis: calc(50% - 1rem); /* Два элемента в строку на планшетах */
+    }
+
+    @media (max-width: 768px) {
+      flex-basis: 100%; /* Один элемент в строку на мобильных */
+      align-items: center; /* Центрируем на мобильных */
+      text-align: center;
+    }
+  }
+
+  &__icon {
+    width: 56px;
+    height: 56px;
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+    border: 2px solid $primary-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 60%;
+      height: 60%;
+    }
+  }
+
+  &__item-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $secondary-color;
+    margin-bottom: 0.5rem;
+  }
+
+  &__item-text {
+    font-size: 1rem;
+    color: $text-color;
+    line-height: 1.5;
+  }
+}

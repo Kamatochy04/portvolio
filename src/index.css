@@ -1,37 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,600&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=WDXL+Lubrifont+TC&display=swap");
-@import url("./styles/variables.scss");
 
 @import url("./styles/_header.scss");
-@import url("./styles/_main.scss");
-@import url("./styles/_button.scss");
-@import url("./styles/_about.scss");
-@import url("./styles/_services.scss");
-@import url("./styles/_reviews.scss");
-@import url("./styles/_blog.scss");
-@import url("./styles/_testimonials.scss");
-@import url("./styles/_portvolio.scss");
-@import url("./styles/_tg.scss");
+@import url("./styles/_hero.scss");
+@import url("./styles/services.scss");
+@import url("./styles/_business.scss");
+@import url("./styles/_advantages.scss");
 @import url("./styles/_footer.scss");
-@import url("./styles/_how-work.scss");
-@import url("styles/_feedbeckmodel.scss");
-@import url("./styles/_feedbackFrorm.scss");
-@import url("./styles/_paralaxImg.scss");
-@import url("./styles/_tehnology.scss");
-@import url("./styles/_model.scss");
-
+@import url("./styles/_portfolio.scss");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #fff;
   -webkit-tap-highlight-color: transparent;
-}
-
-body {
   font-family: "Space Grotesk", sans-serif;
-  line-height: 1.6;
-  overflow-x: hidden;
-  background: var(--bg-color);
 }
 
 html {
@@ -39,39 +21,10 @@ html {
 
   font-size: 16px;
 }
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 .container {
-  max-width: 1140px;
   width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 15px;
-}
-
-.section {
-  padding: 100px 0;
-}
-
-.title {
-  font-size: 1.7rem;
-  position: relative;
-  text-align: start;
-  display: inline;
-}
-
-.sub-title {
-  margin-bottom: 40px;
-  max-width: 700px;
-  line-height: 140%;
-  color: #c7c7c7;
-  font-size: 1.1rem;
-}
-
-@media (max-width: 720px) {
-  .section {
-    padding: 40px 0px;
-  }
+  padding: 0 10px;
 }

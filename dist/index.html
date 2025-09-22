@@ -3,1491 +3,557 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Андрей Валюк - Фронтенд и Маркетинг</title>
+    <title>Электромонтажные услуги для юридических лиц</title>
+    <link rel="stylesheet" href="./src/styles.scss" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" crossorigin href="/assets/index-CYSA-OSx.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-ENEUoH5Z.css">
   </head>
   <body>
-    <!-- header -->
-    <header class="header">
-      <div class="header__container">
-        <div class="header__logo">LOGO</div>
-        <nav class="header__nav">
-          <a href="#about" class="header__nav-item">Обо мне</a>
-          <a href="#services" class="header__nav-item">Услуги</a>
-          <a href="#testimonials" class="header__nav-item">Отзывы</a>
-          <a href="#how-we-work" class="header__nav-item"> Как я работаю </a>
-          <a href="#portfolio" class="header__nav-item">Портфолио</a>
-          <a href="#feedback-section" class="header__nav-item">Контакты</a>
-        </nav>
-        <button class="header__burger">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-    </header>
-
-    <main class="main">
-      <div class="container">
-        <div class="main__container">
-          <div>
-            <h1 class="main__title">Valiuk Andrei</h1>
-          </div>
-
-          <p class="main__text">Создаю современные <span>web-решения</span></p>
-          <p class="main__descr">
-            Добро пожаловать на мой сайт! Я создаю современные, функциональные
-            веб-решения, которые помогают вашему бизнесу выделиться и привлечь
-            клиентов.
-          </p>
-          <button class="button modal-trigger">Связаться со мной</button>
-        </div>
-      </div>
-    </main>
-
-    <section class="stat">
-      <div class="container">
-        <div class="main__statistic" data-aos="zoom-in">
-          <div
-            class="main__statistic-yers main__statistic-stat"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-          >
-            3
-            <p class="main__statistic-text">года опыта разработки</p>
-          </div>
-          <div class="main__statistic-projects main__statistic-stat">
-            +10
-            <p class="main__statistic-text">Законченных проектов</p>
-          </div>
-          <div
-            class="main__statistic-procent main__statistic-stat"
-            data-aos="zoom-in"
-            data-aos-delay="700"
-            data-aos-duration="1000"
-          >
-            90%
-            <p class="main__statistic-text">Довольных клиентов</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services section" id="services">
-      <img
-        src="/assets/node-js-xScK1_eG.svg"
-        alt="node-js"
-        class="node-bg"
-        data-rotation="0"
-        data-amplitude="200"
-      />
-
-      <div class="container">
-        <div
-          class="section-header"
-          data-aos="fade-down"
-          data-aos-duration="1200"
-        >
-          <h2>Мои услуги</h2>
-          <p>
-            Предоставляю профессиональные услуги веб-разработки, от создания
-            лендингов до сложных веб-приложений. Моя цель — помочь вашему
-            бизнесу выделиться в цифровом пространстве с помощью современных и
-            эффективных решений.
-          </p>
-        </div>
-        <div class="services__container">
-          <div class="services__grid">
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="100"
-            >
-              <div class="services__icon">
-                <i class="fas fa-laptop-code"></i>
+    <section class="hero">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__container">
+              <div class="header__logo">
+                <img src="./src/assets/logo.png" alt="Логотип Электромонтаж" />
               </div>
-              <h3 class="services__card-title">Разработка лендингов</h3>
-              <p class="services__description">
-                Создаю яркие и конверсионные одностраничные сайты, которые
-                привлекают клиентов и повышают продажи.
-              </p>
-              <a href="#contact" class="services__link trigger"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="200"
-            >
-              <div class="services__icon">
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-              <h3 class="services__card-title">Интернет-магазины</h3>
-              <p class="services__description">
-                Разрабатываю функциональные e-commerce платформы с фильтрами,
-                корзиной и интеграцией платежных систем.
-              </p>
-              <a href="#contact" class="services__link"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="300"
-            >
-              <div class="services__icon">
-                <i class="fas fa-code"></i>
-              </div>
-              <h3 class="services__card-title">Веб-приложения</h3>
-              <p class="services__description">
-                Создаю интерактивные SPA и сложные веб-приложения с интуитивным
-                интерфейсом и высокой производительностью.
-              </p>
-              <a href="#contact" class="services__link"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="400"
-            >
-              <div class="services__icon">
-                <i class="fab fa-wordpress"></i>
-              </div>
-              <h3 class="services__card-title">Работа с WordPress</h3>
-              <p class="services__description">
-                Разрабатываю и настраиваю сайты на WordPress, включая кастомные
-                темы, плагины и оптимизацию для ваших задач.
-              </p>
-              <a href="#contact" class="services__link"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="500"
-            >
-              <div class="services__icon">
-                <i class="fas fa-search"></i>
-              </div>
-              <h3 class="services__card-title">SEO-оптимизация</h3>
-              <p class="services__description">
-                Оптимизирую сайты для поисковых систем, чтобы ваш бизнес был на
-                первых местах в выдаче.
-              </p>
-              <a href="#contact" class="services__link"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div
-              class="services__card"
-              data-aos="zoom-out-up"
-              data-aos-offset="600"
-            >
-              <div class="services__icon">
-                <i class="fas fa-tools"></i>
-              </div>
-              <h3 class="services__card-title">Поддержка и обновления</h3>
-              <p class="services__description">
-                Обеспечиваю техническую поддержку и обновления сайтов для
-                бесперебойной работы вашего проекта.
-              </p>
-              <a href="#contact" class="services__link"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-          <div class="services__offer" data-aos="fade-up" data-aos-delay="200">
-            <img
-              src="data:image/png;base64,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"
-              alt="WordPress Offer"
-              class="services__offer-icon"
-            />
-            <div class="services__offer-content">
-              <h3 class="services__offer-title">
-                Бесплатная разработка на WordPress!
-              </h3>
-              <p class="services__offer-description">
-                Закажите создание сайта, верстку или веб-приложение, и я настрою
-                ваш проект на WordPress совершенно бесплатно! Получите
-                функциональный и удобный сайт с профессиональной CMS без
-                дополнительных затрат.
-              </p>
-              <a href="#feedback-section" class="services__offer-button trigger"
-                >Получить предложение</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Обо мне -->
-    <section class="about section" id="about">
-      <img
-        src="data:image/svg+xml,%3csvg%20width='211'%20height='211'%20viewBox='0%200%20211%20211'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_f_181_2)'%3e%3cpath%20d='M189.023%2013.1779H21.8224C17.0481%2013.1779%2013.1777%2017.0482%2013.1777%2021.8225V189.023C13.1777%20193.798%2017.0481%20197.668%2021.8224%20197.668H189.023C193.798%20197.668%20197.668%20193.798%20197.668%20189.023V21.8225C197.668%2017.0482%20193.798%2013.1779%20189.023%2013.1779Z'%20fill='%233178C6'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M120.215%20156.547V176.762C123.888%20178.574%20127.802%20179.85%20131.838%20180.55C136.502%20181.411%20141.235%20181.835%20145.978%20181.815C150.6%20181.837%20155.211%20181.371%20159.736%20180.425C163.798%20179.604%20167.673%20178.041%20171.167%20175.813C174.411%20173.719%20177.085%20170.853%20178.949%20167.471C182.287%20160.469%20182.727%20152.433%20180.174%20145.108C179.097%20142.369%20177.492%20139.868%20175.45%20137.748C173.259%20135.494%20170.769%20133.55%20168.051%20131.97C164.921%20130.137%20161.67%20128.521%20158.319%20127.134C155.683%20126.04%20153.311%20124.977%20151.203%20123.945C149.33%20123.048%20147.538%20121.992%20145.846%20120.789C144.521%20119.86%20143.37%20118.704%20142.446%20117.375C141.648%20116.169%20141.232%20114.75%20141.254%20113.303C141.236%20111.972%20141.607%20110.665%20142.321%20109.541C143.097%20108.365%20144.131%20107.383%20145.345%20106.668C146.83%20105.795%20148.445%20105.165%20150.129%20104.804C152.197%20104.344%20154.31%20104.123%20156.428%20104.145C158.209%20104.151%20159.988%20104.279%20161.752%20104.527C163.657%20104.785%20165.541%20105.174%20167.392%20105.693C169.274%20106.215%20171.116%20106.876%20172.9%20107.67C174.632%20108.442%20176.289%20109.373%20177.849%20110.45V91.5863C174.601%2090.3576%20171.233%2089.4743%20167.8%2088.9508C163.655%2088.3476%20159.47%2088.0635%20155.281%2088.1008C150.703%2088.0761%20146.138%2088.5959%20141.682%2089.6492C137.654%2090.5695%20133.825%2092.2054%20130.375%2094.4789C127.171%2096.6135%20124.525%2099.4853%20122.66%20102.853C120.683%20106.594%20119.705%20110.781%20119.82%20115.01C119.674%20120.603%20121.516%20126.066%20125.018%20130.428C129.316%20135.265%20134.734%20138.973%20140.799%20141.227C143.566%20142.369%20146.147%20143.487%20148.541%20144.581C150.701%20145.542%20152.777%20146.682%20154.748%20147.988C156.337%20149.022%20157.733%20150.326%20158.872%20151.842C159.874%20153.217%20160.405%20154.879%20160.388%20156.58C160.397%20157.854%20160.07%20159.109%20159.439%20160.217C158.738%20161.407%20157.754%20162.406%20156.573%20163.122C155.095%20164.023%20153.479%20164.673%20151.789%20165.046C149.588%20165.539%20147.337%20165.771%20145.082%20165.738C140.656%20165.73%20136.266%20164.95%20132.108%20163.432C127.765%20161.865%20123.737%20159.533%20120.215%20156.547ZM86.2557%20106.22H112.611V89.5701H39.125V106.22H65.3622V180.372H86.2557V106.22Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_f_181_2'%20x='-10.2'%20y='-10.2'%20width='231.246'%20height='231.246'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='5.1'%20result='effect1_foregroundBlur_181_2'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
-        alt="ts"
-        class="ts-bg paralaxImg"
-        data-amplitude="400"
-        data-rotation="-20"
-      />
-      <div class="container">
-        <div class="about__container">
-          <div class="about__photo">
-            <img
-              data-aos="zoom-in"
-              src="/assets/Me-DSm3QIgo.jpg"
-              alt="Andrey Valiuk"
-              class="about__image"
-            />
-          </div>
-          <div class="about__content">
-            <h2
-              class="about__title"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-            >
-              Обо мне
-            </h2>
-            <p
-              class="about__description"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-            >
-              Привет! Я Андрей, веб-разработчик, увлеченный созданием
-              современных и функциональных сайтов. Моя страсть — превращать идеи
-              в реальность через код, будь то стильный лендинг, интернет-магазин
-              или сложное веб-приложение.
-            </p>
-            <p
-              class="about__description"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
-            >
-              Я фокусируюсь на качестве, скорости и удобстве для пользователей.
-              Каждый проект для меня — это возможность создать что-то
-              уникальное, что поможет вашему бизнесу выделиться и достичь целей.
-            </p>
-            <div class="about__skills">
-              <h3
-                class="about__skills-title"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="400"
-              >
-                Ключевые навыки:
-              </h3>
-              <ul class="about__skills-list">
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="100"
-                >
-                  HTML5, CSS3, SCSS
+              <ul class="header__info">
+                <li class="header__info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>г. Москва, ул. Примерная, д. 10</span>
                 </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  JavaScript, TypeScript
+                <li class="header__info-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Пн-Пт: 9:00 - 18:00</span>
                 </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="300"
-                >
-                  React, Vue, Next
-                </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="400"
-                >
-                  WordPress
-                </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="500"
-                >
-                  Node.js, Express
-                </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="600"
-                >
-                  Адаптивная и кроссбраузерная верстка
-                </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="700"
-                >
-                  SEO-оптимизация и производительность
-                </li>
-              </ul>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="700"
-              class="button__wrapper"
-            >
-              <button class="button about__button modal-trigger">
-                Связаться со мной
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="tehnologies">
-      <div class="container">
-        <div
-          class="section-header"
-          data-aos="fade-down"
-          data-aos-duration="1200"
-        >
-          <h2>С чем я работаю</h2>
-        </div>
-        <div class="main__tehnologies">
-          <div class="main__tehnologies-item">
-            <img
-              src="data:image/svg+xml,%3csvg%20height='2500'%20viewBox='175.7%2078%20490.6%20436.9'%20width='2194'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20fill='%2361dafb'%3e%3cpath%20d='m666.3%20296.5c0-32.5-40.7-63.3-103.1-82.4%2014.4-63.6%208-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6%200%208.3.9%2011.4%202.6%2013.6%207.8%2019.5%2037.5%2014.9%2075.7-1.1%209.4-2.9%2019.3-5.1%2029.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50%2032.6-30.3%2063.2-46.9%2084-46.9v-22.3c-27.5%200-63.5%2019.6-99.9%2053.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7%200%2051.4%2016.5%2084%2046.6-14%2014.7-28%2031.4-41.3%2049.9-22.6%202.4-44%206.1-63.6%2011-2.3-10-4-19.7-5.2-29-4.7-38.2%201.1-67.9%2014.6-75.8%203-1.8%206.9-2.6%2011.5-2.6v-22.3c-8.4%200-16%201.8-22.6%205.6-28.1%2016.2-34.4%2066.7-19.9%20130.1-62.2%2019.2-102.7%2049.9-102.7%2082.3%200%2032.5%2040.7%2063.3%20103.1%2082.4-14.4%2063.6-8%20114.2%2020.2%20130.4%206.5%203.8%2014.1%205.6%2022.5%205.6%2027.5%200%2063.5-19.6%2099.9-53.6%2036.4%2033.8%2072.4%2053.2%2099.9%2053.2%208.4%200%2016-1.8%2022.6-5.6%2028.1-16.2%2034.4-66.7%2019.9-130.1%2062-19.1%20102.5-49.9%20102.5-82.3zm-130.2-66.7c-3.7%2012.9-8.3%2026.2-13.5%2039.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4%2014.2%202.1%2027.9%204.7%2041%207.9zm-45.8%20106.5c-7.8%2013.5-15.8%2026.3-24.1%2038.2-14.9%201.3-30%202-45.2%202-15.1%200-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8%206.2-13.4%2013.2-26.8%2020.7-39.9%207.8-13.5%2015.8-26.3%2024.1-38.2%2014.9-1.3%2030-2%2045.2-2%2015.1%200%2030.2.7%2045%201.9%208.3%2011.9%2016.4%2024.6%2024.2%2038%207.6%2013.1%2014.5%2026.4%2020.8%2039.8-6.3%2013.4-13.2%2026.8-20.7%2039.9zm32.3-13c5.4%2013.4%2010%2026.8%2013.8%2039.8-13.1%203.2-26.9%205.9-41.2%208%204.9-7.7%209.8-15.6%2014.4-23.7%204.6-8%208.9-16.1%2013-24.1zm-101.4%20106.7c-9.3-9.6-18.6-20.3-27.8-32%209%20.4%2018.2.7%2027.5.7%209.4%200%2018.7-.2%2027.8-.7-9%2011.7-18.3%2022.4-27.5%2032zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9%203.7-12.9%208.3-26.2%2013.5-39.5%204.1%208%208.4%2016%2013.1%2024s9.5%2015.8%2014.4%2023.4zm73.9-208.1c9.3%209.6%2018.6%2020.3%2027.8%2032-9-.4-18.2-.7-27.5-.7-9.4%200-18.7.2-27.8.7%209-11.7%2018.3-22.4%2027.5-32zm-74%2058.9c-4.9%207.7-9.8%2015.6-14.4%2023.7-4.6%208-8.9%2016-13%2024-5.4-13.4-10-26.8-13.8-39.8%2013.1-3.1%2026.9-5.8%2041.2-7.9zm-90.5%20125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6%2058.3-50.6c8.6-3.7%2018-7%2027.7-10.1%205.7%2019.6%2013.2%2040%2022.5%2060.9-9.2%2020.8-16.6%2041.1-22.2%2060.6-9.9-3.1-19.3-6.5-28-10.2zm53.8%20142.9c-13.6-7.8-19.5-37.5-14.9-75.7%201.1-9.4%202.9-19.3%205.1-29.4%2019.6%204.8%2041%208.5%2063.5%2010.9%2013.5%2018.5%2027.5%2035.3%2041.6%2050-32.6%2030.3-63.2%2046.9-84%2046.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7%2038.2-1.1%2067.9-14.6%2075.8-3%201.8-6.9%202.6-11.5%202.6-20.7%200-51.4-16.5-84-46.6%2014-14.7%2028-31.4%2041.3-49.9%2022.6-2.4%2044-6.1%2063.6-11%202.3%2010.1%204.1%2019.8%205.2%2029.1zm38.5-66.7c-8.6%203.7-18%207-27.7%2010.1-5.7-19.6-13.2-40-22.5-60.9%209.2-20.8%2016.6-41.1%2022.2-60.6%209.9%203.1%2019.3%206.5%2028.1%2010.2%2035.4%2015.1%2058.3%2034.9%2058.3%2050.6-.1%2015.7-23%2035.6-58.4%2050.6z'/%3e%3ccircle%20cx='420.9'%20cy='296.5'%20r='45.7'/%3e%3c/g%3e%3c/svg%3e"
-              alt="React"
-            />
-            <p>React</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="data:image/svg+xml,%3csvg%20width='2500'%20height='2158'%20viewBox='0%200%20256%20221'%20xmlns='http://www.w3.org/2000/svg'%20preserveAspectRatio='xMinYMin%20meet'%3e%3cpath%20d='M204.8%200H256L128%20220.8%200%200h97.92L128%2051.2%20157.44%200h47.36z'%20fill='%2341B883'/%3e%3cpath%20d='M0%200l128%20220.8L256%200h-51.2L128%20132.48%2050.56%200H0z'%20fill='%2341B883'/%3e%3cpath%20d='M50.56%200L128%20133.12%20204.8%200h-47.36L128%2051.2%2097.92%200H50.56z'%20fill='%2335495E'/%3e%3c/svg%3e"
-              alt="Vue"
-            />
-            <p>Vue</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="data:image/svg+xml,%3csvg%20height='1024pt'%20viewBox='.5%20-.2%201023%201024.1'%20width='1024pt'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='m478.5.6c-2.2.2-9.2.9-15.5%201.4-145.3%2013.1-281.4%2091.5-367.6%20212-48%2067-78.7%20143-90.3%20223.5-4.1%2028.1-4.6%2036.4-4.6%2074.5s.5%2046.4%204.6%2074.5c27.8%20192.1%20164.5%20353.5%20349.9%20413.3%2033.2%2010.7%2068.2%2018%20108%2022.4%2015.5%201.7%2082.5%201.7%2098%200%2068.7-7.6%20126.9-24.6%20184.3-53.9%208.8-4.5%2010.5-5.7%209.3-6.7-.8-.6-38.3-50.9-83.3-111.7l-81.8-110.5-102.5-151.7c-56.4-83.4-102.8-151.6-103.2-151.6-.4-.1-.8%2067.3-1%20149.6-.3%20144.1-.4%20149.9-2.2%20153.3-2.6%204.9-4.6%206.9-8.8%209.1-3.2%201.6-6%201.9-21.1%201.9h-17.3l-4.6-2.9c-3-1.9-5.2-4.4-6.7-7.3l-2.1-4.5.2-200.5.3-200.6%203.1-3.9c1.6-2.1%205-4.8%207.4-6.1%204.1-2%205.7-2.2%2023-2.2%2020.4%200%2023.8.8%2029.1%206.6%201.5%201.6%2057%2085.2%20123.4%20185.9s157.2%20238.2%20201.8%20305.7l81%20122.7%204.1-2.7c36.3-23.6%2074.7-57.2%20105.1-92.2%2064.7-74.3%20106.4-164.9%20120.4-261.5%204.1-28.1%204.6-36.4%204.6-74.5s-.5-46.4-4.6-74.5c-27.8-192.1-164.5-353.5-349.9-413.3-32.7-10.6-67.5-17.9-106.5-22.3-9.6-1-75.7-2.1-84-1.3zm209.4%20309.4c4.8%202.4%208.7%207%2010.1%2011.8.8%202.6%201%2058.2.8%20183.5l-.3%20179.8-31.7-48.6-31.8-48.6v-130.7c0-84.5.4-132%201-134.3%201.6-5.6%205.1-10%209.9-12.6%204.1-2.1%205.6-2.3%2021.3-2.3%2014.8%200%2017.4.2%2020.7%202z'/%3e%3cpath%20d='m784.3%20945.1c-3.5%202.2-4.6%203.7-1.5%202%202.2-1.3%205.8-4%205.2-4.1-.3%200-2%201-3.7%202.1zm-6.9%204.5c-1.8%201.4-1.8%201.5.4.4%201.2-.6%202.2-1.3%202.2-1.5%200-.8-.5-.6-2.6%201.1zm-5%203c-1.8%201.4-1.8%201.5.4.4%201.2-.6%202.2-1.3%202.2-1.5%200-.8-.5-.6-2.6%201.1zm-5%203c-1.8%201.4-1.8%201.5.4.4%201.2-.6%202.2-1.3%202.2-1.5%200-.8-.5-.6-2.6%201.1zm-7.6%204c-3.8%202-3.6%202.8.2.9%201.7-.9%203-1.8%203-2%200-.7-.1-.6-3.2%201.1z'/%3e%3c/svg%3e"
-              alt="Next"
-            />
-            <p>Next</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='2500'%20height='2500'%20viewBox='8.399%208.4%2051.2%2051.2'%3e%3cpath%20fill='%2321759B'%20d='M34%2059.6C19.813%2059.6%208.293%2048.293%208.4%2034%208.507%2019.707%2019.28%208.4%2034%208.4c14.721%200%2025.6%2011.52%2025.6%2025.6S48.187%2059.6%2034%2059.6zm7.573-3.947l-7.253-19.52-6.827%2019.947c5.014%201.174%208.427%201.493%2014.08-.427zm-17.706-1.066l-10.88-29.76c-1.494%203.2-1.813%205.867-2.027%209.173.107%208.746%205.013%2016.746%2012.907%2020.587zM56.934%2034c.106-5.653-2.453-10.133-2.667-10.773.214%204.374-.427%206.613-1.173%209.067l-7.467%2021.44C55.014%2048.08%2056.826%2039.653%2057.04%2034h-.106zm-23.68-.96l-3.627-9.92-2.667-.213c-1.066-.747-.427-1.92.32-1.92%204.8.32%207.466.32%2012.267%200%201.174%200%201.493%201.707.106%201.92l-2.56.213%208.319%2024.533%203.946-13.44c.214-5.866-1.387-6.506-3.52-10.773-1.707-3.307.107-6.507%203.414-6.613-2.668-2.56-8.107-5.76-15.254-5.867s-14.72%203.52-19.2%2010.347l7.894-.213c.96.427.533%201.813%200%201.92l-2.773.213%208.32%2024.96%205.015-15.147z'/%3e%3c/svg%3e"
-              alt="Wordpress"
-            />
-            <p>Wordpress</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="data:image/svg+xml,%3csvg%20fill='none'%20height='2500'%20width='2183'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20124%20141.53199999999998'%3e%3cpath%20d='M10.383%20126.894L0%200l124%20.255-10.979%20126.639-50.553%2014.638z'%20fill='%23e34f26'/%3e%3cpath%20d='M62.468%20129.277V12.085l51.064.17-9.106%20104.851z'%20fill='%23ef652a'/%3e%3cpath%20d='M99.49%2041.362l1.446-15.49H22.383l4.34%2047.49h54.213L78.81%2093.617l-17.362%204.68-17.617-5.106-.936-12.085H27.319l2.128%2024.681%2032%208.936%2032.255-8.936%204.34-48.17H41.107L39.49%2041.362z'%20fill='%23fff'/%3e%3c/svg%3e"
-              alt="HTML"
-            />
-            <p>HTML</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="data:image/svg+xml,%3csvg%20fill='none'%20height='2500'%20width='2183'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20124%20141.53'%3e%3cpath%20d='M10.383%20126.892L0%200l124%20.255-10.979%20126.637-50.553%2014.638z'%20fill='%231b73ba'/%3e%3cpath%20d='M62.468%20129.275V12.085l51.064.17-9.106%20104.85z'%20fill='%231c88c7'/%3e%3cpath%20d='M100.851%2027.064H22.298l2.128%2015.318h37.276l-36.68%2015.745%202.127%2014.808h54.043l-1.958%2020.68-18.298%203.575-16.595-4.255-1.277-11.745H27.83l2.042%2024.426%2032.681%209.106%2031.32-9.957%204-47.745H64.765l36.085-14.978z'%20fill='%23fff'/%3e%3c/svg%3e"
-              alt="CSS"
-            />
-            <p>CSS</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="data:image/svg+xml,%3csvg%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20400'%20width='2500'%20height='2500'%3e%3cstyle%3e.st0{fill:%23007acc}.st1{fill:%23fff}%3c/style%3e%3cpath%20class='st0'%20d='M0%20200V0h400v400H0'/%3e%3cpath%20class='st1'%20d='M87.7%20200.7V217h52v148h36.9V217h52v-16c0-9%200-16.3-.4-16.5%200-.3-31.7-.4-70.2-.4l-70%20.3v16.4l-.3-.1zM321.4%20184c10.2%202.4%2018%207%2025%2014.3%203.7%204%209.2%2011%209.6%2012.8%200%20.6-17.3%2012.3-27.8%2018.8-.4.3-2-1.4-3.6-4-5.2-7.4-10.5-10.6-18.8-11.2-12-.8-20%205.5-20%2016%200%203.2.6%205%201.8%207.6%202.7%205.5%207.7%208.8%2023.2%2015.6%2028.6%2012.3%2041%2020.4%2048.5%2032%208.5%2013%2010.4%2033.4%204.7%2048.7-6.4%2016.7-22%2028-44.3%2031.7-7%201.2-23%201-30.5-.3-16-3-31.3-11-40.7-21.3-3.7-4-10.8-14.7-10.4-15.4l3.8-2.4%2015-8.7%2011.3-6.6%202.6%203.5c3.3%205.2%2010.7%2012.2%2015%2014.6%2013%206.7%2030.4%205.8%2039-2%203.7-3.4%205.3-7%205.3-12%200-4.6-.7-6.7-3-10.2-3.2-4.4-9.6-8-27.6-16-20.7-8.8-29.5-14.4-37.7-23-4.7-5.2-9-13.3-11-20-1.5-5.8-2-20-.6-25.7%204.3-20%2019.4-34%2041-38%207-1.4%2023.5-.8%2030.4%201l-.2.2z'/%3e%3c/svg%3e"
-              alt="TypeScript"
-            />
-            <p>TypeScript</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img src="/assets/express-yBivx7BJ.svg" alt="Express" />
-            <p>Express</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="data:image/svg+xml,%3csvg%20viewBox='0%200%20630%20630'%20xmlns='http://www.w3.org/2000/svg'%20width='2500'%20height='2500'%3e%3cpath%20d='M0%200h630v630H0z'%20fill='%23f7df1e'/%3e%3cpath%20d='M423.2%20492.19c12.69%2020.72%2029.2%2035.95%2058.4%2035.95%2024.53%200%2040.2-12.26%2040.2-29.2%200-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2%200-44.4%2033.83-78.2%2086.7-78.2%2037.64%200%2064.7%2013.1%2084.2%2047.4l-46.1%2029.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34%200-28.33%2011-28.33%2025.37%200%2017.76%2011%2024.95%2036.4%2035.95l14.8%206.34c50.3%2021.57%2078.7%2043.56%2078.7%2093%200%2053.3-41.87%2082.5-98.1%2082.5-54.98%200-90.5-26.2-107.88-60.54zm-209.13%205.13c9.3%2016.5%2017.76%2030.45%2038.1%2030.45%2019.45%200%2031.72-7.61%2031.72-37.2v-201.3h59.2v202.1c0%2061.3-35.94%2089.2-88.4%2089.2-47.4%200-74.85-24.53-88.81-54.075z'/%3e%3c/svg%3e"
-              alt="JavaScript"
-            />
-            <p>JavaScript</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='2500'%20height='1875'%20viewBox='0%200%20512%20384'%3e%3cpath%20fill='%23CF649A'%20d='M440.6%20220.6c-17.9.101-33.4%204.4-46.4%2010.801-4.8-9.5-9.6-17.801-10.399-24-.9-7.2-2-11.601-.9-20.2C384%20178.6%20389%20166.4%20389%20165.4c-.101-.9-1.101-5.3-11.4-5.4s-19.2%202-20.2%204.7-3%208.9-4.3%2015.3c-1.8%209.4-20.6%2042.7-31.3%2060.2-3.5-6.8-6.5-12.8-7.101-17.601-.899-7.199-2-11.6-.899-20.199%201.1-8.601%206.1-20.8%206.1-21.8-.1-.9-1.1-5.3-11.399-5.4-10.301-.1-19.2%202-20.2%204.7s-2.1%209.1-4.3%2015.3C281.9%20201.4%20256.9%20257%20250.4%20271.5c-3.3%207.4-6.199%2013.3-8.3%2017.3-2.1%204-.1.3-.3.7-1.8%203.4-2.8%205.3-2.8%205.3v.101c-1.4%202.5-2.9%204.899-3.601%204.899-.5%200-1.5-6.7.2-15.899%203.7-19.301%2012.7-49.4%2012.601-50.5%200-.5%201.699-5.801-5.801-8.5-7.3-2.7-9.899%201.8-10.5%201.8-.6%200-1.1%201.6-1.1%201.6s8.1-33.899-15.5-33.899c-14.8%200-35.2%2016.1-45.3%2030.8-6.4%203.5-20%2010.899-34.4%2018.8-5.5%203-11.2%206.2-16.6%209.1L117.9%20251.9c-28.6-30.5-81.5-52.1-79.3-93.1.8-14.9%206-54.2%20101.601-101.8%2078.3-39%20141-28.3%20151.899-4.5%2015.5%2034-33.5%2097.2-114.899%20106.3-31%203.5-47.301-8.5-51.4-13-4.3-4.7-4.9-4.9-6.5-4-2.6%201.4-1%205.6%200%208.1%202.4%206.3%2012.4%2017.5%2029.4%2023.1%2014.899%204.9%2051.3%207.6%2095.3-9.4%2049.3-19.1%2087.8-72.1%2076.5-116.4-11.5-45.1-86.3-59.9-157-34.8C121.4%2027.4%2075.8%2050.8%2043%2081.5%204%20117.9-2.2%20149.7.4%20162.9c9.101%2047.1%2074%2077.8%20100%20100.5-1.3.699-2.5%201.399-3.6%202-13%206.399-62.5%2032.3-74.9%2059.699-14%2031%202.2%2053.301%2013%2056.301%2033.4%209.3%2067.6-7.4%2086.1-34.9%2018.399-27.5%2016.2-63.2%207.7-79.5l-.301-.6%2010.2-6c6.601-3.9%2013.101-7.5%2018.8-10.601-3.199%208.7-5.5%2019-6.699%2034-1.4%2017.601%205.8%2040.4%2015.3%2049.4%204.2%203.899%209.2%204%2012.3%204%2011%200%2016-9.101%2021.5-20%206.8-13.3%2012.8-28.7%2012.8-28.7s-7.5%2041.7%2013%2041.7c7.5%200%2015-9.7%2018.4-14.7v.1s.2-.3.6-1a36.13%2036.13%200%200%200%201.2-1.899v-.2c3-5.2%209.7-17.1%2019.7-36.8%2012.899-25.4%2025.3-57.2%2025.3-57.2s1.2%207.8%204.9%2020.6c2.199%207.601%206.999%2015.9%2010.699%2024-3%204.2-4.8%206.601-4.8%206.601l.1.1c-2.399%203.2-5.1%206.601-7.899%2010-10.2%2012.2-22.4%2026.101-24%2030.101-1.9%204.699-1.5%208.199%202.2%2011%202.7%202%207.5%202.399%2012.6%202%209.2-.601%2015.6-2.9%2018.8-4.301%205-1.8%2010.7-4.5%2016.2-8.5%2010-7.399%2016.1-17.899%2015.5-31.899-.3-7.7-2.8-15.3-5.9-22.5.9-1.3%201.801-2.601%202.7-4%2015.8-23.101%2028-48.5%2028-48.5s1.2%207.8%204.9%2020.6c1.899%206.5%205.7%2013.601%209.1%2020.601-14.8%2012.1-24.1%2026.1-27.3%2035.3-5.9%2017-1.3%2024.7%207.4%2026.5%203.899.8%209.5-1%2013.699-2.8%205.2-1.7%2011.5-4.601%2017.301-8.9%2010-7.4%2019.6-17.7%2019.1-31.6-.3-6.4-2-12.7-4.3-18.7%2012.6-5.2%2028.899-8.2%2049.6-5.7%2044.5%205.2%2053.3%2033%2051.601%2044.6-1.7%2011.601-11%2018-14.101%2020-3.1%201.9-4.1%202.601-3.8%204%20.4%202.101%201.8%202%204.5%201.601%203.7-.601%2023.4-9.5%2024.2-30.899%201.2-27.504-24.9-57.504-71.2-57.205zM97.4%20336.3c-14.7%2016.1-35.4%2022.2-44.2%2017-9.5-5.5-5.801-29.2%2012.3-46.3%2011-10.4%2025.3-20%2034.7-25.9%202.1-1.3%205.3-3.199%209.1-5.5.6-.399%201-.6%201-.6.7-.4%201.5-.9%202.3-1.4%206.7%2024.4.3%2045.8-15.2%2062.7zm107.5-73.1c-5.1%2012.5-15.9%2044.6-22.4%2042.8-5.601-1.5-9-25.8-1.101-49.8%204-12.101%2012.5-26.5%2017.5-32.101%208.101-9%2016.9-12%2019.101-8.3%202.6%204.801-9.9%2039.601-13.1%2047.401zm88.7%2042.4c-2.2%201.101-4.2%201.9-5.1%201.301-.7-.4.899-1.9.899-1.9s11.1-11.9%2015.5-17.4c2.5-3.199%205.5-6.899%208.7-11.1v1.2C313.6%20292.1%20299.8%20301.7%20293.6%20305.6zm68.399-15.6c-1.6-1.2-1.399-4.9%204-16.5%202.101-4.6%206.9-12.3%2015.2-19.6%201%203%201.601%205.899%201.5%208.6-.099%2018-12.899%2024.7-20.7%2027.5z'/%3e%3c/svg%3e"
-              alt="SASS"
-            />
-            <p>SASS</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="data:image/svg+xml,%3csvg%20width='2500'%20height='708'%20viewBox='0%200%20512%20145'%20xmlns='http://www.w3.org/2000/svg'%20preserveAspectRatio='xMinYMin%20meet'%3e%3cg%20fill='%2383CD29'%3e%3cpath%20d='M471.05%2051.611c-1.244%200-2.454.257-3.525.863l-33.888%2019.57c-2.193%201.264-3.526%203.65-3.526%206.189v39.069c0%202.537%201.333%204.92%203.526%206.187l8.85%205.109c4.3%202.119%205.885%202.086%207.842%202.086%206.366%200%2010.001-3.863%2010.001-10.576V81.542c0-.545-.472-.935-1.007-.935h-4.245c-.544%200-1.007.39-1.007.935v38.566c0%202.975-3.1%205.968-8.13%203.453l-9.21-5.396c-.326-.177-.576-.49-.576-.863v-39.07c0-.37.247-.747.576-.935L470.547%2057.8a.998.998%200%200%201%201.007%200l33.817%2019.498c.322.194.576.553.576.936v39.069c0%20.373-.188.755-.504.935l-33.889%2019.498c-.29.173-.69.173-1.007%200l-8.706-5.18a.905.905%200%200%200-.863%200c-2.403%201.362-2.855%201.52-5.109%202.302-.555.194-1.398.495.288%201.44l11.368%206.69a6.995%206.995%200%200%200%203.526.936%206.949%206.949%200%200%200%203.525-.935l33.889-19.499c2.193-1.275%203.525-3.65%203.525-6.187v-39.07c0-2.538-1.332-4.92-3.525-6.187l-33.889-19.57c-1.062-.607-2.28-.864-3.525-.864z'/%3e%3cpath%20d='M480.116%2079.528c-9.65%200-15.397%204.107-15.397%2010.937%200%207.408%205.704%209.444%2014.966%2010.36%2011.08%201.085%2011.943%202.712%2011.943%204.893%200%203.783-3.016%205.396-10.144%205.396-8.957%200-10.925-2.236-11.584-6.691-.078-.478-.447-.864-.936-.864h-4.389c-.54%200-1.007.466-1.007%201.008%200%205.703%203.102%2012.447%2017.916%2012.447%2010.723%200%2016.908-4.209%2016.908-11.584%200-7.31-4.996-9.273-15.398-10.648-10.51-1.391-11.512-2.072-11.512-4.533%200-2.032.85-4.75%208.634-4.75%206.954%200%209.524%201.5%2010.577%206.189.092.44.48.791.935.791h4.39c.27%200%20.532-.166.719-.36.184-.207.314-.44.288-.719-.68-8.074-6.064-11.872-16.909-11.872z'/%3e%3c/g%3e%3cpath%20d='M271.821.383a2.181%202.181%200%200%200-1.08.287%202.18%202.18%200%200%200-1.079%201.871v55.042c0%20.54-.251%201.024-.719%201.295a1.501%201.501%200%200%201-1.511%200l-8.994-5.18a4.31%204.31%200%200%200-4.317%200l-35.903%2020.721c-1.342.775-2.158%202.264-2.158%203.814v41.443c0%201.548.817%202.966%202.158%203.741l35.903%2020.722a4.3%204.3%200%200%200%204.317%200l35.903-20.722a4.308%204.308%200%200%200%202.159-3.741V16.356a4.386%204.386%200%200%200-2.23-3.814L272.9.598c-.335-.187-.707-.22-1.079-.215zM40.861%2052.115c-.684.027-1.328.147-1.942.503L3.015%2073.34a4.3%204.3%200%200%200-2.158%203.741L.929%20132.7c0%20.773.399%201.492%201.079%201.87a2.096%202.096%200%200%200%202.159%200l21.297-12.231c1.349-.802%202.23-2.196%202.23-3.742V92.623c0-1.55.815-2.972%202.159-3.742l9.065-5.252a4.251%204.251%200%200%201%202.159-.576c.74%200%201.5.185%202.158.576l9.066%205.252a4.296%204.296%200%200%201%202.159%203.742v25.973c0%201.546.89%202.95%202.23%203.742l21.297%2012.232a2.096%202.096%200%200%200%202.159%200%202.164%202.164%200%200%200%201.08-1.871l.07-55.618a4.28%204.28%200%200%200-2.158-3.741L43.235%2052.618c-.607-.356-1.253-.475-1.942-.503h-.432zm322.624.503c-.75%200-1.485.19-2.158.576l-35.903%2020.722a4.306%204.306%200%200%200-2.159%203.741V119.1c0%201.559.878%202.971%202.23%203.742l35.616%2020.29c1.315.75%202.921.807%204.245.07l21.585-12.015c.685-.38%201.148-1.09%201.151-1.87a2.126%202.126%200%200%200-1.079-1.871l-36.119-20.722c-.676-.386-1.151-1.167-1.151-1.943v-12.95c0-.775.48-1.485%201.151-1.871l11.224-6.476a2.155%202.155%200%200%201%202.159%200L375.5%2089.96a2.152%202.152%200%200%201%201.08%201.87v10.217a2.15%202.15%200%200%200%201.079%201.87c.673.389%201.487.39%202.158%200L401.331%2091.4a4.325%204.325%200%200%200%202.159-3.742v-10c0-1.545-.82-2.966-2.159-3.742l-35.687-20.722a4.279%204.279%200%200%200-2.159-.575zm-107.35%2030.939c.188%200%20.408.046.576.143l12.304%207.123c.334.193.576.55.576.935v14.246c0%20.387-.24.743-.576.936l-12.304%207.123a1.088%201.088%200%200%201-1.079%200l-12.303-7.123c-.335-.194-.576-.549-.576-.936V91.758c0-.386.242-.74.576-.935l12.303-7.122a.948.948%200%200%201%20.504-.143v-.001z'%20fill='%23404137'/%3e%3cpath%20d='M148.714%2052.402c-.748%200-1.488.19-2.158.576l-35.903%2020.65c-1.343.773-2.159%202.265-2.159%203.813v41.443c0%201.55.817%202.966%202.159%203.742l35.903%2020.721a4.297%204.297%200%200%200%204.317%200l35.903-20.721a4.308%204.308%200%200%200%202.158-3.742V77.441c0-1.55-.816-3.04-2.158-3.813l-35.903-20.65a4.297%204.297%200%200%200-2.159-.576zM363.413%2089.385c-.143%200-.302%200-.431.072l-6.907%204.029a.84.84%200%200%200-.432.72v7.914c0%20.298.172.571.432.72l6.907%203.957c.259.15.535.15.791%200l6.907-3.958a.846.846%200%200%200%20.432-.719v-7.915a.846.846%200%200%200-.432-.719l-6.907-4.03c-.128-.075-.216-.07-.36-.07z'%20fill='%2383CD29'/%3e%3c/svg%3e"
-              alt="nodejs"
-            />
-            <p>nodejs</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img src="/assets/mysql-3-U_xcxpAJ.svg" alt="mysql" />
-            <p>mySQL</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="data:image/svg+xml,%3csvg%20class='Nav__LogoMark-sc-11gnase-3%20dUeojx'%20fill='currentColor'%20viewBox='0.34%20-0.059977834648891726%2033.11668247084116%2039.96397783464889'%20xmlns='http://www.w3.org/2000/svg'%20width='2047'%20height='2500'%3e%3cpath%20d='M32.908%2030.475L19.151%201.26a2.208%202.208%200%200%200-1.88-1.257%202.183%202.183%200%200%200-2.01%201.042L.34%2025.212a2.26%202.26%200%200%200%20.025%202.426L7.66%2038.935a2.346%202.346%200%200%200%202.635.969l21.17-6.262a2.32%202.32%200%200%200%201.457-1.258%202.27%202.27%200%200%200-.013-1.91zm-3.08%201.253L11.864%2037.04c-.548.163-1.074-.312-.96-.865l6.418-30.731c.12-.575.914-.666%201.165-.134l11.881%2025.23a.858.858%200%200%201-.541%201.188z'%20clip-rule='evenodd'%20fill-rule='evenodd'/%3e%3c/svg%3e"
-              alt="prisma"
-            />
-            <p>prisma</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- телеграм -->
-    <section class="tg">
-      <img
-        src="data:image/svg+xml,%3csvg%20width='225'%20height='225'%20viewBox='0%200%20225%20225'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_f_182_5)'%3e%3cpath%20d='M112.5%20210.938C166.866%20210.938%20210.938%20166.866%20210.938%20112.5C210.938%2058.1345%20166.866%2014.0625%20112.5%2014.0625C58.1345%2014.0625%2014.0625%2058.1345%2014.0625%20112.5C14.0625%20166.866%2058.1345%20210.938%20112.5%20210.938Z'%20fill='url(%23paint0_linear_182_5)'/%3e%3cpath%20d='M161.625%2071.7806C162.501%2066.1171%20157.116%2061.6468%20152.08%2063.8578L51.7839%20107.893C48.1727%20109.479%2048.4369%20114.949%2052.1822%20116.141L72.8655%20122.728C76.8136%20123.986%2081.0879%20123.335%2084.5353%20120.954L131.168%2088.7365C132.574%2087.7648%20134.107%2089.7644%20132.905%2091.0027L99.3382%20125.61C96.082%20128.968%2096.7282%20134.657%20100.645%20137.113L138.227%20160.68C142.443%20163.323%20147.865%20160.668%20148.653%20155.574L161.625%2071.7806Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_f_182_5'%20x='-9'%20y='-9'%20width='243'%20height='243'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='4.5'%20result='effect1_foregroundBlur_182_5'/%3e%3c/filter%3e%3clinearGradient%20id='paint0_linear_182_5'%20x1='112.5'%20y1='14.0625'%20x2='112.5'%20y2='210.938'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%2337BBFE'/%3e%3cstop%20offset='1'%20stop-color='%23007DBB'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"
-        alt="tg"
-        class="tg-bg"
-        data-rotation="0"
-      />
-      <div class="container">
-        <div class="tg__container">
-          <h2
-            class="title tg__title"
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            Подпишитесь на мой <br />
-            <span>телеграм канал</span>
-          </h2>
-          <div class="tg__description">
-            <p data-aos="fade-down">
-              Веб-разработчик с 3 годами опыта делится туториалами, кейсами и
-              новостями по React, Node.js, Vue и не только. Подписывайся для
-              обучения и вдохновения!
-            </p>
-            <button class="button tg__button" data-aos="fade-up">
-              Перейти в канал
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- отзывы -->
-    <section class="testimonials section" id="testimonials">
-      <div class="container">
-        <div class="testimonials__container">
-          <div
-            class="section-header"
-            data-aos="fade-down"
-            data-aos-duration="1200"
-          >
-            <h2>Отзывы клиентов</h2>
-          </div>
-
-          <div
-            class="splide testimonials__slider"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-          >
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Работа выполнена на высшем уровне! Сайт получился
-                      стильным, быстрым и полностью соответствовал нашим
-                      ожиданиям. Команда учла все пожелания и предложила крутые
-                      решения.
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="/assets/user-BFA8bF-S.png"
-                        alt="Иван Иванов"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Иван Иванов</h3>
-                        <p class="testimonials__position">
-                          Владелец фитнес-клуба
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <!-- Testimonial 2 -->
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Разработали интернет-магазин с удобным интерфейсом и
-                      интеграцией платежных систем. Продажи выросли, а клиенты
-                      отмечают простоту использования сайта. Рекомендую!
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="/assets/user-BFA8bF-S.png"
-                        alt="Мария Петрова"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Мария Петрова</h3>
-                        <p class="testimonials__position">
-                          Директор по маркетингу
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <!-- Testimonial 3 -->
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Веб-приложение для управления задачами превзошло ожидания.
-                      Интуитивный интерфейс, быстрая работа и отличная
-                      поддержка. Теперь наша команда работает эффективнее!
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="/assets/user-BFA8bF-S.png"
-                        alt="Алексей Сидоров"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Алексей Сидоров</h3>
-                        <p class="testimonials__position">
-                          Руководитель IT-отдела
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <!-- Testimonial 4 -->
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Разработали платформу для обучения с геймификацией.
-                      Интерфейс интуитивно понятен, а функционал для
-                      отслеживания прогресса идеально подходит для студентов.
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="/assets/user-BFA8bF-S.png"
-                        alt="Елена Козлова"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Елена Козлова</h3>
-                        <p class="testimonials__position">
-                          Преподаватель онлайн-курсов
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <!-- Testimonial 5 -->
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Сайт для нашего стартапа получился современным и
-                      функциональным. Интеграция с аналитикой помогла нам лучше
-                      понимать поведение пользователей.
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="/assets/user-BFA8bF-S.png"
-                        alt="Дмитрий Волков"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Дмитрий Волков</h3>
-                        <p class="testimonials__position">
-                          Основатель стартапа
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <!-- Testimonial 6 -->
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Созданное приложение для планирования мероприятий
-                      упростило организацию наших событий. Уведомления и
-                      RSVP-функционал работают безупречно!
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="/assets/user-BFA8bF-S.png"
-                        alt="Ольга Смирнова"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Ольга Смирнова</h3>
-                        <p class="testimonials__position">
-                          Организатор мероприятий
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <!-- Testimonial 7 -->
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Разработка портала для сообщества превзошла наши ожидания.
-                      Чат в реальном времени и модерация контента сделали
-                      платформу удобной и безопасной.
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="/assets/user-BFA8bF-S.png"
-                        alt="Сергей Николаев"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Сергей Николаев</h3>
-                        <p class="testimonials__position">
-                          Координатор сообщества
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new Splide(".testimonials__slider", {
-          type: "loop",
-          perPage: 3,
-          perMove: 1,
-          gap: "30px",
-          pagination: true,
-          arrows: false,
-          autoplay: true,
-          interval: 5000,
-          speed: 600,
-          easing: "cubic-bezier(0.4, 0, 0.2, 1)",
-          breakpoints: {
-            1024: {
-              perPage: 2,
-              gap: "20px",
-              speed: 500,
-            },
-            768: {
-              perPage: 1,
-              gap: "15px",
-              speed: 400,
-            },
-          },
-        }).mount();
-      });
-    </script>
-
-    <!-- шаги -->
-    <section class="how-we-work section" id="how-we-work">
-      <img
-        src="data:image/svg+xml,%3csvg%20width='349'%20height='349'%20viewBox='0%200%20349%20349'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_f_180_2)'%3e%3cpath%20d='M327.188%2021.8125H21.8125V327.188H327.188V21.8125Z'%20fill='%23F5DE19'/%3e%3cpath%20d='M226.948%20260.387C229.55%20265.672%20233.592%20270.114%20238.609%20273.202C243.626%20276.289%20249.414%20277.896%20255.304%20277.837C267.192%20277.837%20274.794%20271.893%20274.794%20263.659C274.794%20253.843%20266.985%20250.331%20253.898%20244.605L246.721%20241.53C225.999%20232.707%20212.257%20221.659%20212.257%20198.297C212.257%20176.779%20228.617%20160.387%20254.279%20160.387C262.587%20159.787%20270.887%20161.647%20278.144%20165.733C285.402%20169.82%20291.296%20175.953%20295.09%20183.367L272.656%20197.708C271.195%20194.032%20268.651%20190.887%20265.361%20188.69C262.071%20186.493%20258.191%20185.348%20254.236%20185.406C252.51%20185.233%20250.767%20185.422%20249.118%20185.96C247.469%20186.498%20245.951%20187.374%20244.659%20188.531C243.367%20189.688%20242.33%20191.102%20241.615%20192.682C240.9%20194.262%20240.522%20195.974%20240.505%20197.708C240.505%20206.314%20245.838%20209.804%20258.151%20215.158L265.327%20218.234C289.714%20228.693%20303.499%20239.349%20303.499%20263.31C303.499%20289.146%20283.203%20303.303%20255.948%20303.303C245.329%20303.979%20234.74%20301.568%20225.461%20296.361C216.181%20291.153%20208.607%20283.371%20203.652%20273.954L226.948%20260.387ZM125.575%20262.873C130.079%20270.868%20134.18%20277.629%20144.039%20277.629C153.462%20277.629%20159.417%20273.943%20159.417%20259.601V162.023H188.111V259.983C188.111%20289.692%20170.661%20303.216%20145.26%20303.216C136.282%20303.706%20127.365%20301.469%20119.682%20296.797C111.999%20292.125%20105.909%20285.238%20102.213%20277.041L125.575%20262.873Z'%20fill='black'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_f_180_2'%20x='-17.3665'%20y='-17.3665'%20width='383.733'%20height='383.733'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='8.68325'%20result='effect1_foregroundBlur_180_2'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e"
-        alt="js"
-        class="js-bg"
-        data-amplitude="100"
-      />
-      <div class="container">
-        <div class="how-we-work__container">
-          <div
-            class="section-header"
-            data-aos="fade-down"
-            data-aos-duration="1200"
-          >
-            <h2>Как я работаю</h2>
-          </div>
-
-          <div class="how-we-work__grid">
-            <div
-              class="how-we-work__card"
-              data-aos="zoom-in"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="100"
-            >
-              <div class="how-we-work__icon">
-                <i class="fas fa-comment-dots"></i>
-              </div>
-              <div class="how-we-work__step-number">1</div>
-              <h3 class="how-we-work__step">Сбор требований</h3>
-              <p class="how-we-work__description">
-                Обсуждаем ваши цели, аудиторию и бизнес-задачи. Анализирую
-                требования, чтобы создать точное техническое задание.
-              </p>
-            </div>
-            <div
-              class="how-we-work__card"
-              data-aos="zoom-in"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="200"
-            >
-              <div class="how-we-work__icon">
-                <i class="fas fa-pencil-ruler"></i>
-              </div>
-              <div class="how-we-work__step-number">2</div>
-
-              <h3 class="how-we-work__step">Прототипирование</h3>
-              <p class="how-we-work__description">
-                Создаю прототип сайта или приложения, чтобы визуализировать
-                структуру и согласовать с вами функционал.
-              </p>
-            </div>
-            <div
-              class="how-we-work__card"
-              data-aos="zoom-in"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="300"
-            >
-              <div class="how-we-work__icon">
-                <i class="fas fa-paint-brush"></i>
-              </div>
-              <div class="how-we-work__step-number">3</div>
-
-              <h3 class="how-we-work__step">Дизайн</h3>
-              <p class="how-we-work__description">
-                Разрабатываю современный и адаптивный дизайн, который
-                соответствует вашему бренду и привлекает пользователей.
-              </p>
-            </div>
-            <div
-              class="how-we-work__card"
-              data-aos="zoom-in"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="400"
-            >
-              <div class="how-we-work__icon">
-                <i class="fas fa-code"></i>
-              </div>
-              <div class="how-we-work__step-number">4</div>
-
-              <h3 class="how-we-work__step">Разработка</h3>
-              <p class="how-we-work__description">
-                Пишу чистый и оптимизированный код, интегрирую необходимые
-                функции и API для полной работоспособности.
-              </p>
-            </div>
-            <div
-              class="how-we-work__card"
-              data-aos="zoom-in"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="500"
-            >
-              <div class="how-we-work__icon">
-                <i class="fas fa-rocket"></i>
-              </div>
-              <div class="how-we-work__step-number">5</div>
-
-              <h3 class="how-we-work__step">Тестирование и запуск</h3>
-              <p class="how-we-work__description">
-                Тестирую проект на всех устройствах, устраняю баги и запускаю
-                сайт, обеспечивая его стабильную работу.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- портфолио -->
-    <section class="projects-section container" id="portfolio">
-      <div class="section-header" data-aos="fade-down" data-aos-duration="1200">
-        <h2>Мои проекты</h2>
-        <p>
-          Здесь представлены некоторые из моих последних работ. Каждый проект —
-          это уникальный опыт и вызов, который помогает мне расти как
-          разработчику.
-        </p>
-      </div>
-
-      <div class="projects-grid">
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
-            <img
-              src="data:image/png;base64,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"
-              alt="Планировщик задач для фрилансеров"
-            />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Планировщик задач для фрилансеров</h3>
-            <p class="project-description">
-              Веб-приложение для фрилансеров, позволяющее управлять проектами,
-              отслеживать время и создавать отчеты для клиентов. Включает
-              интеграцию с календарем и уведомлениями.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Разработал интерактивный интерфейс с
-              React и TypeScript, обеспечив адаптивность с Tailwind CSS.
-              Реализовал REST API с Express для управления задачами и отчетами.
-              Настроил Prisma для взаимодействия с MongoDB, оптимизировал
-              запросы для высокой производительности. Интегрировал
-              push-уведомления через Firebase и развернул приложение в
-              Docker-контейнере.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">MongoDB</span>
-              <span class="project-tag">Tailwind CSS</span>
-              <span class="project-tag">Docker</span>
-            </div>
-            <a href="https://www.taskade.com" class="project-button"
-              >Перейти на проект</a
-            >
-          </div>
-        </div>
-
-        <!-- Проект 2 -->
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
-            <img
-              src="/assets/sc%20training-Bc6Utv0l.jpg"
-              alt="Платформа для микро-курсов"
-            />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Платформа для микро-курсов</h3>
-            <p class="project-description">
-              Платформа для создания и прохождения коротких образовательных
-              курсов с прогресс-трекером и сертификатами. Оптимизирована для
-              мобильных устройств.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Создал адаптивный интерфейс с Vue.js,
-              используя Vuex для управления состоянием. Реализовал бэкенд с
-              Express и Prisma для работы с PostgreSQL, обеспечив хранение
-              курсов и сертификатов. Интегрировал Firebase для аналитики и
-              управления медиа. Настроил Docker для контейнеризации и деплоя,
-              обеспечив масштабируемость.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Vue.js</span>
-              <span class="project-tag">Vuex</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">PostgreSQL</span>
-              <span class="project-tag">Firebase</span>
-            </div>
-            <a href="https://www.edapp.com" class="project-button"
-              >Перейти на проект</a
-            >
-          </div>
-        </div>
-
-        <!-- Проект 3 -->
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
-            <img
-              src="data:image/jpeg;base64,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"
-              alt="Визуализатор личных финансов"
-            />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Визуализатор личных финансов</h3>
-            <p class="project-description">
-              Приложение для анализа личных расходов с интерактивными графиками
-              и категоризацией транзакций. Поддерживает импорт данных из CSV.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Разработал интерфейс с React и
-              TypeScript, внедрил визуализации с Recharts для интерактивных
-              графиков. Настроил Express и Prisma для работы с PostgreSQL,
-              обеспечив импорт и обработку CSV-файлов. Оптимизировал
-              производительность API и развернул приложение с помощью Docker.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">PostgreSQL</span>
-              <span class="project-tag">Recharts</span>
-            </div>
-            <a href="https://www.budgetbakers.com" class="project-button"
-              >Перейти на проект</a
-            >
-          </div>
-        </div>
-
-        <!-- Проект 4 -->
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
-            <img
-              src="data:image/png;base64,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"
-              alt="Форум для локальных сообществ"
-            />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Форум для локальных сообществ</h3>
-            <p class="project-description">
-              Платформа для общения местных сообществ с поддержкой тем,
-              комментариев и уведомлений в реальном времени. Обеспечивает
-              модерацию и фильтрацию контента.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Создал динамичный интерфейс с Vue.js и
-              TypeScript, используя Vuex для управления состоянием. Реализовал
-              бэкенд с Express и Prisma для MongoDB, настроил WebSocket для
-              уведомлений в реальном времени. Интегрировал JWT-аутентификацию и
-              развернул приложение в Docker.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Vue.js</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">MongoDB</span>
-              <span class="project-tag">Vuex</span>
-              <span class="project-tag">Docker</span>
-            </div>
-            <a href="https://www.nextdoor.com" class="project-button"
-              >Перейти на проект</a
-            >
-          </div>
-        </div>
-
-        <!-- Проект 5 -->
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="500"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
-            <img
-              src="/assets/eventtribe-Nb3hoXmg.png"
-              alt="Планировщик мероприятий"
-            />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Планировщик мероприятий</h3>
-            <p class="project-description">
-              Веб-приложение для организации мероприятий с календарем,
-              приглашениями и RSVP-функционалом. Поддерживает уведомления по
-              email и SMS.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Разработал кроссплатформенный интерфейс
-              с React и TypeScript, используя Redux для управления состоянием.
-              Создал API с Express и Prisma для PostgreSQL, интегрировал Twilio
-              для SMS-уведомлений. Настроил деплой с Docker, обеспечив
-              масштабируемость и стабильность.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">PostgreSQL</span>
-              <span class="project-tag">Twilio</span>
-              <span class="project-tag">Docker</span>
-            </div>
-            <a href="https://www.eventbrite.com" class="project-button"
-              >Перейти на проект</a
-            >
-          </div>
-        </div>
-
-        <!-- Проект 6 -->
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="600"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
-            <img
-              src="/assets/kithcen-vRH6oZpT.jpg"
-              alt="Приложение для рецептов"
-            />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Приложение для рецептов</h3>
-            <p class="project-description">
-              Платформа для обмена кулинарными рецептами с функцией поиска по
-              ингредиентам и генерации списка покупок. Поддерживает загрузку
-              изображений.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Разработал интерфейс с Next.js и
-              TypeScript, обеспечив серверный рендеринг для SEO. Создал API с
-              Express и Prisma для Supabase, настроил загрузку медиа.
-              Оптимизировал производительность страниц и развернул приложение с
-              помощью Docker.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Next.js</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">Supabase</span>
-              <span class="project-tag">Docker</span>
-            </div>
-            <a href="https://www.yummly.com" class="project-button"
-              >Перейти на проект</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="container">
-        <div
-          class="section-header"
-          data-aos="fade-down"
-          data-aos-duration="1200"
-        >
-          <h2>Связаться со мной</h2>
-          <p>
-            Хотите обсудить проект или задать вопрос? Свяжитесь со мной через
-            удобную для вас платформу. Я всегда открыт к новым возможностям и
-            сотрудничеству!
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <!-- Telegram -->
-          <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
-            <div class="contact-card">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
-                alt="Telegram"
-                class="contact-icon"
-              />
-              <h3 class="contact-title">Telegram</h3>
-              <p class="contact-description">
-                Быстрое общение через чат или голосовые сообщения. Напишите мне
-                для оперативного ответа.
-              </p>
-              <a href="https://t.me/yourusername" class="contact-button"
-                >Перейти в Telegram</a
-              >
-            </div>
-          </div>
-
-          <!-- Email -->
-          <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
-            <div class="contact-card">
-              <img
-                src="/assets/email-ByKHYskw.png"
-                alt="Email"
-                class="contact-icon"
-              />
-              <h3 class="contact-title">Электронная почта</h3>
-              <p class="contact-description">
-                Отправьте мне письмо для подробного обсуждения или запроса
-                предложения.
-              </p>
-              <a href="mailto:your.email@example.com" class="contact-button"
-                >Написать на почту</a
-              >
-            </div>
-          </div>
-
-          <!-- Phone -->
-          <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
-            <div class="contact-card">
-              <img
-                src="/assets/phone-00-8EuQo.png"
-                alt="Phone"
-                class="contact-icon"
-              />
-              <h3 class="contact-title">Телефон</h3>
-              <p class="contact-description">
-                Позвоните или напишите в мессенджер для прямого общения.
-              </p>
-              <a href="tel:+1234567890" class="contact-button">Позвонить</a>
-            </div>
-          </div>
-
-          <!-- LinkedIn -->
-          <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
-            <div class="contact-card">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-                alt="LinkedIn"
-                class="contact-icon"
-              />
-              <h3 class="contact-title">LinkedIn</h3>
-              <p class="contact-description">
-                Подключитесь ко мне в профессиональной сети для делового
-                общения.
-              </p>
-              <a
-                href="https://www.linkedin.com/in/yourprofile"
-                class="contact-button"
-                >Перейти в LinkedIn</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- модальное овно -->
-    <div class="modal" id="quick-contact-modal">
-      <div class="modal__content">
-        <button class="modal__close">
-          <i class="fas fa-times"></i>
-        </button>
-        <h2 class="modal__title">Связаться со мной</h2>
-        <p class="modal__description">
-          Заполните форму, и я свяжусь с вами в кратчайшие сроки!
-        </p>
-        <form class="modal__form">
-          <input
-            type="text"
-            class="modal__input"
-            id="modal-name"
-            placeholder="Ваше имя"
-            required
-          />
-          <input
-            type="tel"
-            class="modal__input"
-            id="modal-phone"
-            placeholder="Ваш номер телефона"
-            required
-            pattern="[0-9+\-\(\) ]{10,15}"
-            title="Пожалуйста, введите действительный номер телефона"
-          />
-          <button type="submit" class="button">Отправить</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- подвал -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__container">
-          <div
-            class="footer__column footer__column--brand animate"
-            data-delay="0"
-          >
-            <h3 class="footer__logo">Valiuk Andrei</h3>
-            <p class="footer__description">
-              Веб-разработчик, создающий современные и эффективные сайты и
-              приложения для вашего бизнеса.
-            </p>
-
-            <div class="main__buttons">
-              <div class="social-media">
-                <a
-                  href="https://github.com/Kamatochy04"
-                  class="social-media__item"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="tel:+375333260981" class="social-media__item">
+                <li class="header__info-item">
                   <i class="fas fa-phone"></i>
-                </a>
-                <a
-                  href="https://web.telegram.org/a/#7699447339"
-                  class="social-media__item"
-                >
-                  <i class="fab fa-telegram-plane"></i>
-                </a>
-                <a
-                  href="mailto:valukandrey004@gmail.com"
-                  class="social-media__item"
-                >
-                  <i class="fas fa-envelope"></i>
-                </a>
+                  <a href="tel:+79991234567">+375 (33) 212-45-67</a>
+                </li>
+              </ul>
+              <div class="burger-menu">
+                <i class="fas fa-bars"></i>
               </div>
             </div>
           </div>
-          <div
-            class="footer__column footer__column--links animate"
-            data-delay="200"
-          >
-            <h3 class="footer__column-title">Навигация</h3>
-            <ul class="footer__links">
-              <li><a href="#home" class="footer__link">Главная</a></li>
-              <li><a href="#about" class="footer__link">Обо мне</a></li>
-              <li><a href="#portfolio" class="footer__link">Портфолио</a></li>
-              <li><a href="#services" class="footer__link">Услуги</a></li>
-              <li><a href="#testimonials" class="footer__link">Отзывы</a></li>
-              <li><a href="#contact" class="footer__link">Контакты</a></li>
-            </ul>
+        </div>
+        <nav class="header__nav">
+          <div class="container">
+            <div class="header__nav-container">
+              <ul class="nav__list">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+              </ul>
+              <ul class="nav__list-mobile">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <div class="mob-info">
+                  <li class="header__info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>г. Москва, ул. Примерная, д. 10</span>
+                  </li>
+                  <li class="header__info-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Пн-Пт: 9:00 - 18:00</span>
+                  </li>
+                  <li class="header__info-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+79991234567">+375 (33) 212-45-67</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
           </div>
-          <div
-            class="footer__column footer__column--contact animate"
-            data-delay="400"
-          >
-            <h3 class="footer__column-title">Контакты</h3>
-            <ul class="footer__links">
-              <li>
-                <a href="mailto:valukandrey004@gmail.com" class="footer__link">
-                  <i class="fas fa-envelope"></i> valukandrey004@gmail.com
-                </a>
-              </li>
-              <li>
-                <a href="tel:+375333260981" class="footer__link">
-                  <i class="fas fa-phone"></i> +375 (33) 326-0981
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://web.telegram.org/a/#7699447339"
-                  class="footer__link"
-                >
-                  <i class="fab fa-telegram-plane"></i> Telegram
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="footer__column footer__column--subscribe animate"
-            data-delay="600"
-          >
-            <h3 class="footer__column-title">Подписка на новости</h3>
-            <p class="footer__subscribe-text">
-              Получайте советы по веб-разработке и обновления!
-            </p>
-            <div class="footer__subscribe-form">
-              <a
-                href="https://web.telegram.org/a/#7699447339"
-                class="footer__subscribe-btn"
-                target="_blank"
-              >
-                Присоединиться к Telegram
+        </nav>
+      </header>
+
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="/assets/electro-DZr1iN-0.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="container hero-content">
+        <div class="hero__block">
+          <h1 class="hero__title">
+            <span>Профессиональные</span> электромонтажные работы любой
+            сложности
+          </h1>
+          <p class="hero__subtitle">
+            От замены розетки до монтажа электрощита. Ответственный за
+            электрохозяйство для вашего бизнеса.
+          </p>
+          <div class="hero__footer">
+            <a href="tel:+79991234567" class="hero__button">
+              Позвонить для консультации
+            </a>
+            <div class="hero__socials">
+              <a href="#" class="social-icon">
+                <i class="fab fa-viber"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-vk"></i>
               </a>
             </div>
           </div>
         </div>
-        <div class="footer__bottom">
-          <p class="footer__copyright">© 2025 Андрей. Все права защищены.</p>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__header">
+          <h2 class="advantages__title" data-aos="fade-right">
+            Почему выбирают нас?
+          </h2>
+          <p
+            class="advantages__subtitle"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            Мы предлагаем качественные электромонтажные работы, гарантируя
+            безопасность и надёжность на каждом этапе проекта.
+          </p>
+        </div>
+        <div class="advantages__list">
+          <div class="advantages__item" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="advantages__item-title">Опытные специалисты</h3>
+            <p class="advantages__item-text">
+              Наши мастера имеют многолетний опыт в сфере электромонтажа и
+              регулярно повышают квалификацию.
+            </p>
+          </div>
+          <div class="advantages__item" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="advantages__item-title">Гарантия и качество</h3>
+            <p class="advantages__item-text">
+              Мы используем только сертифицированные материалы и современное
+              оборудование от проверенных производителей.
+            </p>
+          </div>
+          <div class="advantages__item" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="advantages__item-title">Гибкий подход</h3>
+            <p class="advantages__item-text">
+              Индивидуальный подход к каждому клиенту и проекту, учитывая все
+              пожелания и особенности объекта.
+            </p>
+          </div>
+          <div class="advantages__item" data-aos="fade-up" data-aos-delay="500">
+            <h3 class="advantages__item-title">Соблюдение сроков</h3>
+            <p class="advantages__item-text">
+              Мы ценим ваше время и всегда выполняем работы точно в оговорённые
+              сроки.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-gallery">
+      <h2 class="services-gallery__title" data-aos="fade-down">Наши услуги</h2>
+      <div class="services-gallery__container">
+        <div
+          class="services-gallery__item"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <img
+            src="/assets/exeple-CWlO4e5b.jpg"
+            alt="Электромонтажные работы"
+          />
+          <div class="services-gallery__overlay">
+            <h3 class="services-gallery__heading">Электромонтажные работы</h3>
+            <div class="services-gallery__hover-content">
+              <p class="services-gallery__text">
+                Полный спектр услуг по монтажу и ремонту электропроводки в жилых
+                и коммерческих помещениях.
+              </p>
+              <a href="#" class="services-gallery__button">Заказать услугу</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="services-gallery__item"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <img
+            src="/assets/exeple-CWlO4e5b.jpg"
+            alt="Проектирование электросетей"
+          />
+          <div class="services-gallery__overlay">
+            <h3 class="services-gallery__heading">
+              Проектирование электросетей
+            </h3>
+            <div class="services-gallery__hover-content">
+              <p class="services-gallery__text">
+                Разработка проектной документации и планов для систем
+                электроснабжения любого масштаба.
+              </p>
+              <a href="#" class="services-gallery__button">Заказать услугу</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="services-gallery__item"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <img src="/assets/exeple-CWlO4e5b.jpg" alt="Обслуживание и ремонт" />
+          <div class="services-gallery__overlay">
+            <h3 class="services-gallery__heading">Обслуживание и ремонт</h3>
+            <div class="services-gallery__hover-content">
+              <p class="services-gallery__text">
+                Регулярное техническое обслуживание и оперативный ремонт
+                электрооборудования для обеспечения бесперебойной работы.
+              </p>
+              <a href="#" class="services-gallery__button">Заказать услугу</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="services-gallery__item"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
+          <img src="/assets/exeple-CWlO4e5b.jpg" alt="Автоматизация систем" />
+          <div class="services-gallery__overlay">
+            <h3 class="services-gallery__heading">Автоматизация систем</h3>
+            <div class="services-gallery__hover-content">
+              <p class="services-gallery__text">
+                Внедрение систем "умный дом" и автоматизированных решений для
+                управления освещением и электроприборами.
+              </p>
+              <a href="#" class="services-gallery__button">Заказать услугу</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="business-accent">
+      <div class="container">
+        <div class="business-accent__wrapper" data-aos="fade-up">
+          <div class="business-accent__content">
+            <h2
+              class="business-accent__title"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              Для бизнеса и организаций
+            </h2>
+            <p
+              class="business-accent__subtitle"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              Возьмем на себя всю ответственность за электрохозяйство вашей
+              компании
+            </p>
+            <ul class="business-accent__list">
+              <li
+                class="business-accent__list-item"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              >
+                Оформление необходимых документов и допусков.
+              </li>
+              <li
+                class="business-accent__list-item"
+                data-aos="fade-right"
+                data-aos-delay="400"
+              >
+                Проведение инструктажей и обучение персонала.
+              </li>
+              <li
+                class="business-accent__list-item"
+                data-aos="fade-right"
+                data-aos-delay="500"
+              >
+                Плановые и внеплановые осмотры электроустановок.
+              </li>
+              <li
+                class="business-accent__list-item"
+                data-aos="fade-right"
+                data-aos-delay="600"
+              >
+                Составление и ведение технической документации.
+              </li>
+            </ul>
+            <a
+              href="tel:+1234567890"
+              class="business-accent__button"
+              data-aos="fade-right"
+              data-aos-delay="700"
+              >Позвонить для обсуждения договора</a
+            >
+          </div>
+          <div class="business-accent__image" data-aos="fade-up">
+            <img
+              src="/assets/exeple-CWlO4e5b.jpg"
+              alt="Услуги для бизнеса и организаций"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-gallery">
+      <div class="portfolio-gallery__container">
+        <h2 class="portfolio-gallery__title" data-aos="fade-down">
+          Наши работы
+        </h2>
+        <div class="portfolio-gallery__grid">
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-2 portfolio-gallery__item--row-2"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="/assets/exeple-CWlO4e5b.jpg"
+              alt="Проект в жилом комплексе"
+            />
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">
+                Проект в жилом комплексе
+              </h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Полный электромонтаж "под ключ" в новом жилом комплексе.
+                  Установка щитового оборудования и прокладка кабельных трасс.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-1"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img src="/assets/exeple-CWlO4e5b.jpg" alt="Освещение офиса" />
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">Освещение офиса</h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Проектирование и монтаж системы освещения для коммерческого
+                  помещения. Использовались современные LED-панели и датчики
+                  движения.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-1"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <img
+              src="/assets/exeple-CWlO4e5b.jpg"
+              alt="Замена проводки в частном доме"
+            />
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">
+                Замена проводки в частном доме
+              </h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Замена старой проводки в частном доме. Установка новых
+                  розеток, выключателей и автоматических выключателей.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-2"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <img src="/assets/exeple-CWlO4e5b.jpg" alt="Система Умный дом" />
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">Система "Умный дом"</h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Монтаж системы "умный дом" с полным управлением освещением,
+                  климатом и жалюзи через мобильное приложение.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-1"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <img src="/assets/exeple-CWlO4e5b.jpg" alt="Видеонаблюдение" />
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">Видеонаблюдение</h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Установка системы видеонаблюдения и контроля доступа на
+                  объекте. Интеграция с существующей электросетью.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-1"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <img
+              src="/assets/exeple-CWlO4e5b.jpg"
+              alt="Модернизация электрощита"
+            />
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">
+                Модернизация электрощита
+              </h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Модернизация электрощита в офисном здании. Установка УЗО и
+                  автоматики для повышения безопасности.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-2"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
+            <img
+              src="/assets/exeple-CWlO4e5b.jpg"
+              alt="Электрификация производства"
+            />
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">
+                Электрификация производства
+              </h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Прокладка новых силовых кабелей и подключение высокомощного
+                  оборудования на промышленном объекте.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__main">
+          <div class="footer__col" data-aos="fade-up">
+            <div class="footer__logo">
+              <a href="/" class="footer__logo-link">
+                <span class="footer__logo-text">Logo-company</span>
+              </a>
+            </div>
+            <p class="footer__description">
+              Надежные электромонтажные работы любой сложности.
+            </p>
+          </div>
+
+          <div class="footer__col" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="footer__heading">Навигация</h4>
+            <ul class="footer__list">
+              <li><a href="#services" class="footer__link">Услуги</a></li>
+              <li>
+                <a href="#advantages" class="footer__link">Преимущества</a>
+              </li>
+              <li><a href="#gallery" class="footer__link">Галерея</a></li>
+              <li><a href="#contacts" class="footer__link">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="footer__heading">Контакты</h4>
+            <ul class="footer__list">
+              <li>
+                <a href="tel:+1234567890" class="footer__link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 01-2 2A20.42 20.42 0 013 4.41a2 2 0 012-2c.98 0 1.95.16 2.88.47a2 2 0 011.23 2.18l-.5 2.5a2 2 0 01-.88 1.58A15.42 15.42 0 0014 17.16a2 2 0 011.58-.88l2.5-.5a2 2 0 012.18 1.23c.31.93.47 1.9.47 2.88z"
+                    />
+                  </svg>
+                  +7 (XXX) XXX-XX-XX
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@el-company.ru" class="footer__link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                  info@el-company.ru
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__col" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="footer__heading">График работы</h4>
+            <ul class="footer__list">
+              <li>Пн-Пт: 9:00 - 18:00</li>
+              <li>Сб: 10:00 - 15:00</li>
+              <li>Вс: Выходной</li>
+            </ul>
+          </div>
+
+          <div class="footer__col" data-aos="fade-up" data-aos-delay="400">
+            <h4 class="footer__heading">Адрес</h4>
+            <p class="footer__address">
+              г. Москва, ул. Примерная, д. 15, офис 22
+            </p>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         AOS.init();
+        const burgerMenu = document.querySelector(".burger-menu");
+        const navListMobile = document.querySelector(".nav__list-mobile");
 
-        const burger = document.querySelector(".header__burger");
-        const nav = document.querySelector(".header__nav");
-
-        burger.addEventListener("click", () => {
-          burger.classList.toggle("active");
-          nav.classList.toggle("active");
+        burgerMenu.addEventListener("click", () => {
+          navListMobile.classList.toggle("active");
         });
-
-        // Close menu when clicking a nav item
-        document.querySelectorAll(".header__nav-item").forEach((item) => {
-          item.addEventListener("click", () => {
-            burger.classList.remove("active");
-            nav.classList.remove("active");
-          });
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener("click", (e) => {
-          if (!nav.contains(e.target) && !burger.contains(e.target)) {
-            burger.classList.remove("active");
-            nav.classList.remove("active");
-          }
-        });
-
-        const triggers = document.querySelectorAll(".modal-trigger");
-        const modal = document.querySelector("#quick-contact-modal");
-        const closeButton = document.querySelector(".modal__close");
-        const form = document.querySelector(".modal__form");
-
-        triggers.forEach((trigger) => {
-          trigger.addEventListener("click", () => {
-            modal.classList.add("active");
-          });
-        });
-
-        closeButton.addEventListener("click", () => {
-          modal.classList.remove("active");
-        });
-
-        modal.addEventListener("click", (e) => {
-          if (e.target === modal) {
-            modal.classList.remove("active");
-          }
-        });
-
-        form.addEventListener("submit", (e) => {
-          e.preventDefault(); // Prevent default form submission
-          modal.classList.remove("active");
-          form.reset(); // Reset form fields
-        });
-
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape" && modal.classList.contains("active")) {
-            modal.classList.remove("active");
-          }
-        });
-
-        const updateParallax = (className) => {
-          const elements = document.querySelectorAll(`.${className}`);
-
-          // Инициализация текущих позиций для сглаживания
-          const currentPositions = new Map();
-          elements.forEach((element) => {
-            currentPositions.set(element, 0);
-          });
-
-          const update = () => {
-            const scrollPosition = window.scrollY;
-            const windowHeight = window.innerHeight;
-
-            elements.forEach((element) => {
-              const rect = element.getBoundingClientRect();
-              const elementTop = rect.top + scrollPosition;
-              const elementCenter = elementTop + rect.height / 2;
-              const scrollProgress =
-                (scrollPosition + windowHeight / 2 - elementCenter) /
-                windowHeight;
-
-              const amplitude = parseFloat(
-                element.getAttribute("data-amplitude") || "250"
-              );
-              const rotation = parseFloat(
-                element.getAttribute("data-rotation") || "23"
-              );
-
-              const targetTranslateY = scrollProgress * amplitude;
-
-              const currentTranslateY = currentPositions.get(element) || 0;
-              const smoothedTranslateY =
-                currentTranslateY +
-                (targetTranslateY - currentTranslateY) * 0.1;
-
-              currentPositions.set(element, smoothedTranslateY);
-
-              element.style.transition = "transform 0.1s ease-out"; // Плавный переход
-              element.style.transform = `translateY(${smoothedTranslateY}px) rotate(${rotation}deg)`;
-            });
-
-            requestAnimationFrame(update);
-          };
-
-          update();
-        };
-
-        updateParallax("js-bg");
-        updateParallax("ts-bg");
-        updateParallax("node-bg");
-        updateParallax("react-bg");
-        updateParallax("tg-bg");
       });
     </script>
-    <script src="./index.js"></script>
   </body>
 </html>

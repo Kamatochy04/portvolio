@@ -1,0 +1,91 @@
+$primary-color: #ff5722;
+$secondary-color: #212121;
+$text-color: #424242;
+$overlay-color: rgba(0, 0, 0, 0.7);
+
+.services-gallery {
+  background-color: #fff;
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $secondary-color;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 25%;
+    height: 60vh; /* Высота для лучшего отображения */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    /* Адаптивность для разных экранов */
+    @media (max-width: 1024px) {
+      width: 50%;
+      height: 40vh;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 30vh;
+    }
+
+    &:hover img {
+      transform: scale(1.05); /* Увеличение картинки при наведении */
+    }
+
+    &:hover .services-gallery__content {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay-color;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+    text-align: left;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  &__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 80%;
+  }
+}

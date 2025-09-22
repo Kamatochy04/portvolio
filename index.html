@@ -3,1330 +3,557 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Андрей Валюк - Фронтенд и Маркетинг</title>
-    <link rel="stylesheet" href="./src/index.css" />
+    <title>Электромонтажные услуги для юридических лиц</title>
+    <link rel="stylesheet" href="./src/styles.scss" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="./src/assets/icons/logo.svg" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <!-- header -->
-    <header class="header">
-      <div class="header__container">
-        <div class="header__logo">
-          <div class="header__logo-container">
-            <img src="./src/assets/icons/logo.svg" alt="logo" />
-            <p>VAV</p>
+    <section class="hero">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__container">
+              <div class="header__logo">
+                <img src="./src/assets/logo.png" alt="Логотип Электромонтаж" />
+              </div>
+              <ul class="header__info">
+                <li class="header__info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>г. Москва, ул. Примерная, д. 10</span>
+                </li>
+                <li class="header__info-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Пн-Пт: 9:00 - 18:00</span>
+                </li>
+                <li class="header__info-item">
+                  <i class="fas fa-phone"></i>
+                  <a href="tel:+79991234567">+375 (33) 212-45-67</a>
+                </li>
+              </ul>
+              <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
           </div>
         </div>
         <nav class="header__nav">
-          <a href="#about" class="header__nav-item">Обо мне</a>
-          <a href="#services" class="header__nav-item">Услуги</a>
-          <!-- <a href="#testimonials" class="header__nav-item">Отзывы</a> -->
-          <a href="#how-we-work" class="header__nav-item"> Как я работаю </a>
-          <a href="#portfolio" class="header__nav-item">Портфолио</a>
-          <a href="#contact" class="header__nav-item">Контакты</a>
+          <div class="container">
+            <div class="header__nav-container">
+              <ul class="nav__list">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+              </ul>
+              <ul class="nav__list-mobile">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <div class="mob-info">
+                  <li class="header__info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>г. Москва, ул. Примерная, д. 10</span>
+                  </li>
+                  <li class="header__info-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Пн-Пт: 9:00 - 18:00</span>
+                  </li>
+                  <li class="header__info-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+79991234567">+375 (33) 212-45-67</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <button class="header__burger">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-    </header>
+      </header>
 
-    <main class="main">
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="./src/assets/video/electro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="container hero-content">
+        <div class="hero__block">
+          <h1 class="hero__title">
+            <span>Профессиональные</span> электромонтажные работы любой
+            сложности
+          </h1>
+          <p class="hero__subtitle">
+            От замены розетки до монтажа электрощита. Ответственный за
+            электрохозяйство для вашего бизнеса.
+          </p>
+          <div class="hero__footer">
+            <a href="tel:+79991234567" class="hero__button">
+              Позвонить для консультации
+            </a>
+            <div class="hero__socials">
+              <a href="#" class="social-icon">
+                <i class="fab fa-viber"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-vk"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
       <div class="container">
-        <div class="main__container">
-          <div
-            data-aos="fade-down"
-            data-aos-duration="1000"
+        <div class="advantages__header">
+          <h2 class="advantages__title" data-aos="fade-right">
+            Почему выбирают нас?
+          </h2>
+          <p
+            class="advantages__subtitle"
+            data-aos="fade-right"
             data-aos-delay="100"
           >
-            <h1 class="main__title">Valiuk Andrei</h1>
-          </div>
-
-          <p
-            class="main__text"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-          >
-            Создаю современные <span>web-решения</span>
+            Мы предлагаем качественные электромонтажные работы, гарантируя
+            безопасность и надёжность на каждом этапе проекта.
           </p>
-
-          <p
-            class="main__descr"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            Добро пожаловать на мой сайт! Я создаю современные, функциональные
-            веб-решения, которые помогают вашему бизнесу выделиться и привлечь
-            клиентов.
-          </p>
-
-          <a href="#contact">
-            <button
-              class="button modal-trigger"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              data-aos-delay="700"
-            >
-              Связаться со мной
-            </button>
-          </a>
         </div>
-      </div>
-    </main>
-
-    <!-- <section>
-      <div class="container">
-        <div class="stat">
-          <div class="main__statistic" data-aos="zoom-in">
-            <div
-              class="main__statistic-yers main__statistic-stat"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-              data-aos-duration="1000"
-            >
-              3
-              <p class="main__statistic-text">года опыта разработки</p>
-            </div>
-            <div class="main__statistic-projects main__statistic-stat">
-              +10
-              <p class="main__statistic-text">Законченных проектов</p>
-            </div>
-            <div
-              class="main__statistic-procent main__statistic-stat"
-              data-aos="zoom-in"
-              data-aos-delay="700"
-              data-aos-duration="1000"
-            >
-              90%
-              <p class="main__statistic-text">Довольных клиентов</p>
-            </div>
+        <div class="advantages__list">
+          <div class="advantages__item" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="advantages__item-title">Опытные специалисты</h3>
+            <p class="advantages__item-text">
+              Наши мастера имеют многолетний опыт в сфере электромонтажа и
+              регулярно повышают квалификацию.
+            </p>
+          </div>
+          <div class="advantages__item" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="advantages__item-title">Гарантия и качество</h3>
+            <p class="advantages__item-text">
+              Мы используем только сертифицированные материалы и современное
+              оборудование от проверенных производителей.
+            </p>
+          </div>
+          <div class="advantages__item" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="advantages__item-title">Гибкий подход</h3>
+            <p class="advantages__item-text">
+              Индивидуальный подход к каждому клиенту и проекту, учитывая все
+              пожелания и особенности объекта.
+            </p>
+          </div>
+          <div class="advantages__item" data-aos="fade-up" data-aos-delay="500">
+            <h3 class="advantages__item-title">Соблюдение сроков</h3>
+            <p class="advantages__item-text">
+              Мы ценим ваше время и всегда выполняем работы точно в оговорённые
+              сроки.
+            </p>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <!-- Услуги -->
-    <section class="services section" id="services">
-      <img
-        src="./src/assets/icons/node-js.svg"
-        alt="node-js"
-        class="node-bg"
-        data-rotation="0"
-        data-amplitude="200"
-      />
-
-      <div class="container">
-        <div class="section-header">
-          <h2 data-aos="fade-right" data-aos-duration="1000">Мои услуги</h2>
-          <p data-aos="fade-left" data-aos-duration="1000">
-            Предоставляю профессиональные услуги веб-разработки, от создания
-            лендингов до сложных веб-приложений. Моя цель — помочь вашему
-            бизнесу выделиться в цифровом пространстве с помощью современных и
-            эффективных решений.
-          </p>
+    <section class="services-gallery">
+      <h2 class="services-gallery__title" data-aos="fade-down">Наши услуги</h2>
+      <div class="services-gallery__container">
+        <div
+          class="services-gallery__item"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <img
+            src="./src/assets/img/exeple.jpg"
+            alt="Электромонтажные работы"
+          />
+          <div class="services-gallery__overlay">
+            <h3 class="services-gallery__heading">Электромонтажные работы</h3>
+            <div class="services-gallery__hover-content">
+              <p class="services-gallery__text">
+                Полный спектр услуг по монтажу и ремонту электропроводки в жилых
+                и коммерческих помещениях.
+              </p>
+              <a href="#" class="services-gallery__button">Заказать услугу</a>
+            </div>
+          </div>
         </div>
-        <div class="services__container">
-          <div class="services__grid">
-            <div class="services__card" data-aos="zoom-out-up">
-              <div class="services__icon">
-                <i class="fas fa-laptop-code"></i>
-              </div>
-              <h3 class="services__card-title">Разработка лендингов</h3>
-              <p class="services__description">
-                Создаю яркие и конверсионные одностраничные сайты, которые
-                привлекают клиентов и повышают продажи.
+        <div
+          class="services-gallery__item"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <img
+            src="./src/assets/img/exeple.jpg"
+            alt="Проектирование электросетей"
+          />
+          <div class="services-gallery__overlay">
+            <h3 class="services-gallery__heading">
+              Проектирование электросетей
+            </h3>
+            <div class="services-gallery__hover-content">
+              <p class="services-gallery__text">
+                Разработка проектной документации и планов для систем
+                электроснабжения любого масштаба.
               </p>
-              <a href="#contact" class="services__link trigger"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
+              <a href="#" class="services-gallery__button">Заказать услугу</a>
             </div>
-            <div class="services__card" data-aos="zoom-out-up">
-              <div class="services__icon">
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-              <h3 class="services__card-title">Интернет-магазины</h3>
-              <p class="services__description">
-                Разрабатываю функциональные e-commerce платформы с фильтрами,
-                корзиной и интеграцией платежных систем.
+          </div>
+        </div>
+        <div
+          class="services-gallery__item"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <img src="./src/assets/img/exeple.jpg" alt="Обслуживание и ремонт" />
+          <div class="services-gallery__overlay">
+            <h3 class="services-gallery__heading">Обслуживание и ремонт</h3>
+            <div class="services-gallery__hover-content">
+              <p class="services-gallery__text">
+                Регулярное техническое обслуживание и оперативный ремонт
+                электрооборудования для обеспечения бесперебойной работы.
               </p>
-              <a href="#contact" class="services__link"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
+              <a href="#" class="services-gallery__button">Заказать услугу</a>
             </div>
-            <div class="services__card" data-aos="zoom-out-up">
-              <div class="services__icon">
-                <i class="fas fa-code"></i>
-              </div>
-              <h3 class="services__card-title">Веб-приложения</h3>
-              <p class="services__description">
-                Создаю интерактивные SPA и сложные веб-приложения с интуитивным
-                интерфейсом и высокой производительностью.
+          </div>
+        </div>
+        <div
+          class="services-gallery__item"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
+          <img src="./src/assets/img/exeple.jpg" alt="Автоматизация систем" />
+          <div class="services-gallery__overlay">
+            <h3 class="services-gallery__heading">Автоматизация систем</h3>
+            <div class="services-gallery__hover-content">
+              <p class="services-gallery__text">
+                Внедрение систем "умный дом" и автоматизированных решений для
+                управления освещением и электроприборами.
               </p>
-              <a href="#contact" class="services__link"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div class="services__card" data-aos="zoom-out-up">
-              <div class="services__icon">
-                <i class="fab fa-wordpress"></i>
-              </div>
-              <h3 class="services__card-title">Работа с WordPress</h3>
-              <p class="services__description">
-                Разрабатываю и настраиваю сайты на WordPress, включая кастомные
-                темы, плагины и оптимизацию для ваших задач.
-              </p>
-              <a href="#contact" class="services__link"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div class="services__card" data-aos="zoom-out-up">
-              <div class="services__icon">
-                <i class="fas fa-search"></i>
-              </div>
-              <h3 class="services__card-title">SEO-оптимизация</h3>
-              <p class="services__description">
-                Оптимизирую сайты для поисковых систем, чтобы ваш бизнес был на
-                первых местах в выдаче.
-              </p>
-              <a href="#contact" class="services__link"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-            <div class="services__card" data-aos="zoom-out-up">
-              <div class="services__icon">
-                <i class="fas fa-tools"></i>
-              </div>
-              <h3 class="services__card-title">Поддержка и обновления</h3>
-              <p class="services__description">
-                Обеспечиваю техническую поддержку и обновления сайтов для
-                бесперебойной работы вашего проекта.
-              </p>
-              <a href="#contact" class="services__link"
-                >Связаться <i class="fas fa-arrow-right"></i
-              ></a>
+              <a href="#" class="services-gallery__button">Заказать услугу</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Обо мне -->
-    <section class="about section" id="about">
-      <img
-        src="./src/assets/icons/typescript-official-svgrepo-com 2.svg"
-        alt="ts"
-        class="ts-bg paralaxImg"
-        data-amplitude="400"
-        data-rotation="-20"
-      />
+    <section class="business-accent">
       <div class="container">
-        <div class="about__container">
-          <div class="about__photo">
-            <img
-              data-aos="zoom-in"
-              src="./src/assets/img/Me.jpg"
-              alt="Andrey Valiuk"
-              class="about__image"
-            />
-          </div>
-          <div class="about__content">
+        <div class="business-accent__wrapper" data-aos="fade-up">
+          <div class="business-accent__content">
             <h2
-              class="about__title"
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              class="business-accent__title"
+              data-aos="fade-right"
               data-aos-delay="100"
             >
-              Обо мне
+              Для бизнеса и организаций
             </h2>
             <p
-              class="about__description"
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              class="business-accent__subtitle"
+              data-aos="fade-right"
               data-aos-delay="200"
             >
-              Привет! Я Андрей, веб-разработчик, увлеченный созданием
-              современных и функциональных сайтов. Моя страсть — превращать идеи
-              в реальность через код, будь то стильный лендинг, интернет-магазин
-              или сложное веб-приложение.
+              Возьмем на себя всю ответственность за электрохозяйство вашей
+              компании
             </p>
-            <p
-              class="about__description"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
-            >
-              Я фокусируюсь на качестве, скорости и удобстве для пользователей.
-              Каждый проект для меня — это возможность создать что-то
-              уникальное, что поможет вашему бизнесу выделиться и достичь целей.
-            </p>
-            <div class="about__skills">
-              <h3
-                class="about__skills-title"
-                data-aos="fade-up"
-                data-aos-duration="1000"
+            <ul class="business-accent__list">
+              <li
+                class="business-accent__list-item"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              >
+                Оформление необходимых документов и допусков.
+              </li>
+              <li
+                class="business-accent__list-item"
+                data-aos="fade-right"
                 data-aos-delay="400"
               >
-                Ключевые навыки:
-              </h3>
-              <ul class="about__skills-list">
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="100"
-                >
-                  HTML5, CSS3, SCSS
-                </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  JavaScript, TypeScript
-                </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="300"
-                >
-                  React, Vue, Next
-                </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="400"
-                >
-                  WordPress
-                </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="500"
-                >
-                  Node.js, Express
-                </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="600"
-                >
-                  Адаптивная и кроссбраузерная верстка
-                </li>
-                <li
-                  class="about__skill"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="700"
-                >
-                  SEO-оптимизация и производительность
-                </li>
-              </ul>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
+                Проведение инструктажей и обучение персонала.
+              </li>
+              <li
+                class="business-accent__list-item"
+                data-aos="fade-right"
+                data-aos-delay="500"
+              >
+                Плановые и внеплановые осмотры электроустановок.
+              </li>
+              <li
+                class="business-accent__list-item"
+                data-aos="fade-right"
+                data-aos-delay="600"
+              >
+                Составление и ведение технической документации.
+              </li>
+            </ul>
+            <a
+              href="tel:+1234567890"
+              class="business-accent__button"
+              data-aos="fade-right"
               data-aos-delay="700"
-              class="button__wrapper"
+              >Позвонить для обсуждения договора</a
             >
-              <button class="button about__button modal-trigger">
-                Связаться со мной
-              </button>
-            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="tehnologies">
-      <div class="container">
-        <div class="section-header">
-          <h2 data-aos="fade-right" data-aos-duration="1000">
-            С чем я работаю
-          </h2>
-        </div>
-        <div class="main__tehnologies">
-          <div class="main__tehnologies-item">
-            <img src="./src/assets/tehnologies/react-2.svg" alt="React" />
-            <p>React</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img src="./src/assets/tehnologies/vue-9.svg" alt="Vue" />
-            <p>Vue</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img src="./src/assets/tehnologies/next.svg" alt="Next" />
-            <p>Next</p>
-          </div>
-          <div class="main__tehnologies-item">
+          <div class="business-accent__image" data-aos="fade-up">
             <img
-              src="./src/assets/tehnologies/wordpress-icon-1.svg"
-              alt="Wordpress"
+              src="./src/assets/img/exeple.jpg"
+              alt="Услуги для бизнеса и организаций"
             />
-            <p>Wordpress</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img src="./src/assets/tehnologies/html-1.svg" alt="HTML" />
-            <p>HTML</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img src="./src/assets/tehnologies/css-3.svg" alt="CSS" />
-            <p>CSS</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="./src/assets/tehnologies/typescript.svg"
-              alt="TypeScript"
-            />
-            <p>TypeScript</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img src="./src/assets/tehnologies/express.svg" alt="Express" />
-            <p>Express</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img
-              src="./src/assets/tehnologies/javascript-1.svg"
-              alt="JavaScript"
-            />
-            <p>JavaScript</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img src="./src/assets/tehnologies/sass-1.svg" alt="SASS" />
-            <p>SASS</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img src="./src/assets/tehnologies/nodejs.svg" alt="nodejs" />
-            <p>nodejs</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img src="./src/assets/tehnologies/mysql-3.svg" alt="mysql" />
-            <p>mySQL</p>
-          </div>
-          <div class="main__tehnologies-item">
-            <img src="./src/assets/tehnologies/prisma-3.svg" alt="prisma" />
-            <p>prisma</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- телеграм -->
-    <!-- <section class="tg">
-      <img
-        src="./src/assets/icons/telegram.svg"
-        alt="tg"
-        class="tg-bg"
-        data-rotation="0"
-      />
-      <div class="container">
-        <div class="tg__container">
-          <h2
-            class="title tg__title"
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            Подпишитесь на мой <br />
-            <span>телеграм канал</span>
-          </h2>
-          <div class="tg__description">
-            <p data-aos="fade-down">
-              Веб-разработчик с 3 годами опыта делится туториалами, кейсами и
-              новостями по React, Node.js, Vue и не только. Подписывайся для
-              обучения и вдохновения!
-            </p>
-            <a href="https://t.me/andrei_valiuk">
-              <button class="button tg__button" data-aos="fade-up">
-                Перейти в канал
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- отзывы -->
-    <!-- <section class="testimonials section" id="testimonials">
-      <div class="container">
-        <div class="testimonials__container">
-          <div class="section-header">
-            <h2 data-aos="fade-right" data-aos-duration="1000">
-              Отзывы клиентов
-            </h2>
-          </div>
-
-          <div
-            class="splide testimonials__slider"
-            data-aos="fade-up"
-            data-aos-duration="1200"
-          >
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Сайт для нашего фитнес-клуба получился стильным и удобным!
-                      Минималистичный дизайн, быстрая загрузка и интерактивные
-                      элементы привлекли новых клиентов.
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="./src/assets/icons/user.png"
-                        alt="Иван Иванов"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Иван Иванов</h3>
-                        <p class="testimonials__position">
-                          Владелец фитнес-клуба
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Интернет-магазин для нашего бренда одежды получился ярким
-                      и удобным. Простая навигация и интеграция платежей сделали
-                      покупки комфортными для клиентов.
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="./src/assets/icons/user.png"
-                        alt="Мария Петрова"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Мария Петрова</h3>
-                        <p class="testimonials__position">
-                          Директор по маркетингу
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Веб-приложение для управления проектами нашей студии
-                      оказалось удобным и стильным. Простота интерфейса и
-                      быстрая работа ускорили наши процессы.
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="./src/assets/icons/user.png"
-                        alt="Алексей Сидоров"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Алексей Сидоров</h3>
-                        <p class="testimonials__position">
-                          Руководитель IT-отдела
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Сайт для нашего стартапа получился современным и
-                      информативным. Аналитика и плавная навигация помогли нам
-                      привлечь первых пользователей.
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="./src/assets/icons/user.png"
-                        alt="Дмитрий Волков"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Дмитрий Волков</h3>
-                        <p class="testimonials__position">
-                          Основатель стартапа
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Приложение для организации мероприятий стало настоящей
-                      находкой! Удобные уведомления и RSVP-функции упростили
-                      планирование наших встреч.
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="./src/assets/icons/user.png"
-                        alt="Ольга Смирнова"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Ольга Смирнова</h3>
-                        <p class="testimonials__position">
-                          Организатор мероприятий
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="testimonials__card">
-                    <div class="testimonials__stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonials__text">
-                      Портал для нашего локального сообщества получился уютным и
-                      функциональным. Чат и модерация контента сделали общение
-                      удобным и безопасным.
-                    </p>
-                    <div class="testimonials__author">
-                      <img
-                        src="./src/assets/icons/user.png"
-                        alt="Сергей Николаев"
-                        class="testimonials__photo"
-                      />
-                      <div class="testimonials__author-info">
-                        <h3 class="testimonials__name">Сергей Николаев</h3>
-                        <p class="testimonials__position">
-                          Координатор сообщества
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new Splide(".testimonials__slider", {
-          type: "loop",
-          perPage: 3,
-          perMove: 1,
-          gap: "30px",
-          pagination: true,
-          arrows: false,
-          autoplay: true,
-          interval: 5000,
-          speed: 600,
-          easing: "cubic-bezier(0.4, 0, 0.2, 1)",
-          breakpoints: {
-            1024: {
-              perPage: 2,
-              gap: "20px",
-              speed: 500,
-            },
-            768: {
-              perPage: 1,
-              gap: "15px",
-              speed: 400,
-            },
-          },
-        }).mount();
-      });
-    </script> -->
-
-    <!-- шаги -->
-    <section class="how-we-work section" id="how-we-work">
-      <img
-        src="./src/assets/icons/js-official-svgrepo-com (1) 2.svg"
-        alt="js"
-        class="js-bg"
-        data-amplitude="100"
-      />
-      <div class="container">
-        <div class="how-we-work__container">
-          <div class="section-header">
-            <h2 data-aos="fade-right" data-aos-duration="1000">
-              Как я работаю
-            </h2>
-          </div>
-
-          <div class="how-we-work__grid">
-            <div
-              class="how-we-work__card"
-              data-aos="zoom-in"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="100"
-            >
-              <div class="how-we-work__icon">
-                <i class="fas fa-comment-dots"></i>
-              </div>
-              <div class="how-we-work__step-number">1</div>
-              <h3 class="how-we-work__step">Сбор требований</h3>
-              <p class="how-we-work__description">
-                Обсуждаем ваши цели, аудиторию и бизнес-задачи. Анализирую
-                требования, чтобы создать точное техническое задание.
-              </p>
-            </div>
-            <div
-              class="how-we-work__card"
-              data-aos="zoom-in"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="200"
-            >
-              <div class="how-we-work__icon">
-                <i class="fas fa-pencil-ruler"></i>
-              </div>
-              <div class="how-we-work__step-number">2</div>
-
-              <h3 class="how-we-work__step">Прототипирование</h3>
-              <p class="how-we-work__description">
-                Создаю прототип сайта или приложения, чтобы визуализировать
-                структуру и согласовать с вами функционал.
-              </p>
-            </div>
-            <div
-              class="how-we-work__card"
-              data-aos="zoom-in"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="300"
-            >
-              <div class="how-we-work__icon">
-                <i class="fas fa-paint-brush"></i>
-              </div>
-              <div class="how-we-work__step-number">3</div>
-
-              <h3 class="how-we-work__step">Дизайн</h3>
-              <p class="how-we-work__description">
-                Разрабатываю современный и адаптивный дизайн, который
-                соответствует вашему бренду и привлекает пользователей.
-              </p>
-            </div>
-            <div
-              class="how-we-work__card"
-              data-aos="zoom-in"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="400"
-            >
-              <div class="how-we-work__icon">
-                <i class="fas fa-code"></i>
-              </div>
-              <div class="how-we-work__step-number">4</div>
-
-              <h3 class="how-we-work__step">Разработка</h3>
-              <p class="how-we-work__description">
-                Пишу чистый и оптимизированный код, интегрирую необходимые
-                функции и API для полной работоспособности.
-              </p>
-            </div>
-            <div
-              class="how-we-work__card"
-              data-aos="zoom-in"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="500"
-            >
-              <div class="how-we-work__icon">
-                <i class="fas fa-rocket"></i>
-              </div>
-              <div class="how-we-work__step-number">5</div>
-
-              <h3 class="how-we-work__step">Тестирование и запуск</h3>
-              <p class="how-we-work__description">
-                Тестирую проект на всех устройствах, устраняю баги и запускаю
-                сайт, обеспечивая его стабильную работу.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- портфолио -->
-    <section class="projects-section container" id="portfolio">
-      <div class="section-header">
-        <h2 data-aos="fade-right" data-aos-duration="1000">
-          Проекты над которыми работал
+    <section class="portfolio-gallery">
+      <div class="portfolio-gallery__container">
+        <h2 class="portfolio-gallery__title" data-aos="fade-down">
+          Наши работы
         </h2>
-
-        <p data-aos="fade-left" data-aos-duration="1000">
-          Здесь представлены некоторые из моих последних работ. Каждый проект —
-          это уникальный опыт и вызов, который помогает мне расти как
-          разработчику.
-        </p>
-      </div>
-
-      <div class="projects-grid">
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
+        <div class="portfolio-gallery__grid">
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-2 portfolio-gallery__item--row-2"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
             <img
-              src="./src/assets/project_img/taskade.png"
-              alt="Планировщик задач для фрилансеров"
+              src="./src/assets/img/exeple.jpg"
+              alt="Проект в жилом комплексе"
             />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Планировщик задач для фрилансеров</h3>
-            <p class="project-description">
-              Веб-приложение для фрилансеров, позволяющее управлять проектами,
-              отслеживать время и создавать отчеты для клиентов. Включает
-              интеграцию с календарем и уведомлениями.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Разработал интерактивный интерфейс с
-              React и TypeScript, обеспечив адаптивность с Tailwind CSS.
-              Реализовал REST API с Express для управления задачами и отчетами.
-              Настроил Prisma для взаимодействия с MongoDB, оптимизировал
-              запросы для высокой производительности. Интегрировал
-              push-уведомления через Firebase и развернул приложение в
-              Docker-контейнере.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">MongoDB</span>
-              <span class="project-tag">Tailwind CSS</span>
-              <span class="project-tag">Docker</span>
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">
+                Проект в жилом комплексе
+              </h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Полный электромонтаж "под ключ" в новом жилом комплексе.
+                  Установка щитового оборудования и прокладка кабельных трасс.
+                </p>
+              </div>
             </div>
-            <a href="https://www.taskade.com" class="project-button"
-              >Перейти на проект</a
-            >
           </div>
-        </div>
-
-        <!-- Проект 2 -->
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-1"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img src="./src/assets/img/exeple.jpg" alt="Освещение офиса" />
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">Освещение офиса</h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Проектирование и монтаж системы освещения для коммерческого
+                  помещения. Использовались современные LED-панели и датчики
+                  движения.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-1"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
             <img
-              src="./src/assets/project_img/sc training.jpg"
-              alt="Платформа для микро-курсов"
+              src="./src/assets/img/exeple.jpg"
+              alt="Замена проводки в частном доме"
             />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Платформа для микро-курсов</h3>
-            <p class="project-description">
-              Платформа для создания и прохождения коротких образовательных
-              курсов с прогресс-трекером и сертификатами. Оптимизирована для
-              мобильных устройств.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Создал адаптивный интерфейс с Vue.js,
-              используя Vuex для управления состоянием. Реализовал бэкенд с
-              Express и Prisma для работы с PostgreSQL, обеспечив хранение
-              курсов и сертификатов. Интегрировал Firebase для аналитики и
-              управления медиа. Настроил Docker для контейнеризации и деплоя,
-              обеспечив масштабируемость.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Vue.js</span>
-              <span class="project-tag">Vuex</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">PostgreSQL</span>
-              <span class="project-tag">Firebase</span>
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">
+                Замена проводки в частном доме
+              </h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Замена старой проводки в частном доме. Установка новых
+                  розеток, выключателей и автоматических выключателей.
+                </p>
+              </div>
             </div>
-            <a href="https://www.edapp.com" class="project-button"
-              >Перейти на проект</a
-            >
           </div>
-        </div>
-
-        <!-- Проект 3 -->
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="300"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-2"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <img src="./src/assets/img/exeple.jpg" alt="Система Умный дом" />
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">Система "Умный дом"</h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Монтаж системы "умный дом" с полным управлением освещением,
+                  климатом и жалюзи через мобильное приложение.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-1"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <img src="./src/assets/img/exeple.jpg" alt="Видеонаблюдение" />
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">Видеонаблюдение</h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Установка системы видеонаблюдения и контроля доступа на
+                  объекте. Интеграция с существующей электросетью.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-1"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
             <img
-              src="./src/assets/project_img/budgetbakers.jpg"
-              alt="Визуализатор личных финансов"
+              src="./src/assets/img/exeple.jpg"
+              alt="Модернизация электрощита"
             />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Визуализатор личных финансов</h3>
-            <p class="project-description">
-              Приложение для анализа личных расходов с интерактивными графиками
-              и категоризацией транзакций. Поддерживает импорт данных из CSV.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Разработал интерфейс с React и
-              TypeScript, внедрил визуализации с Recharts для интерактивных
-              графиков. Настроил Express и Prisma для работы с PostgreSQL,
-              обеспечив импорт и обработку CSV-файлов. Оптимизировал
-              производительность API и развернул приложение с помощью Docker.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">PostgreSQL</span>
-              <span class="project-tag">Recharts</span>
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">
+                Модернизация электрощита
+              </h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Модернизация электрощита в офисном здании. Установка УЗО и
+                  автоматики для повышения безопасности.
+                </p>
+              </div>
             </div>
-            <a href="https://www.budgetbakers.com" class="project-button"
-              >Перейти на проект</a
-            >
           </div>
-        </div>
-
-        <!-- Проект 4 -->
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
+          <div
+            class="portfolio-gallery__item portfolio-gallery__item--col-2"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
             <img
-              src="./src/assets/project_img/nextdoor.png"
-              alt="Форум для локальных сообществ"
+              src="./src/assets/img/exeple.jpg"
+              alt="Электрификация производства"
             />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Форум для локальных сообществ</h3>
-            <p class="project-description">
-              Платформа для общения местных сообществ с поддержкой тем,
-              комментариев и уведомлений в реальном времени. Обеспечивает
-              модерацию и фильтрацию контента.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Создал динамичный интерфейс с Vue.js и
-              TypeScript, используя Vuex для управления состоянием. Реализовал
-              бэкенд с Express и Prisma для MongoDB, настроил WebSocket для
-              уведомлений в реальном времени. Интегрировал JWT-аутентификацию и
-              развернул приложение в Docker.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Vue.js</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">MongoDB</span>
-              <span class="project-tag">Vuex</span>
-              <span class="project-tag">Docker</span>
+            <div class="portfolio-gallery__overlay">
+              <h3 class="portfolio-gallery__heading">
+                Электрификация производства
+              </h3>
+              <div class="portfolio-gallery__content">
+                <p class="portfolio-gallery__description">
+                  Прокладка новых силовых кабелей и подключение высокомощного
+                  оборудования на промышленном объекте.
+                </p>
+              </div>
             </div>
-            <a href="https://www.nextdoor.com" class="project-button"
-              >Перейти на проект</a
-            >
-          </div>
-        </div>
-
-        <!-- Проект 5 -->
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="500"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
-            <img
-              src="./src/assets/project_img/eventtribe.png"
-              alt="Планировщик мероприятий"
-            />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Планировщик мероприятий</h3>
-            <p class="project-description">
-              Веб-приложение для организации мероприятий с календарем,
-              приглашениями и RSVP-функционалом. Поддерживает уведомления по
-              email и SMS.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Разработал кроссплатформенный интерфейс
-              с React и TypeScript, используя Redux для управления состоянием.
-              Создал API с Express и Prisma для PostgreSQL, интегрировал Twilio
-              для SMS-уведомлений. Настроил деплой с Docker, обеспечив
-              масштабируемость и стабильность.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">PostgreSQL</span>
-              <span class="project-tag">Twilio</span>
-              <span class="project-tag">Docker</span>
-            </div>
-            <a href="https://www.eventbrite.com" class="project-button"
-              >Перейти на проект</a
-            >
-          </div>
-        </div>
-
-        <!-- Проект 6 -->
-        <div
-          class="project-card"
-          data-aos="fade-up"
-          data-aos-delay="600"
-          data-aos-duration="1200"
-        >
-          <div class="project-image">
-            <img
-              src="./src/assets/project_img/kithcen.jpg"
-              alt="Приложение для рецептов"
-            />
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Приложение для рецептов</h3>
-            <p class="project-description">
-              Платформа для обмена кулинарными рецептами с функцией поиска по
-              ингредиентам и генерации списка покупок. Поддерживает загрузку
-              изображений.
-            </p>
-            <p class="project-role">
-              <strong>Моя роль:</strong> Разработал интерфейс с Next.js и
-              TypeScript, обеспечив серверный рендеринг для SEO. Создал API с
-              Express и Prisma для Supabase, настроил загрузку медиа.
-              Оптимизировал производительность страниц и развернул приложение с
-              помощью Docker.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Next.js</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">Prisma</span>
-              <span class="project-tag">Supabase</span>
-              <span class="project-tag">Docker</span>
-            </div>
-            <a href="https://www.yummly.com" class="project-button"
-              >Перейти на проект</a
-            >
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact-section" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <h2 data-aos="fade-left" data-aos-duration="1000">
-            Связаться со мной
-          </h2>
-          <p data-aos="fade-right" data-aos-duration="1000">
-            Хотите обсудить проект или задать вопрос? Свяжитесь со мной через
-            удобную для вас платформу. Я всегда открыт к новым возможностям и
-            сотрудничеству!
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <!-- Telegram -->
-          <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
-            <div class="contact-card">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
-                alt="Telegram"
-                class="contact-icon"
-              />
-              <h3 class="contact-title">Telegram</h3>
-              <p class="contact-description">
-                Быстрое общение через чат или голосовые сообщения. Напишите мне
-                для оперативного ответа.
-              </p>
-              <a href="https://t.me/andrey_web_dev" class="contact-button"
-                >Перейти в Telegram</a
-              >
-            </div>
-          </div>
-
-          <!-- Email -->
-          <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
-            <div class="contact-card">
-              <img
-                src="./src/assets/icons/email.png"
-                alt="Email"
-                class="contact-icon"
-              />
-              <h3 class="contact-title">Электронная почта</h3>
-              <p class="contact-description">
-                Отправьте мне письмо для подробного обсуждения или запроса
-                предложения.
-              </p>
-              <a href="mailto:valukandrey004@gmail.com" class="contact-button"
-                >Написать на почту</a
-              >
-            </div>
-          </div>
-
-          <!-- Phone -->
-          <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
-            <div class="contact-card">
-              <img
-                src="./src/assets/icons/phone.png"
-                alt="Phone"
-                class="contact-icon"
-              />
-              <h3 class="contact-title">Телефон</h3>
-              <p class="contact-description">
-                Позвоните или напишите в мессенджер для прямого общения.
-              </p>
-              <a href="tel:+375333260981" class="contact-button">Позвонить</a>
-            </div>
-          </div>
-
-          <!-- LinkedIn -->
-          <!-- <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
-            <div class="contact-card">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-                alt="LinkedIn"
-                class="contact-icon"
-              />
-              <h3 class="contact-title">LinkedIn</h3>
-              <p class="contact-description">
-                Подключитесь ко мне в профессиональной сети для делового
-                общения.
-              </p>
-              <a
-                href="https://www.linkedin.com/in/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%B2%D0%B0%D0%BB%D1%8E%D0%BA-6b0546363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                class="contact-button"
-                >Перейти в LinkedIn</a
-              >
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- модальное овно -->
-    <!-- <div class="modal" id="quick-contact-modal">
-      <div class="modal__content">
-        <button class="modal__close">
-          <i class="fas fa-times"></i>
-        </button>
-        <h2 class="modal__title">Связаться со мной</h2>
-        <p class="modal__description">
-          Заполните форму, и я свяжусь с вами в кратчайшие сроки!
-        </p>
-        <form class="modal__form">
-          <input
-            type="text"
-            class="modal__input"
-            id="modal-name"
-            placeholder="Ваше имя"
-            required
-          />
-          <input
-            type="tel"
-            class="modal__input"
-            id="modal-phone"
-            placeholder="Ваш номер телефона"
-            required
-            pattern="[0-9+\-\(\) ]{10,15}"
-            title="Пожалуйста, введите действительный номер телефона"
-          />
-          <button type="submit" class="button">Отправить</button>
-        </form>
-      </div>
-    </div> -->
-
-    <!-- подвал -->
     <footer class="footer">
       <div class="container">
-        <div class="footer__container">
-          <div
-            class="footer__column footer__column--brand animate"
-            data-delay="0"
-          >
-            <h3 class="footer__logo">Valiuk Andrei</h3>
+        <div class="footer__main">
+          <div class="footer__col" data-aos="fade-up">
+            <div class="footer__logo">
+              <a href="/" class="footer__logo-link">
+                <span class="footer__logo-text">Logo-company</span>
+              </a>
+            </div>
             <p class="footer__description">
-              Веб-разработчик, создающий современные и эффективные сайты и
-              приложения для вашего бизнеса.
+              Надежные электромонтажные работы любой сложности.
             </p>
           </div>
-          <div
-            class="footer__column footer__column--links animate"
-            data-delay="200"
-          >
-            <h3 class="footer__column-title">Навигация</h3>
-            <ul class="footer__links">
-              <li><a href="#home" class="footer__link">Главная</a></li>
-              <li><a href="#about" class="footer__link">Обо мне</a></li>
-              <li><a href="#portfolio" class="footer__link">Портфолио</a></li>
+
+          <div class="footer__col" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="footer__heading">Навигация</h4>
+            <ul class="footer__list">
               <li><a href="#services" class="footer__link">Услуги</a></li>
-              <!-- <li><a href="#testimonials" class="footer__link">Отзывы</a></li> -->
-              <li><a href="#contact" class="footer__link">Контакты</a></li>
+              <li>
+                <a href="#advantages" class="footer__link">Преимущества</a>
+              </li>
+              <li><a href="#gallery" class="footer__link">Галерея</a></li>
+              <li><a href="#contacts" class="footer__link">Контакты</a></li>
             </ul>
           </div>
-          <div
-            class="footer__column footer__column--contact animate"
-            data-delay="400"
-          >
-            <h3 class="footer__column-title">Контакты</h3>
-            <ul class="footer__links">
+
+          <div class="footer__col" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="footer__heading">Контакты</h4>
+            <ul class="footer__list">
               <li>
-                <a href="mailto:valukandrey004@gmail.com" class="footer__link">
-                  <i class="fas fa-envelope"></i> valukandrey004@gmail.com
+                <a href="tel:+1234567890" class="footer__link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 01-2 2A20.42 20.42 0 013 4.41a2 2 0 012-2c.98 0 1.95.16 2.88.47a2 2 0 011.23 2.18l-.5 2.5a2 2 0 01-.88 1.58A15.42 15.42 0 0014 17.16a2 2 0 011.58-.88l2.5-.5a2 2 0 012.18 1.23c.31.93.47 1.9.47 2.88z"
+                    />
+                  </svg>
+                  +7 (XXX) XXX-XX-XX
                 </a>
               </li>
               <li>
-                <a href="tel:+375333260981" class="footer__link">
-                  <i class="fas fa-phone"></i> +375 (33) 326-0981
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://web.telegram.org/a/#7699447339"
-                  class="footer__link"
-                >
-                  <i class="fab fa-telegram-plane"></i> Telegram
+                <a href="mailto:info@el-company.ru" class="footer__link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                  info@el-company.ru
                 </a>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="footer__bottom">
-          <p class="footer__copyright">© 2025 Андрей. Все права защищены.</p>
+
+          <div class="footer__col" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="footer__heading">График работы</h4>
+            <ul class="footer__list">
+              <li>Пн-Пт: 9:00 - 18:00</li>
+              <li>Сб: 10:00 - 15:00</li>
+              <li>Вс: Выходной</li>
+            </ul>
+          </div>
+
+          <div class="footer__col" data-aos="fade-up" data-aos-delay="400">
+            <h4 class="footer__heading">Адрес</h4>
+            <p class="footer__address">
+              г. Москва, ул. Примерная, д. 15, офис 22
+            </p>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         AOS.init();
+        const burgerMenu = document.querySelector(".burger-menu");
+        const navListMobile = document.querySelector(".nav__list-mobile");
 
-        const burger = document.querySelector(".header__burger");
-        const nav = document.querySelector(".header__nav");
-
-        burger.addEventListener("click", () => {
-          burger.classList.toggle("active");
-          nav.classList.toggle("active");
+        burgerMenu.addEventListener("click", () => {
+          navListMobile.classList.toggle("active");
         });
-
-        // Close menu when clicking a nav item
-        document.querySelectorAll(".header__nav-item").forEach((item) => {
-          item.addEventListener("click", () => {
-            burger.classList.remove("active");
-            nav.classList.remove("active");
-          });
-        });
-
-        const updateParallax = (className) => {
-          const elements = document.querySelectorAll(`.${className}`);
-
-          // Инициализация текущих позиций для сглаживания
-          const currentPositions = new Map();
-          elements.forEach((element) => {
-            currentPositions.set(element, 0);
-          });
-
-          const update = () => {
-            const scrollPosition = window.scrollY;
-            const windowHeight = window.innerHeight;
-
-            elements.forEach((element) => {
-              const rect = element.getBoundingClientRect();
-              const elementTop = rect.top + scrollPosition;
-              const elementCenter = elementTop + rect.height / 2;
-              const scrollProgress =
-                (scrollPosition + windowHeight / 2 - elementCenter) /
-                windowHeight;
-
-              const amplitude = parseFloat(
-                element.getAttribute("data-amplitude") || "250"
-              );
-              const rotation = parseFloat(
-                element.getAttribute("data-rotation") || "23"
-              );
-
-              const targetTranslateY = scrollProgress * amplitude;
-
-              const currentTranslateY = currentPositions.get(element) || 0;
-              const smoothedTranslateY =
-                currentTranslateY +
-                (targetTranslateY - currentTranslateY) * 0.1;
-
-              currentPositions.set(element, smoothedTranslateY);
-
-              element.style.transition = "transform 0.1s ease-out"; // Плавный переход
-              element.style.transform = `translateY(${smoothedTranslateY}px) rotate(${rotation}deg)`;
-            });
-
-            requestAnimationFrame(update);
-          };
-
-          update();
-        };
-
-        updateParallax("js-bg");
-        updateParallax("ts-bg");
-        updateParallax("node-bg");
-        updateParallax("react-bg");
-        updateParallax("tg-bg");
       });
     </script>
-    <script src="./index.js"></script>
   </body>
 </html>
